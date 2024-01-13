@@ -1,0 +1,14 @@
+Thank you for purchasing the Stylized City Ruins Pack!
+
+You can immediately start with creating your first environment. 
+Open the Prefabs folder, take a look at the variety of assets and start constructing your scene.
+Multiple Demo and Showcase scenes are included aswell.
+
+
+If you like the package I would really appreciate a small review on the product page!
+I hope you'll have fun with your project!
+
+
+
+Tip:
+Use the Post Processing Stack and switch to Linear Color Space for better visuals (Availabe for free as a Unity Plugin)
