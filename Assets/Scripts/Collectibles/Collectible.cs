@@ -6,9 +6,13 @@ public class Collectible
 {
     string Title;
     string Body;
+    string Status;
+    string Custom;
 
-    public Collectible(string title, string body){
+    public Collectible(string title, string body, string status, string custom){
         Title = title;
         Body = body;
+        Status = status;
+        Custom = custom;
     }
 }
