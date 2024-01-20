@@ -4,10 +4,20 @@ using UnityEngine;
 
 public class Video : Collectible
 {
-    Video Vid;
+    [SerializeField] private Video Vid;
 
-    public Video(string title, string body, string status, string custom, Video vid) : base(title, body, status, custom)
+    public Video(string title, string body, int status, string custom, Video vid) : base(title, body, status, custom)
     {
         Vid = vid;
+    }
+
+    public Video GetVid()
+    {
+        return Vid;
+    }
+
+    public void SetVid(Video l)
+    {
+        Vid = l;
     }
 }

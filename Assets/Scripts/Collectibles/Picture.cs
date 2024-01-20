@@ -5,10 +5,20 @@ using UnityEngine;
 
 public class Picture : Collectible
 {
-    Image Image;
+    [SerializeField] private List<Image> Images;
 
-    public Picture(string title, string body, string status, string custom, Image image) : base(title, body, status, custom)
+    public Picture(string title, string body, int status, string custom, List<Image> images) : base(title, body, status, custom)
     {
-        Image = image;
+        Images = images;
+    }
+
+    public List<Image> GetImages()
+    {
+        return Images;
+    }
+
+    public void SetImages(List<Image> l)
+    {
+        Images = l;
     }
 }
