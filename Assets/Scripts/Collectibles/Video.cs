@@ -20,4 +20,9 @@ public class Video : Collectible
     {
         Vid = l;
     }
+
+    public override void PrintTraits()
+    {
+        Debug.LogFormat("Title: {0}, \nBody: {1}, \nStatus: {2}, \nCustom: {3}, \nVid: {4},\n", GetTitle(), GetBody(), GetStatus(), GetCustom(), Vid);
+    }
 }

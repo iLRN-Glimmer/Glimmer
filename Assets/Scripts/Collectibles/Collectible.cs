@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Collectible 
+abstract public class Collectible : MonoBehaviour 
 {
     [SerializeField] private string Title;
     [SerializeField] private string Body;
@@ -53,5 +53,9 @@ public class Collectible
     public void SetStatus(int i)
     {
         Status = i;
+    }
+
+    public virtual void PrintTraits(){
+        Debug.LogFormat("Title: {0}, \nBody: {1}, \nStatus: {2}, \nCustom: {3},\n", Title, Body, Status, Custom);
     }
 }

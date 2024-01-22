@@ -21,4 +21,9 @@ public class Picture : Collectible
     {
         Images = l;
     }
+
+    public override void PrintTraits()
+    {
+        Debug.LogFormat("Title: {0}, \nBody: {1}, \nStatus: {2}, \nCustom: {3}, \nImage: {4},\n", GetTitle(), GetBody(), GetStatus(), GetCustom(), Images[0]);
+    }
 }

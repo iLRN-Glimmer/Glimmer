@@ -69,4 +69,10 @@ public class Node : Collectible
     {
         Images = l;
     }
+
+    public override void PrintTraits()
+    {
+        
+        Debug.LogFormat("Title: {0}, \nBody: {1}, \nStatus: {2}, \nCustom: {3}, \nQuestion: {4}, \nAnswer: {5}, \nURL: {6}, \nTag: {7}, \n", GetTitle(), GetBody(), GetStatus(), GetCustom(), Question, Answer, URL, Tags[0]);
+    }
 }
