@@ -6,7 +6,7 @@ public class Video : Collectible
 {
     [SerializeField] private Video Vid;
 
-    public Video(string title, string body, int status, string custom, Video vid) : base(title, body, status, custom)
+    public Video(string title, string body, int status, Video vid, string custom = null) : base(title, body, status, custom)
     {
         Vid = vid;
     }

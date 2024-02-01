@@ -7,7 +7,7 @@ public class Picture : Collectible
 {
     [SerializeField] private List<Image> Images;
 
-    public Picture(string title, string body, int status, string custom, List<Image> images) : base(title, body, status, custom)
+    public Picture(string title, string body, int status, List<Image> images , string custom = null) : base(title, body, status, custom)
     {
         Images = images;
     }

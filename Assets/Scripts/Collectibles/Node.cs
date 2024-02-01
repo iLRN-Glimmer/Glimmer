@@ -8,16 +8,22 @@ public class Node : Collectible
     [SerializeField] private string Question;
     [SerializeField] private string Answer;
     [SerializeField] private string URL;
+    [SerializeField] private Collectible Collectible;
     [SerializeField] private List<string> Tags;
     [SerializeField] private List<Image> Images;
 
 
-    public Node(string title, string body, int status, string question, string answer, string url, List<string> tags = null, List<Image> images = null, string custom = null) : base(title,body,status, custom){
+    public Node(string title, string body, int status, string question, string answer, string url, List<string> tags = null, List<Image> images = null,Collectible collectible = null, string custom = null) : base(title,body,status, custom){
         Question = question;
         Answer = answer;
         URL = url;
         Tags =tags;
         Images = images;
+        Collectible = collectible;
+    }
+
+    public Collectible GetCollectible(){
+        return Collectible;
     }
 
     public string GetQuestion()
@@ -68,6 +74,10 @@ public class Node : Collectible
     public void SetImages(List<Image> l)
     {
         Images = l;
+    }
+
+    public void SetCollectible( Collectible collectible){
+        Collectible = collectible;
     }
 
     public override void PrintTraits()
