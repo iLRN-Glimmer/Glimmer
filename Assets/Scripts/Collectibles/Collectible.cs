@@ -58,4 +58,8 @@ abstract public class Collectible : MonoBehaviour
     public virtual void PrintTraits(){
         Debug.LogFormat("Title: {0}, \nBody: {1}, \nStatus: {2}, \nCustom: {3},\n", Title, Body, Status, Custom);
     }
+
+    public virtual void OpenWindow(GameObject canvas){
+        
+    }
 }

@@ -23,7 +23,11 @@ public class TestCamera : MonoBehaviour
     float cameraVerticalRotation = 0f;
     float cameraHorizontalRotation = 0f;
 
+    private GameObject canvas;
+
     private Transform _selection;
+
+    bool freeze = false;
 
 
 
@@ -36,6 +40,7 @@ public class TestCamera : MonoBehaviour
         //script = Player.GetComponent<PlayerMovement>();
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        canvas = GameObject.Find("PanelsCanvas");
 
     }
 
@@ -47,40 +52,45 @@ public class TestCamera : MonoBehaviour
 
 
         
-
-        float inputX = Input.GetAxis("Mouse X") * mouseSensitivity;
-        float inputY = Input.GetAxis("Mouse Y") * mouseSensitivity;
-        cameraHorizontalRotation += inputX;
-        cameraVerticalRotation -= inputY;
-        cameraVerticalRotation = Mathf.Clamp(cameraVerticalRotation, -90f, 90f);
-        transform.rotation = Quaternion.Euler(cameraVerticalRotation, cameraHorizontalRotation, 0);
-        //transform.localEulerAngles = Vector3.right * cameraVerticalRotation;
-        //orientation.rotation = Quaternion.Euler(cameraVerticalRotation, cameraHorizontalRotation, 0);
-        if (_selection != null)
-        {
-            var selectionRenderer = _selection.GetComponent<Renderer>();
-            selectionRenderer.material = defaultMaterial;
-            _selection = null;
-        }
-        var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-        RaycastHit hit;
-        if (Physics.Raycast(ray, out hit))
-        {
-            var selection = hit.transform;
-            if (selection.CompareTag(selectableTag))
+        if(!freeze){
+            float inputX = Input.GetAxis("Mouse X") * mouseSensitivity;
+            float inputY = Input.GetAxis("Mouse Y") * mouseSensitivity;
+            cameraHorizontalRotation += inputX;
+            cameraVerticalRotation -= inputY;
+            cameraVerticalRotation = Mathf.Clamp(cameraVerticalRotation, -90f, 90f);
+            transform.rotation = Quaternion.Euler(cameraVerticalRotation, cameraHorizontalRotation, 0);
+            //transform.localEulerAngles = Vector3.right * cameraVerticalRotation;
+            //orientation.rotation = Quaternion.Euler(cameraVerticalRotation, cameraHorizontalRotation, 0);
+            if (_selection != null)
             {
-                var selectionRenderer = selection.GetComponent<Renderer>();
-                if (selectionRenderer != null)
-                {
-                    selectionRenderer.material = highlightMaterial;
-                }
-                _selection = selection;
+                var selectionRenderer = _selection.GetComponent<Renderer>();
+                selectionRenderer.material = defaultMaterial;
+                _selection = null;
             }
+            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            RaycastHit hit;
+            if (Physics.Raycast(ray, out hit))
+            {
+                var selection = hit.transform;
+                if (selection.CompareTag(selectableTag))
+                {
+                    var selectionRenderer = selection.GetComponent<Renderer>();
+                    if (selectionRenderer != null)
+                    {
+                        selectionRenderer.material = highlightMaterial;
+                    }
+                    _selection = selection;
+                }
 
+            }
         }
+        
 
         if (Input.GetMouseButtonDown(0) && _selection){
-            _selection.gameObject.GetComponent<Collectible>().PrintTraits();
+            _selection.gameObject.GetComponent<Collectible>().OpenWindow(canvas);
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            freeze = true;
         }
     }
 }
