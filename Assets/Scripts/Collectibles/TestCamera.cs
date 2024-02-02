@@ -38,8 +38,10 @@ public class TestCamera : MonoBehaviour
     void Start()
     {
         //script = Player.GetComponent<PlayerMovement>();
-        Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+        //freeze = true;
+        
         canvas = GameObject.Find("PanelsCanvas");
 
     }
@@ -83,14 +85,23 @@ public class TestCamera : MonoBehaviour
                 }
 
             }
-        }
+        
         
 
         if (Input.GetMouseButtonDown(0) && _selection){
             _selection.gameObject.GetComponent<Collectible>().OpenWindow(canvas);
-            Cursor.visible = true;
             Cursor.lockState = CursorLockMode.None;
+            Cursor.visible = true;
+            
             freeze = true;
         }
+        }
+    }
+
+    public void Unpause(){
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
+
+        freeze = false;
     }
 }
