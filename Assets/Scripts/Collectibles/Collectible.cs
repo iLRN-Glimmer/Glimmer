@@ -4,10 +4,10 @@ using UnityEngine;
 
 abstract public class Collectible : MonoBehaviour 
 {
-    [SerializeField] private string Title;
-    [SerializeField] private string Body;
-    [SerializeField] private int Status;
-    [SerializeField] private string Custom;
+    [SerializeField] protected string Title;
+    [SerializeField] protected string Body;
+    [SerializeField] protected int Status;
+    [SerializeField] protected string Custom;
 
     public Collectible(string title, string body, int status, string custom){
         Title = title;
@@ -60,6 +60,6 @@ abstract public class Collectible : MonoBehaviour
     }
 
     public virtual void OpenWindow(GameObject canvas){
-        
+
     }
 }

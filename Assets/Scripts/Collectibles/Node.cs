@@ -88,6 +88,8 @@ public class Node : Collectible
 
     public override void OpenWindow(GameObject canvas)
     {
-        canvas.transform.Find("NodePanel").gameObject.SetActive(true);
+        GameObject temp = canvas.transform.Find("Node").gameObject;
+        temp.SetActive(true);
+        temp.transform.Find("NodePanel").gameObject.GetComponent<NodePanel>().setNode(Title, Body,Question,Answer);
     }
 }

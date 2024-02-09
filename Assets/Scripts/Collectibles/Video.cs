@@ -25,4 +25,11 @@ public class Video : Collectible
     {
         Debug.LogFormat("Title: {0}, \nBody: {1}, \nStatus: {2}, \nCustom: {3}, \nVid: {4},\n", GetTitle(), GetBody(), GetStatus(), GetCustom(), Vid);
     }
+
+    public override void OpenWindow(GameObject canvas)
+    {
+        GameObject temp = canvas.transform.Find("VideoPanel").gameObject;
+        temp.SetActive(true);
+        temp.GetComponent<VideoPanel>().setVideo(Title, Body);
+    }
 }

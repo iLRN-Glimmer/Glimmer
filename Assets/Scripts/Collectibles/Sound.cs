@@ -10,4 +10,9 @@ public class Sound : Collectible
     {
 
     }
+
+    public override void OpenWindow(GameObject canvas)
+    {
+        canvas.transform.Find("SoundPanel").gameObject.SetActive(true);
+    }
 }
