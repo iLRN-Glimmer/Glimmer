@@ -19,6 +19,7 @@ public class DialogBox : MonoBehaviour
 
         box.localPosition = new Vector2(0, -Screen.height);
         box.LeanMoveLocalY(0, 0.5f).setEaseOutExpo().delay = 0.1f;
+        // box.LeanMoveLocalY(0, 0.5f).setEase; // look at bouncing effect for setEase
     }
 
     public void CloseDialog() {
