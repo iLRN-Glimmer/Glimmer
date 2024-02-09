@@ -29,9 +29,9 @@ public class Picture : Collectible
 
     public override void OpenWindow(GameObject canvas)
     {
-        GameObject temp = canvas.transform.Find("ImagePanel").gameObject;
+        GameObject temp = canvas.transform.Find("Image").gameObject;
         temp.SetActive(true);
-        temp.GetComponent<ImagePanel>().setImage(Title, Body);
+        temp.transform.Find("ImagePanel").gameObject.GetComponent<ImagePanel>().setImage(Title, Body);
     }
 
     

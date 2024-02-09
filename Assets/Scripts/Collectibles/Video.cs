@@ -28,8 +28,8 @@ public class Video : Collectible
 
     public override void OpenWindow(GameObject canvas)
     {
-        GameObject temp = canvas.transform.Find("VideoPanel").gameObject;
+        GameObject temp = canvas.transform.Find("Video").gameObject;
         temp.SetActive(true);
-        temp.GetComponent<VideoPanel>().setVideo(Title, Body);
+        temp.transform.Find("VideoPanel").gameObject.GetComponent<VideoPanel>().setVideo(Title, Body);
     }
 }

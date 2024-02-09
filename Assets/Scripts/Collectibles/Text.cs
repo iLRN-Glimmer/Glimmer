@@ -10,8 +10,8 @@ public class Text : Collectible
 
     public override void OpenWindow(GameObject canvas)
     {
-        GameObject temp = canvas.transform.Find("TextPanel").gameObject;
+        GameObject temp = canvas.transform.Find("Text").gameObject;
         temp.SetActive(true);
-        temp.GetComponent<TextPanel>().setText(Title, Body);
+        temp.transform.Find("TextPanel").gameObject.GetComponent<TextPanel>().setText(Title, Body);
     }
 }
