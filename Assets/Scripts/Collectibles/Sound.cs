@@ -13,6 +13,8 @@ public class Sound : Collectible
 
     public override void OpenWindow(GameObject canvas)
     {
-        canvas.transform.Find("SoundPanel").gameObject.SetActive(true);
+        GameObject temp = canvas.transform.Find("Sound").gameObject;
+        temp.SetActive(true);
+        temp.transform.Find("SoundPanel").gameObject.GetComponent<SoundPanel>().setSound(Title, Body);
     }
 }
