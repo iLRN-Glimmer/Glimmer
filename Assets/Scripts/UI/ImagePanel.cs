@@ -22,6 +22,10 @@ public class ImagePanel : MonoBehaviour
         
     }
 
+    private void OnEnable(){
+        this.transform.Find("ImageDesc").gameObject.SetActive(false);
+    }
+
     public void setImage(string Title, string Body)
     {
         
