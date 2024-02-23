@@ -23,7 +23,8 @@ public class VideoPanel : MonoBehaviour
     }
 
     private void OnEnable(){
-        this.transform.Find("VideoDesc").gameObject.SetActive(false);
+        transform.Find("VideoDesc").gameObject.SetActive(false);
+        transform.Find("Video Player").gameObject.SetActive(true);
     }
 
     public void setVideo(string Title, string Body)
