@@ -9,9 +9,15 @@ namespace StarterAssets
 #if ENABLE_INPUT_SYSTEM
 	[RequireComponent(typeof(PlayerInput))]
 #endif
+
+
 	public class FirstPersonController : MonoBehaviour
 	{
-		[Header("Player")]
+        [Header("Wall Slide")]
+        public float wallSlideAngleThreshold = 60f; // Angle threshold for sliding down walls
+        public float wallSlideSpeed = 5f; // Speed of sliding down walls
+
+        [Header("Player")]
 		[Tooltip("Move speed of the character in m/s")]
 		public float MoveSpeed = 4.0f;
 		[Tooltip("Sprint speed of the character in m/s")]
