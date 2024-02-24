@@ -50,17 +50,20 @@ public class TestCamera : MonoBehaviour
     void Update()
     {
 
+        
+
+
 
 
 
         
         if(!freeze){
-            float inputX = Input.GetAxis("Mouse X") * mouseSensitivity;
-            float inputY = Input.GetAxis("Mouse Y") * mouseSensitivity;
-            cameraHorizontalRotation += inputX;
-            cameraVerticalRotation -= inputY;
-            cameraVerticalRotation = Mathf.Clamp(cameraVerticalRotation, -90f, 90f);
-            transform.rotation = Quaternion.Euler(cameraVerticalRotation, cameraHorizontalRotation, 0);
+            // float inputX = Input.GetAxis("Mouse X") * mouseSensitivity;
+            // float inputY = Input.GetAxis("Mouse Y") * mouseSensitivity;
+            // cameraHorizontalRotation += inputX;
+            // cameraVerticalRotation -= inputY;
+            // cameraVerticalRotation = Mathf.Clamp(cameraVerticalRotation, -90f, 90f);
+            // transform.rotation = Quaternion.Euler(cameraVerticalRotation, cameraHorizontalRotation, 0);
             //transform.localEulerAngles = Vector3.right * cameraVerticalRotation;
             //orientation.rotation = Quaternion.Euler(cameraVerticalRotation, cameraHorizontalRotation, 0);
             if (_selection != null)
@@ -71,8 +74,17 @@ public class TestCamera : MonoBehaviour
             }
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             RaycastHit hit;
+
+
+    // Set the length of the ray (adjust as needed)
+            float rayLength = 10f;
+
+    // Draw the ray
+            Debug.DrawRay(ray.origin, ray.direction * rayLength, Color.green);
+
             if (Physics.Raycast(ray, out hit))
             {
+                Debug.Log(hit.collider.gameObject.name);
                 var selection = hit.transform;
                 if (selection.CompareTag(selectableTag))
                 {

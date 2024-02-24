@@ -13,10 +13,7 @@ namespace StarterAssets
 
 	public class FirstPersonController : MonoBehaviour
 	{
-        [Header("Wall Slide")]
-        public float wallSlideAngleThreshold = 60f; // Angle threshold for sliding down walls
-        public float wallSlideSpeed = 5f; // Speed of sliding down walls
-
+        
         [Header("Player")]
 		[Tooltip("Move speed of the character in m/s")]
 		public float MoveSpeed = 4.0f;
