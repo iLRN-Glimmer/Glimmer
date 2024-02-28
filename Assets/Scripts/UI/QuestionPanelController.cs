@@ -19,7 +19,9 @@ public class QuestionPanelController : MonoBehaviour
             // If the panel is active, close it
             if (panel.activeSelf)
             {
-                panel.SetActive(false);
+                LeanTween.move(panel, new Vector2(Screen.width, 540), 0.5f)
+                .setEase(LeanTweenType.easeInExpo)
+                .setOnComplete(() => panel.SetActive(!panel.activeSelf));
                 desc.SetActive(true);
                 button.SetActive(true);
                 
@@ -41,12 +43,12 @@ public class QuestionPanelController : MonoBehaviour
         return results.Count > 0 && results[0].gameObject == panel;
     }
 
-    // Method to close the panel
-    public void TogglePanel()
-    {
-        LeanTween.move(panel, new Vector2(Screen.width, 0), 0.5f)
-        .setEase(LeanTweenType.easeInExpo)
-        .setOnComplete(() => panel.SetActive(!panel.activeSelf));
-    }
+    // // Method to close the panel
+    // public void TogglePanel()
+    // {
+    //     LeanTween.move(panel, new Vector2(Screen.width, 0), 0.5f)
+    //     .setEase(LeanTweenType.easeInExpo)
+    //     .setOnComplete(() => panel.SetActive(!panel.activeSelf));
+    // }
 
 }
