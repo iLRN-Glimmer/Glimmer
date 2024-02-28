@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using System.Collections.Generic;
 
-public class PanelController : MonoBehaviour
+public class QuestionPanelController : MonoBehaviour
 {
     [SerializeField]
     private GameObject panel; // Reference to your panel GameObject
@@ -41,9 +41,12 @@ public class PanelController : MonoBehaviour
         return results.Count > 0 && results[0].gameObject == panel;
     }
 
-    // Method to open or close the panel
+    // Method to close the panel
     public void TogglePanel()
     {
-        panel.SetActive(!panel.activeSelf);
+        LeanTween.move(panel, new Vector2(Screen.width, 0), 0.5f)
+        .setEase(LeanTweenType.easeInExpo)
+        .setOnComplete(() => panel.SetActive(!panel.activeSelf));
     }
+
 }
