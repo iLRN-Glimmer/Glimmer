@@ -54,6 +54,19 @@ namespace StarterAssets
 		[Tooltip("How far in degrees can you move the camera down")]
 		public float BottomClamp = -90.0f;
 
+		// collectible panels
+		private GameObject canvas;
+		bool freeze = false;
+
+		// collectible 
+		private Transform _selection;
+		[SerializeField]
+		private string selectableTag = "Selectable";
+		[SerializeField]
+		private Material highlightMaterial;
+		[SerializeField]
+		private Material defaultMaterial;
+
 		// cinemachine
 		private float _cinemachineTargetPitch;
 
@@ -111,18 +124,75 @@ namespace StarterAssets
 			// reset our timeouts on start
 			_jumpTimeoutDelta = JumpTimeout;
 			_fallTimeoutDelta = FallTimeout;
+
+			Cursor.lockState = CursorLockMode.Locked;
+			Cursor.visible = false;
+			canvas = GameObject.Find("PanelsCanvas");
 		}
 
 		private void Update()
 		{
-			JumpAndGravity();
-			GroundedCheck();
-			Move();
+			if (!freeze)
+			{
+
+				JumpAndGravity();
+				GroundedCheck();
+				Move();
+
+				if (_selection != null)
+				{
+					var selectionRenderer = _selection.GetComponent<Renderer>();
+					selectionRenderer.material = defaultMaterial;
+					_selection = null;
+				}
+				var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+				RaycastHit hit;
+
+
+				// Set the length of the ray (adjust as needed)
+				float rayLength = 10f;
+
+				// Draw the ray
+				Debug.DrawRay(ray.origin, ray.direction * rayLength, Color.green);
+
+				if (Physics.Raycast(ray, out hit))
+				{
+					Debug.Log(hit.collider.gameObject.name);
+					var selection = hit.transform;
+					if (selection.CompareTag(selectableTag))
+					{
+						var selectionRenderer = selection.GetComponent<Renderer>();
+						if (selectionRenderer != null)
+						{
+							selectionRenderer.material = highlightMaterial;
+						}
+						_selection = selection;
+					}
+
+				}
+
+
+
+				if (Input.GetMouseButtonDown(0) && _selection)
+				{
+					_selection.gameObject.GetComponent<Collectible>().OpenWindow(canvas);
+					Cursor.lockState = CursorLockMode.None;
+					Cursor.visible = true;
+
+					freeze = true;
+				}
+
+				
+			}
+			
 		}
 
 		private void LateUpdate()
 		{
-			CameraRotation();
+			if(!freeze){
+				CameraRotation();
+			}
+			
 		}
 
 		private void GroundedCheck()
@@ -266,6 +336,14 @@ namespace StarterAssets
 
 			// when selected, draw a gizmo in the position of, and matching radius of, the grounded collider
 			Gizmos.DrawSphere(new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z), GroundedRadius);
+		}
+
+		public void Unpause()
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+			Cursor.visible = false;
+
+			freeze = false;
 		}
 	}
 }
