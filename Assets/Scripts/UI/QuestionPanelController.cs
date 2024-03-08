@@ -22,6 +22,7 @@ public class PanelController : MonoBehaviour
                 LeanTween.move(panel, new Vector2(Screen.width, 540), 0.5f)
                 .setEase(LeanTweenType.easeInExpo)
                 .setOnComplete(() => panel.SetActive(!panel.activeSelf));
+                desc.SetActive(true);
                 button.SetActive(true);
                 
             }
