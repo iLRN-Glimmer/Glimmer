@@ -19,8 +19,9 @@ public class PanelController : MonoBehaviour
             // If the panel is active, close it
             if (panel.activeSelf)
             {
-                panel.SetActive(false);
-                desc.SetActive(true);
+                LeanTween.move(panel, new Vector2(Screen.width, 540), 0.5f)
+                .setEase(LeanTweenType.easeInExpo)
+                .setOnComplete(() => panel.SetActive(!panel.activeSelf));
                 button.SetActive(true);
                 
             }
@@ -42,8 +43,8 @@ public class PanelController : MonoBehaviour
     }
 
     // Method to open or close the panel
-    public void TogglePanel()
-    {
-        panel.SetActive(!panel.activeSelf);
-    }
+    // public void TogglePanel()
+    // {
+    //     panel.SetActive(!panel.activeSelf);
+    // }
 }
