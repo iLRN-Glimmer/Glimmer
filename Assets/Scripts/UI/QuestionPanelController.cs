@@ -11,6 +11,21 @@ public class PanelController : MonoBehaviour
     [SerializeField]
     private GameObject button;
 
+    private List<GameObject> children;
+
+    private void Start() {
+        children  = new List<GameObject>();
+        AddDescendants(panel.transform,children);
+        children.Add(panel);
+    }
+
+    private void AddDescendants(Transform parent, List<GameObject> list){
+        foreach (Transform child in parent)
+        {
+            list.Add(child.gameObject);
+            AddDescendants(child, list);
+        }
+    }
     private void Update()
     {
         // Check for mouse click outside the panel
@@ -38,7 +53,7 @@ public class PanelController : MonoBehaviour
         EventSystem.current.RaycastAll(eventData, results);
 
         // Check if the UI object under the pointer is the specified panel
-        return results.Count > 0 && results[0].gameObject == panel;
+        return results.Count > 0 && children.Contains(results[0].gameObject);
     }
 
     // Method to open or close the panel
