@@ -125,6 +125,10 @@ namespace StarterAssets
 			_jumpTimeoutDelta = JumpTimeout;
 			_fallTimeoutDelta = FallTimeout;
 
+#if !UNITY_EDITOR && UNITY_WEBGL
+        // disable WebGLInput.stickyCursorLock so if the browser unlocks the cursor (with the ESC key) the cursor will unlock in Unity
+        WebGLInput.stickyCursorLock = false;
+#endif
 			Cursor.lockState = CursorLockMode.Locked;
 			Cursor.visible = false;
 			canvas = GameObject.Find("PanelsCanvas");
