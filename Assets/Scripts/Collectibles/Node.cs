@@ -90,6 +90,6 @@ public class Node : Collectible
     {
         GameObject temp = canvas.transform.Find("Node").gameObject;
         temp.SetActive(true);
-        temp.transform.Find("NodePanel").gameObject.GetComponent<NodePanel>().setNode(Title, Body,Question,Answer);
+        temp.transform.Find("NodePanel").gameObject.GetComponent<NodePanel>().setNode(Title, Body,Question,Answer,URL);
     }
 }

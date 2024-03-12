@@ -14,6 +14,7 @@ public class NodePanel : MonoBehaviour
     private GameObject Parent;
     private List<GameObject> children;
     private string Answer;
+    private string URL;
 
     // Start is called before the first frame update
     void Start()
@@ -76,11 +77,16 @@ public class NodePanel : MonoBehaviour
         transform.Find("NodeDescription").gameObject.SetActive(true);
     }
 
-    public void setNode(string Title, string Body, string Question, string Answer)
+    public void setNode(string Title, string Body, string Question, string Answer, string URL)
     {
         NodeTitle.GetComponent<TextMeshProUGUI>().text = Title;
         NodeDescription.GetComponent<TextMeshProUGUI>().text = Body;
         NodeQuestion.GetComponent<TextMeshProUGUI>().text = Question;
         this.Answer = Answer;
+        this.URL = URL;
+    }
+
+    public void openURL(){
+        Application.OpenURL(URL);
     }
 }

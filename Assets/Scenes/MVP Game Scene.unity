@@ -26980,7 +26980,7 @@ MonoBehaviour:
   Custom: no
   Question: What is 2+2
   Answer: 4
-  URL: google.com idk
+  URL: Google.com
   Collectible: {fileID: 0}
   Tags:
   - 1
@@ -38978,13 +38978,18 @@ PrefabInstance:
     - target: {fileID: 7790518322754237082, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7790518322754237082, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 7790518322754237082, guid: 0379a335f52090e41a6e1e511a542a15,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 2139157605}
     - target: {fileID: 7790518322754237082, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
@@ -38997,13 +39002,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7790518322754237082, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: openURL
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790518322754237082, guid: 0379a335f52090e41a6e1e511a542a15,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
       value: Unpause
       objectReference: {fileID: 0}
     - target: {fileID: 7790518322754237082, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: NodePanel, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790518322754237082, guid: 0379a335f52090e41a6e1e511a542a15,
+        type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: StarterAssets.FirstPersonController, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 7790518322754237082, guid: 0379a335f52090e41a6e1e511a542a15,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
     - target: {fileID: 7790518322754237082, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
@@ -49682,6 +49702,18 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8b8a7a7ac3daa1247b5df030da3dd76c, type: 3}
+--- !u!114 &2139157605 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5965396269076910542, guid: 0379a335f52090e41a6e1e511a542a15,
+    type: 3}
+  m_PrefabInstance: {fileID: 1665971100}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d991e10302a64740b4316b5dee1db38, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2140602252
 PrefabInstance:
   m_ObjectHideFlags: 0
