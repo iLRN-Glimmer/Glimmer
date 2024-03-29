@@ -10,6 +10,7 @@ public class CanvasDeactivate : MonoBehaviour
         for(int i = 0; i < this.gameObject.transform.childCount; i++)
         {
             Transform Go = this.gameObject.transform.GetChild(i);
+            Go.gameObject.SetActive(true);
             Go.gameObject.SetActive(false);
         }
     }

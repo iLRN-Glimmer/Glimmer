@@ -54,6 +54,19 @@ namespace StarterAssets
 		[Tooltip("How far in degrees can you move the camera down")]
 		public float BottomClamp = -90.0f;
 
+		// collectible panels
+		private GameObject canvas;
+		bool freeze = false;
+
+		// collectible 
+		private Transform _selection;
+		[SerializeField]
+		private string selectableTag = "Selectable";
+		[SerializeField]
+		private Material highlightMaterial;
+		[SerializeField]
+		private Material defaultMaterial;
+
 		// cinemachine
 		private float _cinemachineTargetPitch;
 
@@ -111,18 +124,79 @@ namespace StarterAssets
 			// reset our timeouts on start
 			_jumpTimeoutDelta = JumpTimeout;
 			_fallTimeoutDelta = FallTimeout;
+
+#if !UNITY_EDITOR && UNITY_WEBGL
+        // disable WebGLInput.stickyCursorLock so if the browser unlocks the cursor (with the ESC key) the cursor will unlock in Unity
+        WebGLInput.stickyCursorLock = false;
+#endif
+			Cursor.lockState = CursorLockMode.Locked;
+			Cursor.visible = false;
+			canvas = GameObject.Find("PanelsCanvas");
 		}
 
 		private void Update()
 		{
-			JumpAndGravity();
-			GroundedCheck();
-			Move();
+			if (!freeze)
+			{
+
+				JumpAndGravity();
+				GroundedCheck();
+				Move();
+
+				if (_selection != null)
+				{
+					var selectionRenderer = _selection.GetComponent<Renderer>();
+					selectionRenderer.material = defaultMaterial;
+					_selection = null;
+				}
+				var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+				RaycastHit hit;
+
+
+				// Set the length of the ray (adjust as needed)
+				float rayLength = 10f;
+
+				// Draw the ray
+				Debug.DrawRay(ray.origin, ray.direction * rayLength, Color.green);
+
+				if (Physics.Raycast(ray, out hit))
+				{
+					Debug.Log(hit.collider.gameObject.name);
+					var selection = hit.transform;
+					if (selection.CompareTag(selectableTag))
+					{
+						var selectionRenderer = selection.GetComponent<Renderer>();
+						if (selectionRenderer != null)
+						{
+							selectionRenderer.material = highlightMaterial;
+						}
+						_selection = selection;
+					}
+
+				}
+
+
+
+				if (Input.GetMouseButtonDown(0) && _selection)
+				{
+					_selection.gameObject.GetComponent<Collectible>().OpenWindow(canvas);
+					Cursor.lockState = CursorLockMode.None;
+					Cursor.visible = true;
+
+					freeze = true;
+				}
+
+				
+			}
+			
 		}
 
 		private void LateUpdate()
 		{
-			CameraRotation();
+			if(!freeze){
+				CameraRotation();
+			}
+			
 		}
 
 		private void GroundedCheck()
@@ -158,12 +232,12 @@ namespace StarterAssets
 		{
 			// set target speed based on move speed, sprint speed and if sprint is pressed
 			float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
+            float slopeLimit = _controller.slopeLimit;
+            // a simplistic acceleration and deceleration designed to be easy to remove, replace, or iterate upon
 
-			// a simplistic acceleration and deceleration designed to be easy to remove, replace, or iterate upon
-
-			// note: Vector2's == operator uses approximation so is not floating point error prone, and is cheaper than magnitude
-			// if there is no input, set the target speed to 0
-			if (_input.move == Vector2.zero) targetSpeed = 0.0f;
+            // note: Vector2's == operator uses approximation so is not floating point error prone, and is cheaper than magnitude
+            // if there is no input, set the target speed to 0
+            if (_input.move == Vector2.zero) targetSpeed = 0.0f;
 
 			// a reference to the players current horizontal velocity
 			float currentHorizontalSpeed = new Vector3(_controller.velocity.x, 0.0f, _controller.velocity.z).magnitude;
@@ -197,8 +271,20 @@ namespace StarterAssets
 				inputDirection = transform.right * _input.move.x + transform.forward * _input.move.y;
 			}
 
-			// move the player
-			_controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
+            // Check if the character is on a slope greater than the slope limit
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, Vector3.down, out hit, GroundedRadius + 0.1f))
+            {
+                float slopeAngle = Vector3.Angle(hit.normal, Vector3.up);
+                if (slopeAngle > slopeLimit)
+                {
+                    // Apply a downward force to make the character slide down the slope
+                    inputDirection += Vector3.down;
+                }
+            }
+
+            // move the player
+            _controller.Move(inputDirection.normalized * (_speed * Time.deltaTime) + new Vector3(0.0f, _verticalVelocity, 0.0f) * Time.deltaTime);
 		}
 
 		private void JumpAndGravity()
@@ -266,6 +352,14 @@ namespace StarterAssets
 
 			// when selected, draw a gizmo in the position of, and matching radius of, the grounded collider
 			Gizmos.DrawSphere(new Vector3(transform.position.x, transform.position.y - GroundedOffset, transform.position.z), GroundedRadius);
+		}
+
+		public void Unpause()
+		{
+			Cursor.lockState = CursorLockMode.Locked;
+			Cursor.visible = false;
+
+			freeze = false;
 		}
 	}
 }

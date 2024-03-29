@@ -37,11 +37,9 @@ public class TestCamera : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //script = Player.GetComponent<PlayerMovement>();
+        
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        //freeze = true;
-        
         canvas = GameObject.Find("PanelsCanvas");
 
     }
@@ -58,14 +56,7 @@ public class TestCamera : MonoBehaviour
 
         
         if(!freeze){
-            // float inputX = Input.GetAxis("Mouse X") * mouseSensitivity;
-            // float inputY = Input.GetAxis("Mouse Y") * mouseSensitivity;
-            // cameraHorizontalRotation += inputX;
-            // cameraVerticalRotation -= inputY;
-            // cameraVerticalRotation = Mathf.Clamp(cameraVerticalRotation, -90f, 90f);
-            // transform.rotation = Quaternion.Euler(cameraVerticalRotation, cameraHorizontalRotation, 0);
-            //transform.localEulerAngles = Vector3.right * cameraVerticalRotation;
-            //orientation.rotation = Quaternion.Euler(cameraVerticalRotation, cameraHorizontalRotation, 0);
+            
             if (_selection != null)
             {
                 var selectionRenderer = _selection.GetComponent<Renderer>();
@@ -76,10 +67,10 @@ public class TestCamera : MonoBehaviour
             RaycastHit hit;
 
 
-    // Set the length of the ray (adjust as needed)
+            // Set the length of the ray (adjust as needed)
             float rayLength = 10f;
 
-    // Draw the ray
+            // Draw the ray
             Debug.DrawRay(ray.origin, ray.direction * rayLength, Color.green);
 
             if (Physics.Raycast(ray, out hit))
@@ -100,13 +91,13 @@ public class TestCamera : MonoBehaviour
         
         
 
-        if (Input.GetMouseButtonDown(0) && _selection){
-            _selection.gameObject.GetComponent<Collectible>().OpenWindow(canvas);
-            Cursor.lockState = CursorLockMode.None;
-            Cursor.visible = true;
-            
-            freeze = true;
-        }
+            if (Input.GetMouseButtonDown(0) && _selection){
+                _selection.gameObject.GetComponent<Collectible>().OpenWindow(canvas);
+                Cursor.lockState = CursorLockMode.None;
+                Cursor.visible = true;
+                
+                freeze = true;
+            }
         }
     }
 
