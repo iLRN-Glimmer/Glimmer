@@ -17,7 +17,7 @@ public class NodePanel : MonoBehaviour
     private string URL;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         NodeTitle = transform.Find("NodeTitle").gameObject;
         NodeDescription = transform.Find("NodeDescription").gameObject;
