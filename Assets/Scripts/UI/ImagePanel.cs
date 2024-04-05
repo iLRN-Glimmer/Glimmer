@@ -67,7 +67,7 @@ public class ImagePanel : MonoBehaviour
 
     private void OnEnable(){
         transform.Find("ImageDesc").gameObject.SetActive(false);
-        transform.Find("Image").gameObject.SetActive(true);
+        transform.Find("ImageScroll View").gameObject.SetActive(true);
     }
 
     public void setImage(string Title, string Body)

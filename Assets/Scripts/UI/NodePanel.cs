@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine.EventSystems;
 using UnityEngine;
 using StarterAssets;
+using System.Linq;
 
 public class NodePanel : MonoBehaviour
 {
@@ -11,6 +12,7 @@ public class NodePanel : MonoBehaviour
     private GameObject NodeDescription;
     private GameObject NodeThumbnail;
     private GameObject NodeQuestion;
+    private GameObject NodeTags;
     private GameObject Parent;
     private List<GameObject> children;
     private string Answer;
@@ -23,6 +25,7 @@ public class NodePanel : MonoBehaviour
         NodeDescription = transform.Find("NodeDescription").gameObject;
         NodeThumbnail = transform.Find("NodeThumbnail").gameObject;
         NodeQuestion = transform.Find("Question/NodeQuestion").gameObject;
+        NodeTags = transform.Find("NodeTags").gameObject;
         Parent = transform.parent.gameObject;
 
         children = new List<GameObject>();
@@ -77,11 +80,16 @@ public class NodePanel : MonoBehaviour
         transform.Find("NodeDescription").gameObject.SetActive(true);
     }
 
-    public void setNode(string Title, string Body, string Question, string Answer, string URL)
+    public void setNode(string Title, string Body, string Question, string Answer, string URL, List<string> Tags)
     {
         NodeTitle.GetComponent<TextMeshProUGUI>().text = Title;
         NodeDescription.GetComponent<TextMeshProUGUI>().text = Body;
         NodeQuestion.GetComponent<TextMeshProUGUI>().text = Question;
+        string temp = "";
+        foreach(string tag in Tags){
+            temp = temp+ "#" + tag + " ";
+        }
+        NodeTags.GetComponent<TextMeshProUGUI>().text = temp;
         this.Answer = Answer;
         this.URL = URL;
     }
