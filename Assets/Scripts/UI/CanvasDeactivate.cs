@@ -4,6 +4,18 @@ using UnityEngine;
 
 public class CanvasDeactivate : MonoBehaviour
 {
+
+    
+    void Awake()
+    {
+        for (int i = 0; i < this.gameObject.transform.childCount; i++)
+        {
+            Transform Go = this.gameObject.transform.GetChild(i);
+            Go.gameObject.SetActive(true);
+            
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {

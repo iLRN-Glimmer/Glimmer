@@ -27495,16 +27495,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e7718f343c8ef14780cd8a9db749f14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: Node
-  Body: This is a Node
-  Status: 1
+  Title: 'Wake: Tales from the Aqualab'
+  Body: 'Wake: Tales from the Aqualab is a 6th-9th grade science game that challenges
+    students with engaging, authentic missions in a variety of ocean-based ecosystems.'
+  Status: 0
   Custom: no
-  Question: What is 2+2
-  Answer: 4
-  URL: https://www.google.com/
+  Question: What is in the Second Picture
+  Answer: Submarine
+  URL: https://fielddaylab.org/play/wake/ci/production/
   Collectible: {fileID: 0}
   Tags:
-  - 1
+  - David Gagnon
+  - Shari Metcalf
+  - House 5
+  - STEM Education
+  - K-12 (Secondary)
+  - WebGL
+  - WebXR
   Images: []
 --- !u!135 &1135401635
 SphereCollider:
@@ -39803,6 +39810,11 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6362358334494274891, guid: 0379a335f52090e41a6e1e511a542a15,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7777434903576960554, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -39917,6 +39929,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_SizeDelta.x
       value: -17
+      objectReference: {fileID: 0}
+    - target: {fileID: 8943537584572202269, guid: 0379a335f52090e41a6e1e511a542a15,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

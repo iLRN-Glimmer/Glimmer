@@ -136,6 +136,13 @@ namespace StarterAssets
 
 		private void Update()
 		{
+			if (!freeze && Input.GetMouseButtonDown(0))
+			{
+				Cursor.lockState = CursorLockMode.Locked;
+			}
+			if(freeze){
+				Cursor.lockState = CursorLockMode.None;
+			}
 			if (!freeze)
 			{
 
