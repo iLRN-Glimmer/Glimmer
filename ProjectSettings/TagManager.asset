@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Selectable
   - CinemachineTarget
+  - MapIcon
   layers:
   - Default
   - TransparentFX
