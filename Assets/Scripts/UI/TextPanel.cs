@@ -14,15 +14,17 @@ public class TextPanel : MonoBehaviour
     private List<GameObject> children;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        TextTitle = transform.Find("TextTitle").gameObject;
-        TextDescription = transform.Find("Text").gameObject;
-        Parent = transform.parent.gameObject;
+        
 
         children = new List<GameObject>();
         AddDescendants(transform, children);
         children.Add(gameObject);
+
+        TextTitle = transform.Find("TextTitle").gameObject;
+        TextDescription = transform.Find("Text").gameObject;
+        Parent = transform.parent.gameObject;
 
     }
 

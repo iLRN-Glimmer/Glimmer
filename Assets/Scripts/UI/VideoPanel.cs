@@ -14,7 +14,7 @@ public class VideoPanel : MonoBehaviour
     private List<GameObject> children;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         VideoTitle = transform.Find("VideoTitle").gameObject;
         Vid = transform.Find("Video Player").gameObject;

@@ -14,17 +14,18 @@ public class SoundPanel : MonoBehaviour
     private List<GameObject> children;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        SoundTitle = transform.Find("SoundTitle").gameObject;
-        SoundDesc = transform.Find("SoundDesc").gameObject;
-        Sound = transform.Find("PlayAudioButton").gameObject;
-        Parent = transform.parent.gameObject;
+        
 
         children = new List<GameObject>();
         AddDescendants(transform, children);
         children.Add(gameObject);
-
+        
+        SoundTitle = transform.Find("SoundTitle").gameObject;
+        SoundDesc = transform.Find("SoundDesc").gameObject;
+        Sound = transform.Find("PlayAudioButton").gameObject;
+        Parent = transform.parent.gameObject;
     }
 
     private void AddDescendants(Transform parent, List<GameObject> list)

@@ -8,12 +8,18 @@ abstract public class Collectible : MonoBehaviour
     [SerializeField] protected string Body;
     [SerializeField] protected int Status;
     [SerializeField] protected string Custom;
+    [SerializeField] protected Collectible Next;
 
-    public Collectible(string title, string body, int status, string custom){
+    public Collectible(string title, string body, int status, string custom, Collectible next = null){
         Title = title;
         Body = body;
         Status = status;
         Custom = custom;
+        Next = next;
+    }
+
+    public Collectible GetNext(){
+        return Next;
     }
 
     public string GetTitle(){
@@ -53,6 +59,10 @@ abstract public class Collectible : MonoBehaviour
     public void SetStatus(int i)
     {
         Status = i;
+    }
+
+    public void SetNext(Collectible c){
+        Next = c;
     }
 
     public virtual void PrintTraits(){

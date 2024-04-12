@@ -14,15 +14,17 @@ public class ImagePanel : MonoBehaviour
     private List<GameObject> children;
 
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
-        ImageTitle = transform.Find("ImageTitle").gameObject;
-        Picture = transform.Find("Image").gameObject;
-        Parent = transform.parent.gameObject;
+        
 
         children = new List<GameObject>();
         AddDescendants(transform, children);
         children.Add(gameObject);
+
+        ImageTitle = transform.Find("ImageTitle").gameObject;
+        Picture = transform.Find("ImageScroll View").gameObject;
+        Parent = transform.parent.gameObject;
 
     }
 
