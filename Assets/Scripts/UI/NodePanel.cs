@@ -77,8 +77,9 @@ public class NodePanel : MonoBehaviour
 
 
     private void OnEnable() {
-        this.transform.Find("Question").gameObject.SetActive(false);
+        transform.Find("Question").gameObject.SetActive(false);
         transform.Find("NodeDescription").gameObject.SetActive(true);
+        transform.Find("QuestionButton").gameObject.SetActive(true);
     }
 
     public void setNode(string Title, string Body, string Question, string Answer, string URL, List<string> Tags, Collectible Next)
@@ -94,6 +95,7 @@ public class NodePanel : MonoBehaviour
         this.Answer = Answer;
         this.URL = URL;
         this.Next = Next;
+        Debug.Log(this.Next);
     }
 
     public void openURL(){
@@ -101,11 +103,12 @@ public class NodePanel : MonoBehaviour
     }
 
     public void openNext(){
-        Next.transform.parent.gameObject.SetActive(true);
+        var canvas = GameObject.Find("PanelsCanvas");
+        Next.OpenWindow(canvas);
 
         if (Parent.activeSelf)
         {
-            GameObject.Find("controller/PlayerCapsule").GetComponent<FirstPersonController>().Unpause();
+            //GameObject.Find("controller/PlayerCapsule").GetComponent<FirstPersonController>().Unpause();
             Parent.SetActive(false);
 
         }
