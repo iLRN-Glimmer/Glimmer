@@ -12,6 +12,7 @@ public class TextPanel : MonoBehaviour
     private GameObject TextDescription;
     private GameObject Parent;
     private List<GameObject> children;
+    private Collectible Next;
 
     // Start is called before the first frame update
     void Awake()
@@ -67,8 +68,26 @@ public class TextPanel : MonoBehaviour
         return results.Count > 0 && children.Contains(results[0].gameObject);
     }
 
-    public void setText(string Title, string Body){
+    public void setText(string Title, string Body, Collectible Next){
         TextTitle.GetComponent<TextMeshProUGUI>().text = Title;
         TextDescription.GetComponent<TextMeshProUGUI>().text = Body;
+        this.Next = Next;
+    }
+
+    public void openNext()
+    {
+        if (Next == null)
+        {
+            return;
+        }
+        var canvas = GameObject.Find("PanelsCanvas");
+        Next.OpenWindow(canvas);
+
+        if (Parent.activeSelf)
+        {
+            //GameObject.Find("controller/PlayerCapsule").GetComponent<FirstPersonController>().Unpause();
+            Parent.SetActive(false);
+
+        }
     }
 }

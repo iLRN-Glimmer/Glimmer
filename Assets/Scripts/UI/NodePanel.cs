@@ -12,6 +12,7 @@ public class NodePanel : MonoBehaviour
     private GameObject NodeDescription;
     private GameObject NodeThumbnail;
     private GameObject NodeQuestion;
+    private GameObject QuestionText;
     private GameObject NodeTags;
     private GameObject Parent;
     private List<GameObject> children;
@@ -26,6 +27,7 @@ public class NodePanel : MonoBehaviour
         NodeDescription = transform.Find("NodeDescription").gameObject;
         NodeThumbnail = transform.Find("NodeThumbnail").gameObject;
         NodeQuestion = transform.Find("Question/NodeQuestion").gameObject;
+        QuestionText = transform.Find("Question/NodeAnswerInput").gameObject;
         NodeTags = transform.Find("NodeTags").gameObject;
         Parent = transform.parent.gameObject;
 
@@ -95,7 +97,7 @@ public class NodePanel : MonoBehaviour
         this.Answer = Answer;
         this.URL = URL;
         this.Next = Next;
-        Debug.Log(this.Next);
+        //Debug.Log(this.Next);
     }
 
     public void openURL(){
@@ -103,6 +105,14 @@ public class NodePanel : MonoBehaviour
     }
 
     public void openNext(){
+        if (Next == null)
+        {
+            return;
+        }
+        var txt = QuestionText.GetComponent<TMP_InputField>().text.ToLower();
+        if(txt != Answer.ToLower()){
+            return;
+        }
         var canvas = GameObject.Find("PanelsCanvas");
         Next.OpenWindow(canvas);
 

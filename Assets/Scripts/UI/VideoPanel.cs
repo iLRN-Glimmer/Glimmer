@@ -12,6 +12,7 @@ public class VideoPanel : MonoBehaviour
     private GameObject Vid;
     private GameObject Parent;
     private List<GameObject> children;
+    private Collectible Next;
 
     // Start is called before the first frame update
     void Awake()
@@ -70,10 +71,26 @@ public class VideoPanel : MonoBehaviour
         transform.Find("Video Player").gameObject.SetActive(true);
     }
 
-    public void setVideo(string Title, string Body)
+    public void setVideo(string Title, string Body, Collectible Next)
     {
-
+        this.Next = Next;
         VideoTitle.GetComponent<TextMeshProUGUI>().text = Title;
         //ImageDescription.GetComponent<TextMeshProUGUI>().text = Body;
+    }
+
+    public void openNext()
+    {
+        if(Next == null){
+            return;
+        }
+        var canvas = GameObject.Find("PanelsCanvas");
+        Next.OpenWindow(canvas);
+
+        if (Parent.activeSelf)
+        {
+            //GameObject.Find("controller/PlayerCapsule").GetComponent<FirstPersonController>().Unpause();
+            Parent.SetActive(false);
+
+        }
     }
 }

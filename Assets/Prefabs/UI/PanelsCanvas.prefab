@@ -1012,9 +1012,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 3381153192177205836}
-        m_TargetAssemblyTypeName: DialogBox, Assembly-CSharp
-        m_MethodName: CloseDialog
+      - m_Target: {fileID: 6603787203533594458}
+        m_TargetAssemblyTypeName: ImagePanel, Assembly-CSharp
+        m_MethodName: openNext
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1145,9 +1145,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4518924807811958704}
-        m_TargetAssemblyTypeName: DialogBox, Assembly-CSharp
-        m_MethodName: CloseDialog
+      - m_Target: {fileID: 2597729983877618740}
+        m_TargetAssemblyTypeName: TextPanel, Assembly-CSharp
+        m_MethodName: openNext
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3236,9 +3236,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 4937545531391553620}
-        m_TargetAssemblyTypeName: DialogBox, Assembly-CSharp
-        m_MethodName: CloseDialog
+      - m_Target: {fileID: 549814918163493285}
+        m_TargetAssemblyTypeName: SoundPanel, Assembly-CSharp
+        m_MethodName: openNext
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3591,9 +3591,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1816983335480869246}
-        m_TargetAssemblyTypeName: DialogBox, Assembly-CSharp
-        m_MethodName: CloseDialog
+      - m_Target: {fileID: 73920002005964607}
+        m_TargetAssemblyTypeName: VideoPanel, Assembly-CSharp
+        m_MethodName: openNext
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

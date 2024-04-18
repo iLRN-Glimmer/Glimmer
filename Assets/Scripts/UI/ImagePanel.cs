@@ -12,6 +12,7 @@ public class ImagePanel : MonoBehaviour
     private GameObject Picture;
     private GameObject Parent;
     private List<GameObject> children;
+    private Collectible Next;
 
     // Start is called before the first frame update
     void Awake()
@@ -72,10 +73,27 @@ public class ImagePanel : MonoBehaviour
         transform.Find("ImageScroll View").gameObject.SetActive(true);
     }
 
-    public void setImage(string Title, string Body)
+    public void setImage(string Title, string Body, Collectible Next)
     {
-        
+        this.Next = Next;
         ImageTitle.GetComponent<TextMeshProUGUI>().text = Title;
         //ImageDescription.GetComponent<TextMeshProUGUI>().text = Body;
+    }
+
+    public void openNext()
+    {
+        if (Next == null)
+        {
+            return;
+        }
+        var canvas = GameObject.Find("PanelsCanvas");
+        Next.OpenWindow(canvas);
+
+        if (Parent.activeSelf)
+        {
+            //GameObject.Find("controller/PlayerCapsule").GetComponent<FirstPersonController>().Unpause();
+            Parent.SetActive(false);
+
+        }
     }
 }

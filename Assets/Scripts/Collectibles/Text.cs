@@ -12,6 +12,6 @@ public class Text : Collectible
     {
         GameObject temp = canvas.transform.Find("Text").gameObject;
         temp.SetActive(true);
-        temp.transform.Find("TextPanel").gameObject.GetComponent<TextPanel>().setText(Title, Body);
+        temp.transform.Find("TextPanel").gameObject.GetComponent<TextPanel>().setText(Title, Body,Next);
     }
 }
