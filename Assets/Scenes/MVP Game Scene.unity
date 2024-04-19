@@ -27850,6 +27850,7 @@ MonoBehaviour:
   - WebGL
   - WebXR
   Images: []
+  Open: 2024-04-19
 --- !u!135 &1135401635
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -39930,6 +39931,7 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 0.0009863784
+
       objectReference: {fileID: 0}
     - target: {fileID: 591068830877015830, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
