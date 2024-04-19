@@ -4032,7 +4032,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   textObject: {fileID: 8006640201138933609}
-  mediaObject: {fileID: 0}
+  mediaObject: {fileID: 1233838563804464082}
 --- !u!1 &5499482434521262186
 GameObject:
   m_ObjectHideFlags: 0
@@ -5953,7 +5953,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &9049009633948700962
 RectTransform:
   m_ObjectHideFlags: 0

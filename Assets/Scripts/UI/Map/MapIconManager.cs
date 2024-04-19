@@ -22,6 +22,10 @@ public class MapIconManager : MonoBehaviour
         PopulateArrays();
     }
 
+    private void OnEnable()
+    {
+    }
+
     private void PopulateArrays()
     {
         // Assuming each type of map icon is stored in a child GameObject
@@ -30,7 +34,7 @@ public class MapIconManager : MonoBehaviour
         unexploredMapIcons = GetUnexploredMapIcons(); // since can overlap with below lists, separate method
         nodesMapIcons = GetMapIconsByType("Node"); // sort the collectibles by script name (returns array of associated objects)
         imagesMapIcons = GetMapIconsByType("Picture");
-        textMapIcons = GetMapIconsByType("Text"); // TODO: doesn't work for text for some reason
+        textMapIcons = GetMapIconsByType("Text1"); // TODO: doesn't work for text for some reason
         videoMapIcons = GetMapIconsByType("Video");
         soundMapIcons = GetMapIconsByType("Sound");
     }
@@ -47,12 +51,14 @@ public class MapIconManager : MonoBehaviour
         List<GameObject> mapIconChildren = new List<GameObject>();
 
         // Find all GameObjects with the specified script component
-        GameObject[] allObjects = GameObject.FindObjectsOfType<GameObject>();
+        GameObject[] allObjects = GameObject.FindGameObjectsWithTag("Selectable");
         foreach (GameObject obj in allObjects)
         {
+            Debug.Log(scriptName + " outside");
             // check if the game object has the script corresponding to the type
             if (obj.GetComponent(scriptName) != null)
             {
+                Debug.Log(scriptName + " inside");
                 // Get all children of the GameObject
                 foreach (Transform childTransform in obj.transform)
                 {
