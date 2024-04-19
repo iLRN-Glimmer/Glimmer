@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -10,7 +11,8 @@ public class Node : Collectible
     [SerializeField] private string URL;
     [SerializeField] private List<string> Tags;
     [SerializeField] private List<Image> Images;
-
+    [SerializeField] private string Open;
+    
 
     public Node(string title, string body, int status, string question, string answer, string url, List<string> tags = null, List<Image> images = null, string custom = null) : base(title,body,status, custom){
         Question = question;
@@ -18,6 +20,13 @@ public class Node : Collectible
         URL = url;
         Tags =tags;
         Images = images;
+    }
+
+    private void Start() {
+        System.DateTime dateTime = System.DateTime.Parse(Open);
+        if(DateTime.UtcNow < dateTime){
+            gameObject.SetActive(false);
+        }
     }
 
     public string GetQuestion()

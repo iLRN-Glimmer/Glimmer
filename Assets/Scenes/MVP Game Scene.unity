@@ -27913,6 +27913,7 @@ MonoBehaviour:
   - WebGL
   - WebXR
   Images: []
+  Open: 2024-04-19
 --- !u!135 &1135401635
 SphereCollider:
   m_ObjectHideFlags: 0
