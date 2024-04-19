@@ -24,7 +24,7 @@ public class ImagePanel : MonoBehaviour
         children.Add(gameObject);
 
         ImageTitle = transform.Find("ImageTitle").gameObject;
-        Picture = transform.Find("ImageScroll View").gameObject;
+        Picture = transform.Find("Image").gameObject;
         Parent = transform.parent.gameObject;
 
     }
@@ -70,7 +70,7 @@ public class ImagePanel : MonoBehaviour
 
     private void OnEnable(){
         transform.Find("ImageDesc").gameObject.SetActive(false);
-        transform.Find("ImageScroll View").gameObject.SetActive(true);
+        transform.Find("Image").gameObject.SetActive(true);
     }
 
     public void setImage(string Title, string Body, Collectible Next)
