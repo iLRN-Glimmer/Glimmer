@@ -294,6 +294,7 @@ GameObject:
   - component: {fileID: 3817127766245879107}
   - component: {fileID: 1949944083364603830}
   - component: {fileID: 3518966797169825487}
+  - component: {fileID: 84897889180741696}
   m_Layer: 5
   m_Name: PanelsCanvas
   m_TagString: Untagged
@@ -403,6 +404,19 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 700fcf50cec060f4cb2af2c6502e17d0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &84897889180741696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513990786808628223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2172f7b9dd68bba4b9623d53038da6b3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 8099213680894147215, guid: 2488cfde3aa51f341bf36f3cae42847a, type: 3}
 --- !u!1 &527910422053279028
 GameObject:
   m_ObjectHideFlags: 0

@@ -54,11 +54,11 @@ public class MapIconManager : MonoBehaviour
         GameObject[] allObjects = GameObject.FindGameObjectsWithTag("Selectable");
         foreach (GameObject obj in allObjects)
         {
-            Debug.Log(scriptName + " outside");
+            /* debugging: Debug.Log(scriptName + " outside"); */
             // check if the game object has the script corresponding to the type
             if (obj.GetComponent(scriptName) != null)
             {
-                Debug.Log(scriptName + " inside");
+                /* debugging: Debug.Log(scriptName + " inside");*/
                 // Get all children of the GameObject
                 foreach (Transform childTransform in obj.transform)
                 {
