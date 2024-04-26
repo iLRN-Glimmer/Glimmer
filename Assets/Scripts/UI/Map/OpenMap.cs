@@ -20,10 +20,10 @@ public class OpenMap : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.M))
         {
             Debug.Log("M key pressed!");
-            // If mapObject is not null, activate it and its children
+            // Toggle the active state of the panel
             if (panel != null)
             {
-                panel.SetActive(true);
+                panel.SetActive(!panel.activeSelf);
             }
         }
     }
