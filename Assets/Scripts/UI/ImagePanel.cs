@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.EventSystems;
 using StarterAssets;
 
@@ -13,6 +14,14 @@ public class ImagePanel : MonoBehaviour
     private GameObject Parent;
     private List<GameObject> children;
     private Collectible Next;
+    private int index;
+    private List<Image> imageList;
+
+    [SerializeField]
+    private Button leftButton;
+    [SerializeField]
+    private Button rightButton;
+
 
     // Start is called before the first frame update
     void Awake()
@@ -26,6 +35,9 @@ public class ImagePanel : MonoBehaviour
         ImageTitle = transform.Find("ImageTitle").gameObject;
         Picture = transform.Find("Image").gameObject;
         Parent = transform.parent.gameObject;
+        index = 0;
+        
+        UpdateButtonVisibility();
 
     }
 
@@ -73,11 +85,77 @@ public class ImagePanel : MonoBehaviour
         transform.Find("Image").gameObject.SetActive(true);
     }
 
-    public void setImage(string Title, string Body, Collectible Next)
+    public void setImage(string Title, string Body, Collectible Next, List<Image> images)
     {
         this.Next = Next;
         ImageTitle.GetComponent<TextMeshProUGUI>().text = Title;
         //ImageDescription.GetComponent<TextMeshProUGUI>().text = Body;
+        imageList = images;
+        UpdateImage();
+        UpdateButtonVisibility();
+        Debug.Log("set image");
+    }
+
+    // Method to decrement the index and update the image
+    public void OnLeftButtonClick()
+    {
+        index--;
+        UpdateImage();
+        UpdateButtonVisibility();
+    }
+
+    // Method to increment the index and update the image
+    public void OnRightButtonClick()
+    {
+        index++;
+        UpdateImage();
+        UpdateButtonVisibility();
+    }
+
+    // Method to update the displayed image based on the current index
+    private void UpdateImage()
+    {
+        Debug.Log("image index " + index);
+        if (index >= 0 && index < imageList.Count)
+        {
+            Picture.GetComponent<Image>().sprite = imageList[index].sprite;
+        }
+        else
+        {
+            Debug.Log("Index out of range for images list.");
+            if (index < 0)
+            {
+                index = 0;
+            }
+            else 
+            {
+                index = imageList.Count;
+            }
+        }
+    }
+
+    // Method to update button visibility based on current index
+    private void UpdateButtonVisibility()
+    {
+        Debug.Log("update button");
+        Debug.Log("button index " + index);
+        if (index <= 0)
+        {
+            leftButton.gameObject.SetActive(false);
+        }
+        else
+        {
+            leftButton.gameObject.SetActive(true);
+        }
+
+        if (index >= imageList.Count - 1)
+        {
+            rightButton.gameObject.SetActive(false);
+        }
+        else
+        {
+            rightButton.gameObject.SetActive(true);
+        }
     }
 
     public void openNext()

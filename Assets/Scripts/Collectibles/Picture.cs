@@ -31,7 +31,8 @@ public class Picture : Collectible
     {
         GameObject temp = canvas.transform.Find("Image").gameObject;
         temp.SetActive(true);
-        temp.transform.Find("ImagePanel").gameObject.GetComponent<ImagePanel>().setImage(Title, Body,Next);
+        temp.transform.Find("ImagePanel").gameObject.GetComponent<ImagePanel>().setImage(Title, Body, Next, Images);
+
     }
 
     
