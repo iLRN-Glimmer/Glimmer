@@ -37,7 +37,9 @@ public class ImagePanel : MonoBehaviour
         Parent = transform.parent.gameObject;
         index = 0;
         
+
         //UpdateButtonVisibility();
+
 
     }
 
