@@ -10,11 +10,11 @@ public class Node : Collectible
     [SerializeField] private string Answer;
     [SerializeField] private string URL;
     [SerializeField] private List<string> Tags;
-    [SerializeField] private List<Image> Images;
+    [SerializeField] private List<Texture> Images;
     [SerializeField] private string Open;
     
 
-    public Node(string title, string body, int status, string question, string answer, string url, List<string> tags = null, List<Image> images = null, string custom = null) : base(title,body,status, custom){
+    public Node(string title, string body, int status, string question, string answer, string url, List<string> tags = null, List<Texture> images = null, string custom = null) : base(title,body,status, custom){
         Question = question;
         Answer = answer;
         URL = url;
@@ -49,7 +49,7 @@ public class Node : Collectible
         return Tags;
     }
 
-    public List<Image> GetImages()
+    public List<Texture> GetImages()
     {
         return Images;
     }
@@ -74,7 +74,7 @@ public class Node : Collectible
         Tags = l;
     }
 
-    public void SetImages(List<Image> l)
+    public void SetImages(List<Texture> l)
     {
         Images = l;
     }
