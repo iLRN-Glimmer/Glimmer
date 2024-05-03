@@ -719,6 +719,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dissolveStrength: 0
   dissolveDuration: 2
+  player: {fileID: 8257954945797881024}
+  dissolveDistance: 10
 --- !u!1 &1733153853
 GameObject:
   m_ObjectHideFlags: 0

@@ -8,12 +8,6 @@ public class boundaryTrigger : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         Debug.Log("Collided with Trigger");
-        StartCoroutine(objectToDissolve.GetComponent<dissolver>().DissolveIn());
-    }
-
-    private void OnTriggerExit(Collider other)
-    {
-        Debug.Log("Collided with Trigger");
-        StartCoroutine(objectToDissolve.GetComponent<dissolver>().DissolveOut());
+        StartCoroutine(objectToDissolve.GetComponent<dissolver>().ShowBoundary());
     }
 }
