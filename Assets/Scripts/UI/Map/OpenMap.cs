@@ -1,4 +1,5 @@
 using UnityEngine;
+using StarterAssets;
 
 public class OpenMap : MonoBehaviour
 {
@@ -23,8 +24,23 @@ public class OpenMap : MonoBehaviour
             // Toggle the active state of the panel
             if (panel != null)
             {
-                panel.SetActive(!panel.activeSelf);
+                // If the panel is currently inactive, activate it
+                if (!panel.activeSelf)
+                {
+                    panel.SetActive(true);
+
+                    // Ensure cursor is visible and unlocked
+                    Cursor.lockState = CursorLockMode.None;
+                    Cursor.visible = true;
+                    GameObject.Find("controller/PlayerCapsule").GetComponent<FirstPersonController>().SetFreeze();
+                }
+                else // If the panel is currently active, deactivate it
+                {
+                    GameObject.Find("controller/PlayerCapsule").GetComponent<FirstPersonController>().Unpause();
+                    panel.SetActive(false);
+                }
             }
         }
     }
+
 }

@@ -368,5 +368,15 @@ namespace StarterAssets
 
 			freeze = false;
 		}
+
+		public void SetFreeze()
+		{
+			freeze = true;
+		}
+
+		public bool GetFreeze()
+		{
+			return freeze;
+		}
 	}
 }
