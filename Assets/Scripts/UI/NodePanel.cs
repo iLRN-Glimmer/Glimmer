@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine.EventSystems;
 using UnityEngine;
+using UnityEngine.UI;
 using StarterAssets;
 using System.Linq;
 
@@ -19,6 +20,15 @@ public class NodePanel : MonoBehaviour
     private string Answer;
     private string URL;
     private Collectible Next;
+    
+    private int index;
+    private List<Texture> imageList;
+
+
+    [SerializeField]
+    private Button leftButton;
+    [SerializeField]
+    private Button rightButton;
 
     // Start is called before the first frame update
     void Awake()
@@ -84,7 +94,7 @@ public class NodePanel : MonoBehaviour
         transform.Find("QuestionButton").gameObject.SetActive(true);
     }
 
-    public void setNode(string Title, string Body, string Question, string Answer, string URL, List<string> Tags, Collectible Next)
+    public void setNode(string Title, string Body, string Question, string Answer, string URL, List<string> Tags, Collectible Next, List<Texture> Images)
     {
         NodeTitle.GetComponent<TextMeshProUGUI>().text = Title;
         NodeDescription.GetComponent<TextMeshProUGUI>().text = Body;
@@ -98,6 +108,11 @@ public class NodePanel : MonoBehaviour
         this.URL = URL;
         this.Next = Next;
         //Debug.Log(this.Next);
+
+        imageList = Images;
+        UpdateImage();
+        UpdateButtonVisibility();
+        Debug.Log("set image");
     }
 
     public void openURL(){
@@ -123,4 +138,70 @@ public class NodePanel : MonoBehaviour
 
         }
     }
+
+
+    // Method to decrement the index and update the image
+    public void OnLeftButtonClick()
+    {
+        index--;
+        UpdateImage();
+        UpdateButtonVisibility();
+    }
+
+    // Method to increment the index and update the image
+    public void OnRightButtonClick()
+    {
+        index++;
+        UpdateImage();
+        UpdateButtonVisibility();
+    }
+
+    // Method to update the displayed image based on the current index
+    private void UpdateImage()
+    {
+        Debug.Log("image index " + index);
+        if (index >= 0 && index < imageList.Count)
+        {
+
+             // Assign the texture directly to the RawImage component
+            NodeThumbnail.GetComponent<RawImage>().texture = imageList[index];
+        }
+        else
+        {
+            Debug.Log("Index out of range for images list.");
+            if (index < 0)
+            {
+                index = 0;
+            }
+            else 
+            {
+                index = imageList.Count;
+            }
+        }
+    }
+
+    // Method to update button visibility based on current index
+    private void UpdateButtonVisibility()
+    {
+        Debug.Log("update button");
+        Debug.Log("button index " + index);
+        if (index <= 0)
+        {
+            leftButton.gameObject.SetActive(false);
+        }
+        else
+        {
+            leftButton.gameObject.SetActive(true);
+        }
+
+        if (index >= imageList.Count - 1)
+        {
+            rightButton.gameObject.SetActive(false);
+        }
+        else
+        {
+            rightButton.gameObject.SetActive(true);
+        }
+    }
+
 }
