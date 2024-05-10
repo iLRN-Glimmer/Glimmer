@@ -7,10 +7,14 @@ public class ScrollViewItem : MonoBehaviour
 {
     [SerializeField]
     private GameObject CollectedTitle;
+    [SerializeField]
+    private GameObject CollectedType;
+    
 
-    public void ChangeTitle(string title) {
+    public void ChangeInventory(string title, string type) {
         Debug.Log("changed inventory title to " + title);
         CollectedTitle.GetComponent<TextMeshProUGUI>().text = title;
+        CollectedType.GetComponent<TextMeshProUGUI>().text = "Type: " + type;
     }
     
 }

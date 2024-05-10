@@ -13,6 +13,11 @@ public class DynamicScrollView : MonoBehaviour
 
     private List<GameObject> collected;
 
+    private int status;
+    private string title;
+    private string type;
+
+
     private void Start() {
         Debug.Log("create inventory");
         // Find all game objects tagged as "Selectable"
@@ -29,11 +34,16 @@ public class DynamicScrollView : MonoBehaviour
             // where is get status?? how to get the status 
             //--> getting it by searching for a script and 
             // then checking status var did not work
-            // if(obj.GetStatus() = 1){
-            //     Debug.Log("collected status = 1");
-            //     // Add the object to the filtered list
-            //     filteredObjects.Add(obj);
-            // }
+
+            status = 0;
+            status = obj.GetComponent<Collectible>().GetStatus();
+            Debug.Log("status: " + status);
+
+            if(status == 1){
+                Debug.Log("collected status = 1");
+                // Add the object to the filtered list
+                filteredObjects.Add(obj);
+            }
     
         }
 
@@ -47,7 +57,10 @@ public class DynamicScrollView : MonoBehaviour
             GameObject newCollectible = Instantiate(prefab, scrollViewContent);
             if(newCollectible.TryGetComponent<ScrollViewItem>(out ScrollViewItem item)) {
                 // get title from collectible in collected and change it
-                item.ChangeTitle("test title"); //how to get title from collectible?
+                title = collectible.GetComponent<Collectible>().GetTitle();
+                Debug.Log("title: " + title);
+                type = collectible.GetComponent<Collectible>().GetCustom();
+                item.ChangeInventory(title, type); //how to get title from collectible?
             }
         }
     }

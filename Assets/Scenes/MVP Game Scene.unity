@@ -39427,7 +39427,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: Text!
   Body: This is Text
-  Status: 0
+  Status: 1
   Custom: 
   Next: {fileID: 1135401634}
 --- !u!65 &1655603342
