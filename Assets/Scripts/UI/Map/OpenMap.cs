@@ -30,14 +30,17 @@ public class OpenMap : MonoBehaviour
                 freezed = GameObject.Find("controller/PlayerCapsule").GetComponent<FirstPersonController>().GetFreeze();
                 
                 // Toggle the active state of the panel
-                if (!panel.activeSelf && !freezed)
+                if (!panel.activeSelf)
                 {
-                    panel.SetActive(true);
+                    if(!freezed) {
+                        panel.SetActive(true);
 
-                    // Ensure cursor is visible and unlocked
-                    Cursor.lockState = CursorLockMode.None;
-                    Cursor.visible = true;
-                    GameObject.Find("controller/PlayerCapsule").GetComponent<FirstPersonController>().SetFreeze();
+                        // Ensure cursor is visible and unlocked
+                        Cursor.lockState = CursorLockMode.None;
+                        Cursor.visible = true;
+                        GameObject.Find("controller/PlayerCapsule").GetComponent<FirstPersonController>().SetFreeze();
+                        
+                    }
                 }
                 else // If the panel is currently active, deactivate it
                 {
