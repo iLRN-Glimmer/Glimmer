@@ -59,7 +59,7 @@ public class DynamicScrollView : MonoBehaviour
                 // get title from collectible in collected and change it
                 title = collectible.GetComponent<Collectible>().GetTitle();
                 Debug.Log("title: " + title);
-                type = collectible.GetComponent<Collectible>().GetCustom();
+                type = collectible.GetComponent<Collectible>().GetType().Name;
                 item.ChangeInventory(title, type); //how to get title from collectible?
             }
         }
