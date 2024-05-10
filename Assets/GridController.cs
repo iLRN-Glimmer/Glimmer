@@ -8,8 +8,9 @@ public class GridController : MonoBehaviour
     private Material mat;
 
     public GameObject player;
-    public float fadeDist = 10.0f;
+    public float fadeDist = 3.0f;
     public float transparency = 0.0f;
+    public float scalingFactor = 2.5f;
     void Start()
     {
         mat = GetComponent<Renderer>().material;
@@ -19,6 +20,10 @@ public class GridController : MonoBehaviour
         float tilingY = objectScale.z;
 
         mat.mainTextureScale = new Vector2(tilingX, tilingY);
+        player = GameObject.FindWithTag("Player");
+        Color color = mat.GetColor("_Color");
+        color.a = transparency;
+        mat.SetColor("_Color", color);
     }
 
     public IEnumerator ShowBoundary()
@@ -32,7 +37,7 @@ public class GridController : MonoBehaviour
             float distanceToPlayer = Vector3.Distance(playerCollider.ClosestPoint(transform.position), objectCollider.ClosestPoint(player.transform.position));
             transparency = 1 - Mathf.Clamp01(distanceToPlayer / fadeDist); // Inverted
             Color color = mat.GetColor("_Color");
-            color.a = transparency;
+            color.a = transparency * scalingFactor;
             mat.SetColor("_Color", color);
             yield return null;
         }
