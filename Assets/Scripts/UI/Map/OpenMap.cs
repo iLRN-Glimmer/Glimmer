@@ -4,6 +4,7 @@ using StarterAssets;
 public class OpenMap : MonoBehaviour
 {
     public GameObject panel; // Reference to the panel you want to activate/deactivate
+    private bool freezed;
 
     void Start()
     {
@@ -21,11 +22,15 @@ public class OpenMap : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.M))
         {
             Debug.Log("M key pressed!");
-            // Toggle the active state of the panel
-            if (panel != null)
-            {
+
+        
+            if (panel != null) {
                 // If the panel is currently inactive, activate it
-                if (!panel.activeSelf)
+                //find freeze state
+                freezed = GameObject.Find("controller/PlayerCapsule").GetComponent<FirstPersonController>().GetFreeze();
+                
+                // Toggle the active state of the panel
+                if (!panel.activeSelf && !freezed)
                 {
                     panel.SetActive(true);
 
@@ -41,6 +46,6 @@ public class OpenMap : MonoBehaviour
                 }
             }
         }
-    }
-
+    
+}
 }
