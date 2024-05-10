@@ -15,7 +15,7 @@ public class ImagePanel : MonoBehaviour
     private List<GameObject> children;
     private Collectible Next;
     private int index;
-    private List<Image> imageList;
+    private List<Sprite> imageList;
 
     [SerializeField]
     private Button leftButton;
@@ -87,7 +87,7 @@ public class ImagePanel : MonoBehaviour
         transform.Find("Image").gameObject.SetActive(true);
     }
 
-    public void setImage(string Title, string Body, Collectible Next, List<Image> images)
+    public void setImage(string Title, string Body, Collectible Next, List<Sprite> images)
     {
         this.Next = Next;
         ImageTitle.GetComponent<TextMeshProUGUI>().text = Title;
@@ -120,7 +120,7 @@ public class ImagePanel : MonoBehaviour
         Debug.Log("image index " + index);
         if (index >= 0 && index < imageList.Count)
         {
-            Picture.GetComponent<Image>().sprite = imageList[index].sprite;
+            Picture.GetComponent<Image>().sprite = imageList[index];
         }
         else
         {

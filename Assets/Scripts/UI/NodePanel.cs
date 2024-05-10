@@ -22,7 +22,7 @@ public class NodePanel : MonoBehaviour
     private Collectible Next;
     
     private int index;
-    private List<Texture> imageList;
+    private List<Sprite> imageList;
 
 
     [SerializeField]
@@ -94,7 +94,7 @@ public class NodePanel : MonoBehaviour
         transform.Find("QuestionButton").gameObject.SetActive(true);
     }
 
-    public void setNode(string Title, string Body, string Question, string Answer, string URL, List<string> Tags, Collectible Next, List<Texture> Images)
+    public void setNode(string Title, string Body, string Question, string Answer, string URL, List<string> Tags, Collectible Next, List<Sprite> Images)
     {
         NodeTitle.GetComponent<TextMeshProUGUI>().text = Title;
         NodeDescription.GetComponent<TextMeshProUGUI>().text = Body;
@@ -164,7 +164,7 @@ public class NodePanel : MonoBehaviour
         {
 
              // Assign the texture directly to the RawImage component
-            NodeThumbnail.GetComponent<RawImage>().texture = imageList[index];
+            NodeThumbnail.GetComponent<Image>().sprite = imageList[index];
         }
         else
         {
