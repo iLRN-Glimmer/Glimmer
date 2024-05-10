@@ -203,7 +203,7 @@ MonoBehaviour:
     badge. Congratulations - your zero-waste journey has begun!
   Status: 0
   Custom: no
-  Next: {fileID: 0}
+  Next: {fileID: 3576478830888575719, guid: 10cf2a7ac43b71a4db84cc03c7092738, type: 3}
   Question: What number is in the top left of the first picture
   Answer: 66
   URL: https://tangra.link/zero-waste-lifestyle-training
@@ -225,7 +225,7 @@ MonoBehaviour:
   - WebXR
   - Google Play Store (Android)
   Images:
-  - {fileID: 2800000, guid: fcc5334b65f69084a941974d6750b9ed, type: 3}
-  - {fileID: 2800000, guid: d6f1360a26e919b47ac7843a2dc8ebf5, type: 3}
-  - {fileID: 2800000, guid: cad5417c94c983d43bd062199ab5a8f5, type: 3}
+  - {fileID: 21300000, guid: fcc5334b65f69084a941974d6750b9ed, type: 3}
+  - {fileID: 21300000, guid: d6f1360a26e919b47ac7843a2dc8ebf5, type: 3}
+  - {fileID: 21300000, guid: cad5417c94c983d43bd062199ab5a8f5, type: 3}
   Open: 2024-04-19

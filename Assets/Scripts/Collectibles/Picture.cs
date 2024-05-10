@@ -5,19 +5,19 @@ using UnityEngine.UI;
 
 public class Picture : Collectible
 {
-    [SerializeField] private List<Image> Images;
+    [SerializeField] private List<Sprite> Images;
 
-    public Picture(string title, string body, int status, List<Image> images , string custom = null) : base(title, body, status, custom)
+    public Picture(string title, string body, int status, List<Sprite> images , string custom = null) : base(title, body, status, custom)
     {
         Images = images;
     }
 
-    public List<Image> GetImages()
+    public List<Sprite> GetImages()
     {
         return Images;
     }
 
-    public void SetImages(List<Image> l)
+    public void SetImages(List<Sprite> l)
     {
         Images = l;
     }
