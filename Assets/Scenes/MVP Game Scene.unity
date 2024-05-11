@@ -39994,6 +39994,12 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 1004989134992496582, guid: 0379a335f52090e41a6e1e511a542a15,
+        type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 43b57c96271669042a4bb96110025e41,
+        type: 3}
     - target: {fileID: 1140876429795666191, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
       propertyPath: m_IsActive
@@ -40379,7 +40385,7 @@ PrefabInstance:
     - target: {fileID: 3766930401173502378, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4184297369567647135, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
@@ -40466,7 +40472,7 @@ PrefabInstance:
     - target: {fileID: 5147756982470722847, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 5542786906621841812, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
@@ -40678,6 +40684,11 @@ PrefabInstance:
       propertyPath: rightButton
       value: 
       objectReference: {fileID: 966214353}
+    - target: {fileID: 6619855542259731649, guid: 0379a335f52090e41a6e1e511a542a15,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6983921128729242352, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -40704,6 +40715,11 @@ PrefabInstance:
       propertyPath: m_hasFontAssetChanged
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7419792772115314759, guid: 0379a335f52090e41a6e1e511a542a15,
+        type: 3}
+      propertyPath: m_hasFontAssetChanged
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7457637939144495110, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
       propertyPath: m_HorizontalScrollbar
@@ -40722,7 +40738,7 @@ PrefabInstance:
     - target: {fileID: 7585901805559519113, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -100
+      value: -120
       objectReference: {fileID: 0}
     - target: {fileID: 7777434903576960554, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
