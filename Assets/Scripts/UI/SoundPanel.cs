@@ -49,15 +49,14 @@ public class SoundPanel : MonoBehaviour
             {
                 // check if opened panel is on map and don't unpause screen if so
                 GameObject map = GameObject.Find("Map");
-                bool onMap = GameObject.Find("Map").activeSelf;
-                Debug.Log("map is open? " + onMap);
-                Debug.Log("open collectible? " + onMap);
-                if (onMap == false)
+                if(map && map.activeSelf)
                 {
+                    GameObject.Find("Inventory").GetComponent<InventoryPanel>().setOpenedCollectible(false);
+                } else {
                     GameObject.Find("controller/PlayerCapsule").GetComponent<FirstPersonController>().Unpause();
                 }
                 Parent.SetActive(false);
-                GameObject.Find("Inventory").GetComponent<InventoryPanel>().setOpenedCollectible(false);
+    
 
             }
         }
