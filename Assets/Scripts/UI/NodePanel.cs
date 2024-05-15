@@ -20,6 +20,7 @@ public class NodePanel : MonoBehaviour
     private string Answer;
     private string URL;
     private Collectible Next;
+    private Node Node;
     
     private int index;
     private List<Sprite> imageList;
@@ -103,8 +104,9 @@ public class NodePanel : MonoBehaviour
         transform.Find("QuestionButton").gameObject.SetActive(true);
     }
 
-    public void setNode(string Title, string Body, string Question, string Answer, string URL, List<string> Tags, Collectible Next, List<Sprite> Images)
+    public void setNode(string Title, string Body, string Question, string Answer, string URL, List<string> Tags, Collectible Next, List<Sprite> Images, Node node)
     {
+        Node = node;
         NodeTitle.GetComponent<TextMeshProUGUI>().text = Title;
         NodeDescription.GetComponent<TextMeshProUGUI>().text = Body;
         NodeQuestion.GetComponent<TextMeshProUGUI>().text = Question;
@@ -211,6 +213,15 @@ public class NodePanel : MonoBehaviour
         {
             rightButton.gameObject.SetActive(true);
         }
+    }
+
+    public int GetStatus(){
+        return Node.GetStatus();
+    }
+
+    public void SetStatus()
+    {
+        Node.SetStatus(1);
     }
 
 }
