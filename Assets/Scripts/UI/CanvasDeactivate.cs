@@ -5,7 +5,8 @@ using UnityEngine;
 public class CanvasDeactivate : MonoBehaviour
 {
 
-    
+    [SerializeField]
+    private GameObject minimap;
     void Awake()
     {
         for (int i = 0; i < this.gameObject.transform.childCount; i++)
@@ -24,6 +25,11 @@ public class CanvasDeactivate : MonoBehaviour
             Transform Go = this.gameObject.transform.GetChild(i);
             Go.gameObject.SetActive(true);
             Go.gameObject.SetActive(false);
+        }
+
+        if (minimap != null)
+        {
+            minimap.SetActive(true);
         }
     }
 
