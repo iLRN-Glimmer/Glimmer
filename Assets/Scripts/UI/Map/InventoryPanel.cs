@@ -8,11 +8,15 @@ public class InventoryPanel : MonoBehaviour
     [SerializeField]
     private Transform box;
 
+    private bool openedCollectible;
+
     private void OnEnable()
     {
         // Move the panel on screen
         box.localPosition = new Vector2(-570, -Screen.height);
         box.LeanMoveLocalY(0, 0.5f).setEaseOutExpo().delay = 0.1f;
+        openedCollectible = false;
+        Debug.Log("opened collectible is false");
     }
 
     public void CloseDialog()
@@ -25,10 +29,14 @@ public class InventoryPanel : MonoBehaviour
     void Update()
     {
         // Check for mouse click outside the panel
-        if (Input.GetMouseButtonDown(0) && !IsPointerOverPanel() && gameObject.activeSelf)
+        Debug.Log("update inventory: openedcollectible? " + openedCollectible);
+        if (Input.GetMouseButtonDown(0) && !IsPointerOverPanel() && gameObject.activeSelf && !openedCollectible)
         {
+            Debug.Log("opened collectible is " + openedCollectible);
             // If the panel is active, close it
             CloseDialog();
+        } else {
+            Debug.Log("can't close inventory atm");
         }
     }
 
@@ -56,5 +64,16 @@ public class InventoryPanel : MonoBehaviour
     void OnComplete()
     {
         gameObject.SetActive(false);
+    }
+
+    public void setOpenedCollectible(bool status) 
+    {
+        Debug.Log("open collectible? set to " + status);
+        openedCollectible = status;
+    }
+
+    public bool getOpenedCollectible()
+    {
+        return openedCollectible;
     }
 }

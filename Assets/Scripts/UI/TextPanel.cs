@@ -47,8 +47,17 @@ public class TextPanel : MonoBehaviour
             // If the panel is active, close it
             if (Parent.activeSelf)
             {
-                GameObject.Find("controller/PlayerCapsule").GetComponent<FirstPersonController>().Unpause();
+                // check if opened panel is on map and don't unpause screen if so
+                GameObject map = GameObject.Find("Map");
+                bool onMap = GameObject.Find("Map").activeSelf;
+                Debug.Log("map is open? " + onMap);
+                Debug.Log("open collectible? " + onMap);
+                if (onMap == false)
+                {
+                    GameObject.Find("controller/PlayerCapsule").GetComponent<FirstPersonController>().Unpause();
+                }
                 Parent.SetActive(false);
+                GameObject.Find("Inventory").GetComponent<InventoryPanel>().setOpenedCollectible(false);
 
             }
         }

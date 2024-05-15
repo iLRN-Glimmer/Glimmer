@@ -40706,8 +40706,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7289364650409312883, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7289364650409312883, guid: 0379a335f52090e41a6e1e511a542a15,
+        type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: -150
+      value: -1205
+      objectReference: {fileID: 0}
+    - target: {fileID: 7289364650409312883, guid: 0379a335f52090e41a6e1e511a542a15,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 733
       objectReference: {fileID: 0}
     - target: {fileID: 7417807791521159688, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
@@ -40860,6 +40870,21 @@ PrefabInstance:
       propertyPath: m_AnchorMin.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8573405452926804515, guid: 0379a335f52090e41a6e1e511a542a15,
+        type: 3}
+      propertyPath: m_text
+      value: Press 'M' to open the map.
+      objectReference: {fileID: 0}
+    - target: {fileID: 8573405452926804515, guid: 0379a335f52090e41a6e1e511a542a15,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 8573405452926804515, guid: 0379a335f52090e41a6e1e511a542a15,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 40
+      objectReference: {fileID: 0}
     - target: {fileID: 8576840617830619299, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -40888,7 +40913,7 @@ PrefabInstance:
     - target: {fileID: 8943537584572202269, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 0.0000076293945
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 9033899500881094827, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
