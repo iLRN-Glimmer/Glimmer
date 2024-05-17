@@ -24,7 +24,12 @@ public class CanvasDeactivate : MonoBehaviour
         {
             Transform Go = this.gameObject.transform.GetChild(i);
             Go.gameObject.SetActive(true);
-            Go.gameObject.SetActive(false);
+            if (Go.name != "ReticlePanel")
+            {
+                Go.gameObject.SetActive(false);
+            }
+            
+            
         }
 
         if (minimap != null)

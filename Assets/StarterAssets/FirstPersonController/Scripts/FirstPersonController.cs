@@ -57,6 +57,7 @@ namespace StarterAssets
 		// collectible panels
 		private GameObject canvas;
 		bool freeze = false;
+		private GameObject reticle;
 
 		// collectible 
 		private Transform _selection;
@@ -132,6 +133,7 @@ namespace StarterAssets
 			Cursor.lockState = CursorLockMode.Locked;
 			Cursor.visible = false;
 			canvas = GameObject.Find("PanelsCanvas");
+			reticle = GameObject.Find("ReticlePanel");
 		}
 
 		private void Update()
@@ -191,6 +193,7 @@ namespace StarterAssets
 					Cursor.visible = true;
 
 					freeze = true;
+					reticle.SetActive(false);
 				}
 
 				
@@ -367,11 +370,13 @@ namespace StarterAssets
 			Cursor.visible = false;
 
 			freeze = false;
+			reticle.SetActive(true);
 		}
 
 		public void SetFreeze()
 		{
 			freeze = true;
+			reticle.SetActive(false);
 		}
 
 		public bool GetFreeze()
