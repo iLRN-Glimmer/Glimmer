@@ -13,6 +13,7 @@ public class TextPanel : MonoBehaviour
     private GameObject Parent;
     private List<GameObject> children;
     private Collectible Next;
+    private GameObject NextButton;
 
     // Start is called before the first frame update
     void Awake()
@@ -26,6 +27,7 @@ public class TextPanel : MonoBehaviour
         TextTitle = transform.Find("TextTitle").gameObject;
         TextDescription = transform.Find("Text").gameObject;
         Parent = transform.parent.gameObject;
+        NextButton = transform.Find("CloseButton").gameObject;
 
     }
 
@@ -80,6 +82,14 @@ public class TextPanel : MonoBehaviour
         TextTitle.GetComponent<TextMeshProUGUI>().text = Title;
         TextDescription.GetComponent<TextMeshProUGUI>().text = Body;
         this.Next = Next;
+        if (!this.Next)
+        {
+            NextButton.SetActive(false);
+        }
+        else
+        {
+            NextButton.SetActive(true);
+        }
     }
 
     public void openNext()
