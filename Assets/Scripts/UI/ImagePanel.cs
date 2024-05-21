@@ -16,6 +16,7 @@ public class ImagePanel : MonoBehaviour
     private Collectible Next;
     private int index;
     private List<Sprite> imageList;
+    private GameObject NextButton;
 
     [SerializeField]
     private Button leftButton;
@@ -36,6 +37,7 @@ public class ImagePanel : MonoBehaviour
         Picture = transform.Find("Image").gameObject;
         Parent = transform.parent.gameObject;
         index = 0;
+        NextButton = transform.Find("CloseButton").gameObject;
         
 
         //UpdateButtonVisibility();
@@ -98,6 +100,11 @@ public class ImagePanel : MonoBehaviour
     public void setImage(string Title, string Body, Collectible Next, List<Sprite> images)
     {
         this.Next = Next;
+        if (!this.Next){
+            NextButton.SetActive(false);
+        }else{
+            NextButton.SetActive(true);
+        }
         ImageTitle.GetComponent<TextMeshProUGUI>().text = Title;
         //ImageDescription.GetComponent<TextMeshProUGUI>().text = Body;
         imageList = images;
