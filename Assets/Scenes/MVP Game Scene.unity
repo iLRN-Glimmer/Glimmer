@@ -40318,6 +40318,11 @@ PrefabInstance:
       propertyPath: m_SizeDelta.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1661882138376954404, guid: 0379a335f52090e41a6e1e511a542a15,
+        type: 3}
+      propertyPath: m_text
+      value: PRESS 'M' TO EXIT THE MAP.
+      objectReference: {fileID: 0}
     - target: {fileID: 1745649116681887861, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -41005,6 +41010,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 570
+      objectReference: {fileID: 0}
+    - target: {fileID: 7127918148313314919, guid: 0379a335f52090e41a6e1e511a542a15,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -400
       objectReference: {fileID: 0}
     - target: {fileID: 7289364650409312883, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}

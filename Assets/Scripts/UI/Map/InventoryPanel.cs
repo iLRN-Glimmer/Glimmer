@@ -10,19 +10,26 @@ public class InventoryPanel : MonoBehaviour
 
     private bool openedCollectible;
 
+    // Offset to fine-tune the panel's position when fully visible
+    private Vector2 visiblePosition = new Vector2(-550, 0);  // Adjust this based on your UI layout
+
+    // Offset to position the panel off-screen to the left
+    private Vector2 offScreenPosition = new Vector2(-Screen.width, 0);  // Adjust this if needed
+
     private void OnEnable()
     {
-        // Move the panel on screen
-        box.localPosition = new Vector2(-570, -Screen.height);
-        box.LeanMoveLocalY(0, 0.5f).setEaseOutExpo().delay = 0.1f;
+        // Move the panel off screen to the left
+        box.localPosition = new Vector2(offScreenPosition.x, visiblePosition.y); // Initially set the box off-screen
+        // Animate the panel sliding in from the left
+        box.LeanMoveLocalX(visiblePosition.x, 0.5f).setEaseOutExpo().delay = 0.1f;
         openedCollectible = false;
         Debug.Log("opened collectible is false");
     }
 
     public void CloseDialog()
     {
-        // move panel outside of view
-        box.LeanMoveLocalY(-Screen.height, 0.5f).setEaseInExpo().setOnComplete(OnComplete);
+        // Animate the panel sliding out to the left
+        box.LeanMoveLocalX(offScreenPosition.x, 0.5f).setEaseInExpo().setOnComplete(OnComplete);
     }
 
     // Update is called once per frame
@@ -35,7 +42,9 @@ public class InventoryPanel : MonoBehaviour
             Debug.Log("opened collectible is " + openedCollectible);
             // If the panel is active, close it
             CloseDialog();
-        } else {
+        }
+        else
+        {
             Debug.Log("can't close inventory atm");
         }
     }
@@ -66,7 +75,7 @@ public class InventoryPanel : MonoBehaviour
         gameObject.SetActive(false);
     }
 
-    public void setOpenedCollectible(bool status) 
+    public void setOpenedCollectible(bool status)
     {
         Debug.Log("open collectible? set to " + status);
         openedCollectible = status;

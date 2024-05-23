@@ -8547,6 +8547,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5994515595439857921, guid: 2488cfde3aa51f341bf36f3cae42847a,
+        type: 3}
+      propertyPath: m_text
+      value: PRESS 'M' TO EXIT THE MAP.
+      objectReference: {fileID: 0}
     - target: {fileID: 6080192186875021533, guid: 2488cfde3aa51f341bf36f3cae42847a,
         type: 3}
       propertyPath: m_fontAsset
@@ -8572,17 +8577,17 @@ PrefabInstance:
     - target: {fileID: 6636395229718078288, guid: 2488cfde3aa51f341bf36f3cae42847a,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6636395229718078288, guid: 2488cfde3aa51f341bf36f3cae42847a,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6636395229718078288, guid: 2488cfde3aa51f341bf36f3cae42847a,
         type: 3}
       propertyPath: m_SizeDelta.x
-      value: -17
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6935280911926121326, guid: 2488cfde3aa51f341bf36f3cae42847a,
         type: 3}
@@ -8719,17 +8724,17 @@ PrefabInstance:
     - target: {fileID: 8524643753530527463, guid: 2488cfde3aa51f341bf36f3cae42847a,
         type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8524643753530527463, guid: 2488cfde3aa51f341bf36f3cae42847a,
         type: 3}
       propertyPath: m_AnchorMax.y
-      value: 0.81333333
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8731681210917474273, guid: 2488cfde3aa51f341bf36f3cae42847a,
         type: 3}
       propertyPath: m_Size
-      value: 0.81333333
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
