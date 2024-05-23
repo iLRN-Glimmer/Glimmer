@@ -72,7 +72,7 @@ public class ImagePanel : MonoBehaviour
                 } else {
                     GameObject.Find("controller/PlayerCapsule").GetComponent<FirstPersonController>().Unpause();
                 }
-                Parent.SetActive(false);
+                Parent.GetComponent<DialogBox>().CloseDialog();
     
 
             }
