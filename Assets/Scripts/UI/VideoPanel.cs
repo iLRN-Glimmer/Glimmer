@@ -51,7 +51,8 @@ public class VideoPanel : MonoBehaviour
                 GameObject map = GameObject.Find("Map");
                 if(map && map.activeSelf)
                 {
-                    GameObject.Find("Inventory").GetComponent<InventoryPanel>().setOpenedCollectible(false);
+                   //BUG
+                    // GameObject.Find("Inventory").GetComponent<InventoryPanel>().setOpenedCollectible(false);
                 } else {
                     GameObject.Find("controller/PlayerCapsule").GetComponent<FirstPersonController>().Unpause();
                 }

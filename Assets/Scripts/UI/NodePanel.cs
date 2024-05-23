@@ -69,8 +69,8 @@ public class NodePanel : MonoBehaviour
                 // check if opened panel is on map and don't unpause screen if so
                 GameObject map = GameObject.Find("Map");
                 if(map && map.activeSelf)
-                {
-                    GameObject.Find("Inventory").GetComponent<InventoryPanel>().setOpenedCollectible(false);
+                { //BUG
+                    // GameObject.Find("Inventory").GetComponent<InventoryPanel>().setOpenedCollectible(false);
                 } else {
                     GameObject.Find("controller/PlayerCapsule").GetComponent<FirstPersonController>().Unpause();
                 }
