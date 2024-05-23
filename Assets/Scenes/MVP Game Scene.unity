@@ -40804,22 +40804,22 @@ PrefabInstance:
     - target: {fileID: 6028943803786246766, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
       propertyPath: m_Color.a
-      value: 0.83137256
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6028943803786246766, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
       propertyPath: m_Color.b
-      value: 0.22264141
+      value: 0.52156866
       objectReference: {fileID: 0}
     - target: {fileID: 6028943803786246766, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
       propertyPath: m_Color.g
-      value: 0.22264141
+      value: 0.60784316
       objectReference: {fileID: 0}
     - target: {fileID: 6028943803786246766, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
       propertyPath: m_Color.r
-      value: 0.22264141
+      value: 0.627451
       objectReference: {fileID: 0}
     - target: {fileID: 6261389189931142343, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
@@ -41060,7 +41060,7 @@ PrefabInstance:
     - target: {fileID: 7585901805559519113, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 550
+      value: 650
       objectReference: {fileID: 0}
     - target: {fileID: 7585901805559519113, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
@@ -41195,17 +41195,17 @@ PrefabInstance:
     - target: {fileID: 8573405452926804515, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
       propertyPath: m_text
-      value: Press 'M' to open the map.
+      value: PRESS 'TAB' FOR HELP SCREEN.
       objectReference: {fileID: 0}
     - target: {fileID: 8573405452926804515, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
       propertyPath: m_fontSize
-      value: 40
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8573405452926804515, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
       propertyPath: m_fontSizeBase
-      value: 40
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 8576840617830619299, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
@@ -41296,6 +41296,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 9049009633948700962, guid: 0379a335f52090e41a6e1e511a542a15,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1000
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6801030052833683347, guid: 0379a335f52090e41a6e1e511a542a15, type: 3}
