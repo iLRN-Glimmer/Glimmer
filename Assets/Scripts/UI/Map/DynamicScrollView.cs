@@ -2,24 +2,33 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class DynamicScrollView : MonoBehaviour
 {
     [SerializeField]
     private Transform scrollViewContent;
-    
+
     [SerializeField]
     private GameObject prefab;
 
     private List<GameObject> collected;
 
-    private int status;
-    private string title;
-    private string type;
+    public TMP_Dropdown filterDropdown;
 
+    private void Start()
+    {
 
-    private void Start() {
-        Debug.Log("create inventory");
+        // Subscribe to the dropdown's OnValueChanged event to handle filtering
+        filterDropdown.onValueChanged.AddListener(FilterInventory);
+
+        // Collect objects and populate the scroll view initially
+        CollectObjects();
+        PopulateScrollView(collected);
+    }
+
+    private void CollectObjects()
+    {
         // Find all game objects tagged as "Selectable"
         GameObject[] selectableObjects = GameObject.FindGameObjectsWithTag("Selectable");
 
@@ -29,40 +38,63 @@ public class DynamicScrollView : MonoBehaviour
         // Loop through each selectable object
         foreach (GameObject obj in selectableObjects)
         {
-             Debug.Log("find collectible");
+            // Get the status of the collectible object
+            int status = obj.GetComponent<Collectible>().GetStatus();
 
-            // where is get status?? how to get the status 
-            //--> getting it by searching for a script and 
-            // then checking status var did not work
-
-            status = 0;
-            status = obj.GetComponent<Collectible>().GetStatus();
-            Debug.Log("status: " + status);
-
-            if(status == 1){
-                Debug.Log("collected status = 1");
+            if (status == 1)
+            {
                 // Add the object to the filtered list
                 filteredObjects.Add(obj);
             }
-    
         }
 
         collected = filteredObjects;
+    }
 
-        Debug.Log("looping through collected");
-
-        foreach (GameObject collectible in collected)
+    private void PopulateScrollView(List<GameObject> objects)
+    {
+        foreach (GameObject collectible in objects)
         {
-            Debug.Log("collected: " + collectible);
             GameObject newCollectible = Instantiate(prefab, scrollViewContent);
-            if(newCollectible.TryGetComponent<ScrollViewItem>(out ScrollViewItem item)) {
-                // get title from collectible in collected and change it
-                title = collectible.GetComponent<Collectible>().GetTitle();
-                Debug.Log("title: " + title);
-                type = collectible.GetComponent<Collectible>().GetType().Name;
-                item.ChangeInventory(title, type, collectible); //how to get title from collectible?
+            if (newCollectible.TryGetComponent<ScrollViewItem>(out ScrollViewItem item))
+            {
+                // Get title and type from collectible object
+                string title = collectible.GetComponent<Collectible>().GetTitle();
+                string type = collectible.GetComponent<Collectible>().GetType().Name;
+                item.ChangeInventory(title, type, collectible);
             }
         }
     }
 
+    private void FilterInventory(int dropdownIndex)
+    {
+        // Clear the scroll view content
+        foreach (Transform child in scrollViewContent)
+        {
+            Destroy(child.gameObject);
+        }
+
+        // Apply filtering based on the selected dropdown option
+        switch (dropdownIndex)
+        {
+            case 0: // All
+                PopulateScrollView(collected);
+                break;
+            case 1: // Node
+                PopulateScrollView(collected.FindAll(obj => obj.GetComponent<Collectible>().GetType().Name == "Node"));
+                break;
+            case 2: // Text
+                PopulateScrollView(collected.FindAll(obj => obj.GetComponent<Collectible>().GetType().Name == "Text1"));
+                break;
+            case 3: // Video
+                PopulateScrollView(collected.FindAll(obj => obj.GetComponent<Collectible>().GetType().Name == "Video"));
+                break;
+            case 4: // Image
+                PopulateScrollView(collected.FindAll(obj => obj.GetComponent<Collectible>().GetType().Name == "Image"));
+                break;
+            case 5: // Sound
+                PopulateScrollView(collected.FindAll(obj => obj.GetComponent<Collectible>().GetType().Name == "Sound"));
+                break;
+        }
+    }
 }

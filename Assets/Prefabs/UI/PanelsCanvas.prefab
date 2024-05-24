@@ -9447,6 +9447,21 @@ PrefabInstance:
       propertyPath: m_AnchorMax.y
       value: 0.81333333
       objectReference: {fileID: 0}
+    - target: {fileID: 4000836353921807783, guid: 2488cfde3aa51f341bf36f3cae42847a,
+        type: 3}
+      propertyPath: m_Options.m_Options.Array.data[2].m_Text
+      value: Text
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000836353921807783, guid: 2488cfde3aa51f341bf36f3cae42847a,
+        type: 3}
+      propertyPath: m_Options.m_Options.Array.data[3].m_Text
+      value: Video
+      objectReference: {fileID: 0}
+    - target: {fileID: 4000836353921807783, guid: 2488cfde3aa51f341bf36f3cae42847a,
+        type: 3}
+      propertyPath: m_Options.m_Options.Array.data[4].m_Text
+      value: Image
+      objectReference: {fileID: 0}
     - target: {fileID: 4011287349905710029, guid: 2488cfde3aa51f341bf36f3cae42847a,
         type: 3}
       propertyPath: m_AnchorMax.x

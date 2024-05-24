@@ -41185,12 +41185,12 @@ PrefabInstance:
     - target: {fileID: 8333119070728058498, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
       propertyPath: m_Options.m_Options.Array.data[3].m_Text
-      value: Text
+      value: Video
       objectReference: {fileID: 0}
     - target: {fileID: 8333119070728058498, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
       propertyPath: m_Options.m_Options.Array.data[4].m_Text
-      value: Video
+      value: Image
       objectReference: {fileID: 0}
     - target: {fileID: 8400794708217707984, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
