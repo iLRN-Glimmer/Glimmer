@@ -132,21 +132,8 @@ MonoBehaviour:
   Answer: Helmsdale
   URL: https://northernheritage.org/
   Tags:
-  - Andy Dengel
   - House 3
-  - Galleries
-  - ' Libraries'
-  - Archives
-  - '& Museums (GLAM)'
   - House 6
-  - Language
-  - Culture
-  - Heritage (LCH)
-  - ' K-12 (Primary)'
-  - K-12 (Secondary)
-  - Informal / Community / Lifelong Learning
-  - WebGL
-  - WebXR
   Images:
   - {fileID: 21300000, guid: b5d5bcf77acba2e40a2d7fc7ecd8ccb7, type: 3}
   - {fileID: 21300000, guid: aa83fdef9121a9f43aa8f14fe08e2a65, type: 3}
