@@ -130,10 +130,13 @@ namespace StarterAssets
         // disable WebGLInput.stickyCursorLock so if the browser unlocks the cursor (with the ESC key) the cursor will unlock in Unity
         WebGLInput.stickyCursorLock = false;
 #endif
-			Cursor.lockState = CursorLockMode.Locked;
-			Cursor.visible = false;
+			// CHANGED 
+			Cursor.lockState = CursorLockMode.None;
+			Cursor.visible = true;
+			freeze = true;
 			canvas = GameObject.Find("PanelsCanvas");
 			reticle = GameObject.Find("ReticlePanel");
+			reticle.SetActive(false);
 		}
 
 		private void Update()

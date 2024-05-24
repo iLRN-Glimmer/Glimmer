@@ -430,6 +430,7 @@ GameObject:
   - component: {fileID: 1949944083364603830}
   - component: {fileID: 3518966797169825487}
   - component: {fileID: 84897889180741696}
+  - component: {fileID: 524420863215592690}
   m_Layer: 5
   m_Name: PanelsCanvas
   m_TagString: Untagged
@@ -457,8 +458,8 @@ RectTransform:
   - {fileID: 1607124729075306294}
   - {fileID: 6182166730578062821}
   - {fileID: 6465372862377297792}
-  - {fileID: 3804594900321689809}
   - {fileID: 7791302162995915112}
+  - {fileID: 3804594900321689809}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -542,6 +543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   minimap: {fileID: 5878971812777849020}
+  welcome: {fileID: 3685930895496797655}
 --- !u!114 &84897889180741696
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -555,6 +557,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 8099213680894147215, guid: 2488cfde3aa51f341bf36f3cae42847a, type: 3}
+--- !u!114 &524420863215592690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 513990786808628223}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 552d499e2b7969e4d96131390ffd0608, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  panel: {fileID: 7987077582570030422}
 --- !u!1 &527910422053279028
 GameObject:
   m_ObjectHideFlags: 0
@@ -1600,10 +1615,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 8789392053569720680}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1000, y: 450}
+  m_AnchorMin: {x: 0.5, y: 0}
+  m_AnchorMax: {x: 0.5, y: 0}
+  m_AnchoredPosition: {x: 0, y: 260}
+  m_SizeDelta: {x: 1000, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2264637282757564114
 CanvasRenderer:
@@ -1637,6 +1652,10 @@ MonoBehaviour:
     a variety of immersive experiences created by different iLRN members. Player
     will be exploring the map and interact with different objects as they delve into
     a mysterious story. New areas will be opened daily.
+
+
+    Click outside of this
+    note to continue.
 
 '
   m_isRightToLeft: 0
@@ -3223,14 +3242,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3804594900321689809}
-  - component: {fileID: 8086005103774330616}
+  - component: {fileID: 6978138236485824582}
   m_Layer: 0
   m_Name: Welcome
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3804594900321689809
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3250,9 +3269,9 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -600, y: -300}
+  m_SizeDelta: {x: -600, y: -600}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &8086005103774330616
+--- !u!114 &6978138236485824582
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3261,11 +3280,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 3685930895496797655}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9838a9aeaaf47d1479bb8e438efa8e73, type: 3}
+  m_Script: {fileID: 11500000, guid: dd4801711fceb644a9382cadbc91794f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  box: {fileID: 8789392053569720680}
-  background: {fileID: 626389259302939900}
+  panel: {fileID: 3998267704767231005}
+  help: {fileID: 7987077582570030422}
 --- !u!1 &3764010824418758986
 GameObject:
   m_ObjectHideFlags: 0
@@ -5858,10 +5877,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 7045120993506172564}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 1000, y: 450}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 530, y: -310}
+  m_SizeDelta: {x: 700, y: 220}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &7347828948578421465
 CanvasRenderer:
@@ -5891,21 +5910,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'CONTROLS:
-
-    Use ''WASD'' or arrow keys to move around the scene.
-
-    Use
-    ''Space'' to jump.
-
-    Use mouse to rotate camera view and look around the scene.
-
-
-    Press
-    ''M'' to open and close the map and inventory.
-
-    If you would like to view
-    this page again, press ''Tab''.'
+  m_text: "CONTROLS:\nUse 'WASD' or arrow keys to move around the scene.\nUse 'Space'
+    to jump.\nUse mouse to rotate camera view and look around the scene.\n\nPress
+    'M' to open and close the map and inventory.\nIf you would like to view this
+    page again, press 'Tab'. \nClose this page by pressing 'Tab' once more."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 075e847c4cab9a147a46b72eafcc3c74, type: 2}
   m_sharedMaterial: {fileID: -8600009960632274475, guid: 075e847c4cab9a147a46b72eafcc3c74,
@@ -8053,7 +8061,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -600, y: -300}
+  m_SizeDelta: {x: -900, y: -500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &5949687545209753213
 MonoBehaviour:
