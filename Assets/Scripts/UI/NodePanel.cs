@@ -31,6 +31,9 @@ public class NodePanel : MonoBehaviour
     [SerializeField]
     private Button rightButton;
 
+    [SerializeField]
+    private GameObject tag;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -39,7 +42,7 @@ public class NodePanel : MonoBehaviour
         NodeThumbnail = transform.Find("NodeThumbnail").gameObject;
         NodeQuestion = transform.Find("Question/NodeQuestion").gameObject;
         QuestionText = transform.Find("Question/NodeAnswerInput").gameObject;
-        NodeTags = transform.Find("NodeTags").gameObject;
+        NodeTags = transform.Find("NodeTags/Viewport/Content").gameObject;
         Parent = transform.parent.gameObject;
 
         children = new List<GameObject>();
@@ -91,6 +94,7 @@ public class NodePanel : MonoBehaviour
         List<RaycastResult> results = new List<RaycastResult>();
         EventSystem.current.RaycastAll(eventData, results);
 
+
         // Check if the UI object under the pointer is the specified panel
         return results.Count > 0 && children.Contains(results[0].gameObject);
     }
@@ -110,10 +114,22 @@ public class NodePanel : MonoBehaviour
         NodeDescription.GetComponent<TextMeshProUGUI>().text = Body;
         NodeQuestion.GetComponent<TextMeshProUGUI>().text = Question;
         string temp = "";
-        foreach(string tag in Tags){
-            temp = temp+ "#" + tag + " ";
+        foreach (Transform child in NodeTags.transform)
+        {
+            children.Remove(child.gameObject);
+            children.Remove(child.GetChild(0).gameObject);
+            Destroy(child.gameObject);
         }
-        NodeTags.GetComponent<TextMeshProUGUI>().text = temp;
+
+        foreach (string text in Tags){
+            GameObject newTag = Instantiate(tag,NodeTags.transform);
+            newTag.GetComponentInChildren<TextMeshProUGUI>().text = text;
+            children.Add(newTag);
+            children.Add(newTag.transform.GetChild(0).gameObject);
+            Debug.Log(newTag);
+        }
+
+        //NodeTags.GetComponent<TextMeshProUGUI>().text = temp;
         this.Answer = Answer;
         this.URL = URL;
         this.Next = Next;
