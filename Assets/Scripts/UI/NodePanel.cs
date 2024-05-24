@@ -136,6 +136,8 @@ public class NodePanel : MonoBehaviour
         }
         var txt = QuestionText.GetComponent<TMP_InputField>().text.ToLower();
         if(txt != Answer.ToLower()){
+            // Trigger the shake animation using LeanTween
+            ShakeInputField();
             return;
         }
         var canvas = GameObject.Find("PanelsCanvas");
@@ -147,6 +149,17 @@ public class NodePanel : MonoBehaviour
             Parent.SetActive(false);
 
         }
+    }
+
+    // shake animation for input field incorrect
+    void ShakeInputField()
+    {
+        RectTransform rectTransform = QuestionText.GetComponent<RectTransform>();
+        float shakeDuration = 0.2f;
+        float shakeStrength = 8f;
+        int shakeVibrato = 10;
+
+        LeanTween.moveX(rectTransform, rectTransform.anchoredPosition.x + shakeStrength, shakeDuration / shakeVibrato).setEaseShake().setLoopPingPong(shakeVibrato);
     }
 
 
