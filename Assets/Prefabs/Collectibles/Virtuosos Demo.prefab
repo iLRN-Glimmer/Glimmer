@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 3640622278455241478}
   - component: {fileID: 5421167991663603545}
   m_Layer: 0
-  m_Name: Alice and TomKaT on the paths of OnLIFE Education
+  m_Name: Virtuosos Demo
   m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -194,23 +194,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e7718f343c8ef14780cd8a9db749f14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: Alice and TomKaT
-  Body: In this world, in the Spatial metaverse, join Alice from Wonderland and TomKat
-    from ConectaKaT to explore the paths of the OnLIFE Education. Through an immersive,
-    inventive, and gamified narrative, these characters will guide you to understand
-    and experience this paradigm which is connected to our lives. By unraveling the
-    clues, you will discover how projects developed by students from a Brazilian
-    university shed light on pertinent issues regarding OnLIFE Education.
+  Title: 'Virtuosos: Demo'
+  Body: Virtuosos, a rhythm role playing game, offers an immersive learning experience
+    by blending interactive gameplay with musical creativity, allowing players to
+    engage deeply with music through rhythm-based challenges. This innovative platform
+    not only entertains but also educates, fostering a deeper appreciation for musical
+    composition and performance.
   Status: 0
   Custom: no
   Next: {fileID: 0}
-  Question: Who is in Wonderland
-  Answer: Alice
-  URL: https://www.spatial.io/s/Alice-e-TomKat-nos-caminhos-da-Educacao-OnLIFE-2023-02-6547de361575c6e70c212ad2?share=9008268964280416174
+  Question: What instrument does the character Bronte play?
+  Answer: Drum
+  URL: https://gelzonexunsas.itch.io/virtuosos
   Tags:
   - House 1
   Images:
-  - {fileID: 21300000, guid: 778b2afefc7e7dc44b11061d0ee1dc49, type: 3}
-  - {fileID: 21300000, guid: d4e1769aaa164254096f8dec90fb1e0b, type: 3}
-  - {fileID: 21300000, guid: 02277a484bffa2145a442070a1c8cab9, type: 3}
+  - {fileID: 21300000, guid: 4b859f75e090dfd4b97fafd8381fa81c, type: 3}
+  - {fileID: 21300000, guid: 1e382de72b5470a4491fbebeb47bc686, type: 3}
+  - {fileID: 21300000, guid: b59a4798a14abd043a61d7594b23716e, type: 3}
+  - {fileID: 21300000, guid: 2e2c40ff4ac0ebd4db1f0e4f7ff74bf2, type: 3}
   Open: 2024-04-19
