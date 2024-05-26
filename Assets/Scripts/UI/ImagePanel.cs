@@ -111,6 +111,10 @@ public class ImagePanel : MonoBehaviour
         imageList = images;
         UpdateImage();
         UpdateButtonVisibility();
+        if(!Next){
+            SetStatus();
+        }
+        
         Debug.Log("set image");
     }
 
@@ -191,5 +195,15 @@ public class ImagePanel : MonoBehaviour
             Parent.SetActive(false);
 
         }
+    }
+
+    public int GetStatus()
+    {
+        return Node.GetStatus();
+    }
+
+    public void SetStatus()
+    {
+        Node.SetStatus(1);
     }
 }

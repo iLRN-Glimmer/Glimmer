@@ -109,4 +109,14 @@ public class TextPanel : MonoBehaviour
 
         }
     }
+
+    public int GetStatus()
+    {
+        return Node.GetStatus();
+    }
+
+    public void SetStatus()
+    {
+        Node.SetStatus(1);
+    }
 }

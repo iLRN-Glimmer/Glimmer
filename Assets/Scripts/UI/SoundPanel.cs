@@ -93,6 +93,10 @@ public class SoundPanel : MonoBehaviour
         {
             NextButton.SetActive(true);
         }
+        if (!Next)
+        {
+            SetStatus();
+        }
     }
 
     public void openNext()
@@ -110,5 +114,15 @@ public class SoundPanel : MonoBehaviour
             Parent.SetActive(false);
 
         }
+    }
+
+    public int GetStatus()
+    {
+        return Node.GetStatus();
+    }
+
+    public void SetStatus()
+    {
+        Node.SetStatus(1);
     }
 }
