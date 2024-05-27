@@ -43824,7 +43824,7 @@ MonoBehaviour:
   Body: This is Text
   Status: 1
   Custom: 
-  Next: {fileID: 1570413761746013162, guid: 70fffe18fc7942e489dbc7a026b343bb, type: 3}
+  Next: {fileID: 7649599076849097754, guid: 4fa0bc49a958a1e4a90c4aa07f231bd8, type: 3}
 --- !u!65 &1655603342
 BoxCollider:
   m_ObjectHideFlags: 0
