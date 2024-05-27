@@ -194,7 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e7718f343c8ef14780cd8a9db749f14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: Alice and TomKaT
+  Title: Alice and TomKaT on the paths of OnLIFE Education
   Body: In this world, in the Spatial metaverse, join Alice from Wonderland and TomKat
     from ConectaKaT to explore the paths of the OnLIFE Education. Through an immersive,
     inventive, and gamified narrative, these characters will guide you to understand
@@ -204,8 +204,9 @@ MonoBehaviour:
   Status: 0
   Custom: no
   Next: {fileID: 0}
-  Question: Who is in Wonderland
-  Answer: Alice
+  Question: The students who helped create this experience are from a university
+    in which country?
+  Answer: Brazil
   URL: https://www.spatial.io/s/Alice-e-TomKat-nos-caminhos-da-Educacao-OnLIFE-2023-02-6547de361575c6e70c212ad2?share=9008268964280416174
   Tags:
   - House 1
@@ -214,3 +215,5 @@ MonoBehaviour:
   - {fileID: 21300000, guid: d4e1769aaa164254096f8dec90fb1e0b, type: 3}
   - {fileID: 21300000, guid: 02277a484bffa2145a442070a1c8cab9, type: 3}
   Open: 2024-04-19
+  Author:
+  - Eliane Schlemmer (Professor)

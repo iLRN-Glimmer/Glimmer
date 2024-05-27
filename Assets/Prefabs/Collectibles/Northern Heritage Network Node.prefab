@@ -128,8 +128,10 @@ MonoBehaviour:
   Status: 0
   Custom: no
   Next: {fileID: 0}
-  Question: What is the place in the second photo
-  Answer: Helmsdale
+  Question: "St. Kilda\u2019s isolation led to developing its very own animal species,
+    such as the St. Kila Wren, St. Kilda field mouse, and the ancient ____ sheep
+    breed."
+  Answer: Soay
   URL: https://northernheritage.org/
   Tags:
   - House 3
@@ -139,6 +141,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: aa83fdef9121a9f43aa8f14fe08e2a65, type: 3}
   - {fileID: 21300000, guid: 7009e420fb7f08e45868ca79a6e3d58e, type: 3}
   Open: 2024-04-19
+  Author:
+  - University of St. Andrews
 --- !u!1 &4709517547250472130
 GameObject:
   m_ObjectHideFlags: 0

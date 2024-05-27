@@ -8478,7 +8478,7 @@ MonoBehaviour:
   m_VertexBufferAutoSizeReduction: 0
   m_useMaxVisibleDescender: 1
   m_pageToDisplay: 1
-  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_margin: {x: 0, y: 0, z: -373.49158, w: 0}
   m_isUsingLegacyAnimationComponent: 0
   m_isVolumetricText: 0
   m_hasFontAssetChanged: 0
@@ -10531,7 +10531,7 @@ PrefabInstance:
     - target: {fileID: 8731681210917474273, guid: 2488cfde3aa51f341bf36f3cae42847a,
         type: 3}
       propertyPath: m_Size
-      value: 1
+      value: 0.81333333
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:

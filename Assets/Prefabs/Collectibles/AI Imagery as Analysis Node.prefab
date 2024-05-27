@@ -120,17 +120,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: AI Imagery as Analysis
-  Body: Genevieve Smith-Nunes explores AI at the intersection of visual arts and
-    data analysis by producing over a dozen pieces of AI-generated artwork representing
-    data visualizations that effectively emphasize intricate patterns and correlations
-    that might elude detection in conventional data depictions and enabling educational
-    researchers to communicate their findings in innovative ways, diverging from
-    traditional print-based dissemination, and appealing to a broader audience.
+  Body: Explore AI at the intersection of visual arts and data analysis with a dozen
+    pieces of AI-generated artwork representing data visualizations that effectively
+    emphasize intricate patterns and correlations that might elude detection in conventional
+    data depictions and enabling educational researchers to communicate their findings
+    in innovative ways, diverging from traditional print-based dissemination, and
+    appealing to a broader audience.
   Status: 0
   Custom: no
   Next: {fileID: 0}
-  Question: What is this about
-  Answer: AI
+  Question: 'In thinking about the ethical implications of sharing personal biometric
+    information, one question to ask is: Are __________ something deeply personal?'
+  Answer: brainwaves
   URL: https://www.spatial.io/s/AI-magery-as-analysis-63da7700ac31fab2ef98c693?share=6139665159883199232
   Tags:
   - House 3
@@ -141,6 +142,9 @@ MonoBehaviour:
   - {fileID: 21300000, guid: f1c63c01279976a489be863f6f1863e3, type: 3}
   - {fileID: 21300000, guid: a7eb5ae403f28e347834d704753bee14, type: 3}
   Open: 2024-04-19
+  Author:
+  - Genevieve Smith-Nunes
+  - Alex
 --- !u!1 &4982520195169091851
 GameObject:
   m_ObjectHideFlags: 0

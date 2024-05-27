@@ -205,11 +205,13 @@ MonoBehaviour:
   Status: 0
   Custom: no
   Next: {fileID: 0}
-  Question: Whose Workshop is this
-  Answer: Bill's
+  Question: What is the first component you need to fix?
+  Answer: CPU
   URL: https://andydengel.itch.io/bills-computer-workshop-en
   Tags:
   - House 1
   Images:
   - {fileID: 21300000, guid: 6c5a3d42e00af9843b4744f6b3b564bf, type: 3}
   Open: 2024-04-19
+  Author:
+  - Andy Dengel
