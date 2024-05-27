@@ -16,6 +16,7 @@ public class NodePanel : MonoBehaviour
     private GameObject QuestionText;
     private GameObject NodeTags;
     private GameObject Parent;
+    private GameObject NodeAuthor;
     private List<GameObject> children;
     private string Answer;
     private string URL;
@@ -43,6 +44,7 @@ public class NodePanel : MonoBehaviour
         NodeQuestion = transform.Find("Question/NodeQuestion").gameObject;
         QuestionText = transform.Find("Question/NodeAnswerInput").gameObject;
         NodeTags = transform.Find("NodeTags/Viewport/Content").gameObject;
+        NodeAuthor = transform.Find("NodeAuthor").gameObject;
         Parent = transform.parent.gameObject;
 
         children = new List<GameObject>();
@@ -107,13 +109,21 @@ public class NodePanel : MonoBehaviour
         transform.Find("QuestionButton").gameObject.SetActive(true);
     }
 
-    public void setNode(string Title, string Body, string Question, string Answer, string URL, List<string> Tags, Collectible Next, List<Sprite> Images, Node node)
+    public void setNode(string Title, string Body, string Question, string Answer, string URL, List<string> Tags, Collectible Next, List<Sprite> Images,List<string> author, Node node)
     {
         Node = node;
         NodeTitle.GetComponent<TextMeshProUGUI>().text = Title;
         NodeDescription.GetComponent<TextMeshProUGUI>().text = Body;
         NodeQuestion.GetComponent<TextMeshProUGUI>().text = Question;
-        string temp = "";
+        string temp = "Author(s): ";
+            
+        foreach (string auth in author){
+            temp += auth ;
+            if(author.Last() != auth){
+                temp += ", ";
+                }
+        }
+        NodeAuthor.GetComponent<TextMeshProUGUI>().text = temp;
         foreach (Transform child in NodeTags.transform)
         {
             children.Remove(child.gameObject);
