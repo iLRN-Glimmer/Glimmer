@@ -17,6 +17,7 @@ public class ImagePanel : MonoBehaviour
     private int index;
     private List<Sprite> imageList;
     private GameObject NextButton;
+    private Picture picture;
 
     [SerializeField]
     private Button leftButton;
@@ -98,8 +99,9 @@ public class ImagePanel : MonoBehaviour
         transform.Find("Image").gameObject.SetActive(true);
     }
 
-    public void setImage(string Title, string Body, Collectible Next, List<Sprite> images)
+    public void setImage(string Title, string Body, Collectible Next, List<Sprite> images, Picture Picture)
     {
+        picture =Picture;
         this.Next = Next;
         if (!this.Next){
             NextButton.SetActive(false);
@@ -199,11 +201,11 @@ public class ImagePanel : MonoBehaviour
 
     public int GetStatus()
     {
-        return Node.GetStatus();
+        return picture.GetStatus();
     }
 
     public void SetStatus()
     {
-        Node.SetStatus(1);
+        picture.SetStatus(1);
     }
 }

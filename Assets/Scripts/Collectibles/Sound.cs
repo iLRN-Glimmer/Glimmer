@@ -15,6 +15,6 @@ public class Sound : Collectible
     {
         GameObject temp = canvas.transform.Find("Sound").gameObject;
         temp.SetActive(true);
-        temp.transform.Find("SoundPanel").gameObject.GetComponent<SoundPanel>().setSound(Title, Body,Next);
+        temp.transform.Find("SoundPanel").gameObject.GetComponent<SoundPanel>().setSound(Title, Body,Next,this);
     }
 }

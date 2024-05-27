@@ -30,6 +30,6 @@ public class Video : Collectible
     {
         GameObject temp = canvas.transform.Find("Video").gameObject;
         temp.SetActive(true);
-        temp.transform.Find("VideoPanel").gameObject.GetComponent<VideoPanel>().setVideo(Title, Body, Next);
+        temp.transform.Find("VideoPanel").gameObject.GetComponent<VideoPanel>().setVideo(Title, Body, Next,this);
     }
 }
