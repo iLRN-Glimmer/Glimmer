@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4684488538352112593}
   - component: {fileID: 6320215028923037986}
   m_Layer: 0
-  m_Name: AI Text
+  m_Name: AI Text 1
   m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -127,15 +127,8 @@ MonoBehaviour:
     a creative technologist and freelancer based in Edinburgh, Scotland. They are
     passionate about creative coding and knowledge sharing, dance, digital storytelling,
     and immersive multisensory worlds. Some days, the drive to increase the creativity
-    in the world is what gets them out of bed, some days it''s coffee. The inspiration
-    for the project was to be able to represent findings in a non-text format. We
-    interpret the written text also based on our lived experience, the choice of
-    words are important and convey meaning. The visual gives space for a kaleidoscope
-    of thought without the need to be placed in a permanent box. The project draws
-    on Mayer''s Contemporary Multimedia Theory of Learning and my work on the Ontological
-    Kaleidoscope. It was more of data analysis > findings > prompt > image generation
-    often with Dalle2 > editing process. '
-  Status: 1
+    in the world is what gets them out of bed, some days it''s coffee. '
+  Status: 0
   Custom: 
   Next: {fileID: 7649599076849097754, guid: 4fa0bc49a958a1e4a90c4aa07f231bd8, type: 3}
 --- !u!1 &7165364373610784779
