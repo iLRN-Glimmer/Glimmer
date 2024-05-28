@@ -2549,7 +2549,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 76011382}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -44366,6 +44366,26 @@ PrefabInstance:
       propertyPath: m_Texture
       value: 
       objectReference: {fileID: 0}
+    - target: {fileID: 282688542984574757, guid: 0379a335f52090e41a6e1e511a542a15,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 282688542984574757, guid: 0379a335f52090e41a6e1e511a542a15,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 51
+      objectReference: {fileID: 0}
+    - target: {fileID: 282688542984574757, guid: 0379a335f52090e41a6e1e511a542a15,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -513.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 282688542984574757, guid: 0379a335f52090e41a6e1e511a542a15,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -820.2151
+      objectReference: {fileID: 0}
     - target: {fileID: 336895162150284163, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
       propertyPath: m_AnchorMax.x
@@ -45460,7 +45480,7 @@ PrefabInstance:
     - target: {fileID: 7987077582570030422, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8152327491999588234, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
@@ -45628,7 +45648,7 @@ PrefabInstance:
     m_AddedGameObjects:
     - targetCorrespondingSourceObject: {fileID: 93103761160262557, guid: 0379a335f52090e41a6e1e511a542a15,
         type: 3}
-      insertIndex: -1
+      insertIndex: 0
       addedObject: {fileID: 76011383}
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 8012733187660721000, guid: 0379a335f52090e41a6e1e511a542a15,
