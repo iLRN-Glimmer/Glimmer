@@ -33,7 +33,7 @@ public class NodePanel : MonoBehaviour
     private Button rightButton;
 
     [SerializeField]
-    private GameObject tag;
+    private GameObject tag1;
 
     // Start is called before the first frame update
     void Awake()
@@ -132,7 +132,7 @@ public class NodePanel : MonoBehaviour
         }
 
         foreach (string text in Tags){
-            GameObject newTag = Instantiate(tag,NodeTags.transform);
+            GameObject newTag = Instantiate(tag1,NodeTags.transform);
             newTag.GetComponentInChildren<TextMeshProUGUI>().text = text;
             children.Add(newTag);
             children.Add(newTag.transform.GetChild(0).gameObject);

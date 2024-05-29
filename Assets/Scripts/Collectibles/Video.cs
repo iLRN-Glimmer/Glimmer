@@ -4,19 +4,19 @@ using UnityEngine;
 
 public class Video : Collectible
 {
-    [SerializeField] private Video Vid;
+    [SerializeField] private string Vid;
 
-    public Video(string title, string body, int status, Video vid, string custom = null) : base(title, body, status, custom)
+    public Video(string title, string body, int status, string vid, string custom = null) : base(title, body, status, custom)
     {
         Vid = vid;
     }
 
-    public Video GetVid()
+    public string GetVid()
     {
         return Vid;
     }
 
-    public void SetVid(Video l)
+    public void SetVid(string l)
     {
         Vid = l;
     }
@@ -30,6 +30,6 @@ public class Video : Collectible
     {
         GameObject temp = canvas.transform.Find("Video").gameObject;
         temp.SetActive(true);
-        temp.transform.Find("VideoPanel").gameObject.GetComponent<VideoPanel>().setVideo(Title, Body, Next,this);
+        temp.transform.Find("VideoPanel").gameObject.GetComponent<VideoPanel>().setVideo(Title, Body, Next,Vid,this);
     }
 }

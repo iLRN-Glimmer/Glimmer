@@ -17,4 +17,13 @@ public class Sound : Collectible
         temp.SetActive(true);
         temp.transform.Find("SoundPanel").gameObject.GetComponent<SoundPanel>().setSound(Title, Body,Next,this);
     }
+
+    public AudioClip GetAudio(){
+        return Audio;
+    }
+
+    public void SetAudio(AudioClip audio)
+    {
+        Audio = audio;
+    }
 }

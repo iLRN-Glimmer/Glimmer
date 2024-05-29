@@ -15,6 +15,8 @@ public class SoundPanel : MonoBehaviour
     private Collectible Next;
     private GameObject NextButton;
     private Sound sound;
+    private AudioClip clip;
+    
 
     // Start is called before the first frame update
     void Awake()
@@ -30,6 +32,7 @@ public class SoundPanel : MonoBehaviour
         Sound = transform.Find("PlayAudioButton").gameObject;
         Parent = transform.parent.gameObject;
         NextButton = transform.Find("CloseButton").gameObject;
+
     }
 
     private void AddDescendants(Transform parent, List<GameObject> list)
@@ -80,9 +83,11 @@ public class SoundPanel : MonoBehaviour
         return results.Count > 0 && children.Contains(results[0].gameObject);
     }
 
-    public void setSound(string Title, string Body, Collectible Next, Sound Sound)
+    public void setSound(string Title, string Body, Collectible Next, Sound play)
     {
-        sound = Sound;
+        sound = play;
+        clip = play.GetAudio();
+        
         SoundTitle.GetComponent<TextMeshProUGUI>().text = Title;
         SoundDesc.GetComponent<TextMeshProUGUI>().text = Body;
         this.Next = Next;
@@ -98,6 +103,9 @@ public class SoundPanel : MonoBehaviour
         {
             SetStatus();
         }
+
+        AudioSource speaker = Sound.transform.GetComponent<AudioSource>();
+        speaker.clip = clip;
     }
 
     public void openNext()
@@ -126,4 +134,10 @@ public class SoundPanel : MonoBehaviour
     {
         sound.SetStatus(1);
     }
+
+    public void PlaySound(){
+        AudioSource speaker = Sound.transform.GetComponent<AudioSource>();
+        speaker.Play(0);
+    }
+
 }

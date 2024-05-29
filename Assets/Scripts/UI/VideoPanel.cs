@@ -83,11 +83,17 @@ public class VideoPanel : MonoBehaviour
         transform.Find("Video Player").gameObject.SetActive(true);
     }
 
-    public void setVideo(string Title, string Body, Collectible Next, Video Video)
+    public void setVideo(string Title, string Body, Collectible Next,string vid, Video Video)
     {
         video = Video;
         this.Next = Next;
         VideoTitle.GetComponent<TextMeshProUGUI>().text = Title;
+        UnityEngine.Video.VideoPlayer player = Vid.GetComponent<UnityEngine.Video.VideoPlayer>();
+        Debug.Log(Application.streamingAssetsPath +"/"+ vid + ".mp4");
+        //player.url = Application.streamingAssetsPath+ "/" + vid + ".mp4";
+        
+        // player.Play();
+        
         //ImageDescription.GetComponent<TextMeshProUGUI>().text = Body;
         if (!this.Next)
         {
