@@ -26,6 +26,11 @@ public class DynamicScrollView : MonoBehaviour
         CollectObjects();
         PopulateScrollView(collected);
     }
+    
+    private void OnEnable() {
+        CollectObjects();
+        FilterInventory(0);
+    }
 
     private void CollectObjects()
     {
@@ -34,13 +39,15 @@ public class DynamicScrollView : MonoBehaviour
 
         // List to store filtered objects
         List<GameObject> filteredObjects = new List<GameObject>();
-        Debug.Log(selectableObjects.GetLength(0));
         // Loop through each selectable object
         foreach (GameObject obj in selectableObjects)
         {
-            Debug.Log(obj);
+            
             // Get the status of the collectible object
             int status = obj.GetComponent<Collectible>().GetStatus();
+            
+            Debug.Log(obj + " Then " + status);
+            
 
             if (status == 1)
             {
@@ -90,8 +97,8 @@ public class DynamicScrollView : MonoBehaviour
             case 3: // Video
                 PopulateScrollView(collected.FindAll(obj => obj.GetComponent<Collectible>().GetType().Name == "Video"));
                 break;
-            case 4: // Image
-                PopulateScrollView(collected.FindAll(obj => obj.GetComponent<Collectible>().GetType().Name == "Image"));
+            case 4: // Picture
+                PopulateScrollView(collected.FindAll(obj => obj.GetComponent<Collectible>().GetType().Name == "Picture"));
                 break;
             case 5: // Sound
                 PopulateScrollView(collected.FindAll(obj => obj.GetComponent<Collectible>().GetType().Name == "Sound"));

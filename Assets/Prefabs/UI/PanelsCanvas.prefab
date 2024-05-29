@@ -9285,7 +9285,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   leftButton: {fileID: 415947464113411417}
   rightButton: {fileID: 7684056349369319542}
-  tag1: {fileID: 0}
+  tag1: {fileID: 4174524834376801939, guid: 0a7029781165a974c922f269f2cab450, type: 3}
 --- !u!114 &6039759157523356081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12005,6 +12005,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_hasFontAssetChanged
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2037048107397759310, guid: 2488cfde3aa51f341bf36f3cae42847a,
+        type: 3}
+      propertyPath: m_Options.m_Options.Array.data[4].m_Text
+      value: Picture
       objectReference: {fileID: 0}
     - target: {fileID: 2110588095474403184, guid: 2488cfde3aa51f341bf36f3cae42847a,
         type: 3}
