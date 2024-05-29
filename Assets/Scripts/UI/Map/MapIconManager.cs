@@ -34,7 +34,7 @@ public class MapIconManager : MonoBehaviour
         unexploredMapIcons = GetUnexploredMapIcons(); // since can overlap with below lists, separate method
         nodesMapIcons = GetMapIconsByType("Node"); // sort the collectibles by script name (returns array of associated objects)
         imagesMapIcons = GetMapIconsByType("Picture");
-        textMapIcons = GetMapIconsByType("Text1"); // TODO: doesn't work for text for some reason
+        textMapIcons = GetMapIconsByType("Text1");
         videoMapIcons = GetMapIconsByType("Video");
         soundMapIcons = GetMapIconsByType("Sound");
     }
@@ -62,18 +62,12 @@ public class MapIconManager : MonoBehaviour
                 // Get all children of the GameObject
                 foreach (Transform childTransform in obj.transform)
                 {
-                    // Check if the child has an Image component (assuming UI Image represents map icon)
-                    Image imageComponent = childTransform.GetComponent<Image>();
-                    if (imageComponent != null)
-                    {   
-                        // add the child with the image component (presumably map icon) to the list
-                        mapIconChildren.Add(childTransform.gameObject);
-                    }
+                    // each object only has one child - the map icon
+                    mapIconChildren.Add(childTransform.gameObject);
                 }
             }
         }
-
-        return mapIconChildren.ToArray(); // Convert List<GameObject> to GameObject[];
+            return mapIconChildren.ToArray(); // Convert List<GameObject> to GameObject[];
     }
 
     //TODO: get unexplored map icons does not work
