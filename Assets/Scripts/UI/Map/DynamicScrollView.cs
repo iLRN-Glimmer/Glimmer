@@ -42,14 +42,19 @@ public class DynamicScrollView : MonoBehaviour
         // Loop through each selectable object
         foreach (GameObject obj in selectableObjects)
         {
-            
+            Collectible item = obj.GetComponent<Collectible>();
             // Get the status of the collectible object
-            int status = obj.GetComponent<Collectible>().GetStatus();
+            int status = item.GetStatus();
+
             
             Debug.Log(obj + " Then " + status);
             
-
-            if (status == 1)
+            if(item.GetNext()){
+                if(item.GetNext().GetStatus() == 1){
+                    filteredObjects.Add(item.GetNext().gameObject);
+                }
+            }
+            else if (status == 1)
             {
                 // Add the object to the filtered list
                 filteredObjects.Add(obj);

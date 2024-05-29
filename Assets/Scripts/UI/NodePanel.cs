@@ -166,6 +166,7 @@ public class NodePanel : MonoBehaviour
             ShakeInputField();
             return;
         }
+        SetStatus();
         var canvas = GameObject.Find("PanelsCanvas");
         Next.OpenWindow(canvas);
 
