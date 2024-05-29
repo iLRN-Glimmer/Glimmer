@@ -55,8 +55,18 @@ public class MapIconManager : MonoBehaviour
         foreach (GameObject obj in allObjects)
         {
             /* debugging: Debug.Log(scriptName + " outside"); */
+            if (obj.GetComponent(scriptName) != null && obj.GetComponent<Node>().GetNext())
+            {
+                /* debugging: Debug.Log(scriptName + " inside");*/
+                // Get all children of the GameObject
+                foreach (Transform childTransform in obj.GetComponent<Node>().GetNext().transform)
+                {
+                    // each object only has one child - the map icon
+                    mapIconChildren.Add(childTransform.gameObject);
+                }
+            }
             // check if the game object has the script corresponding to the type
-            if (obj.GetComponent(scriptName) != null)
+            else if (obj.GetComponent(scriptName) != null)
             {
                 /* debugging: Debug.Log(scriptName + " inside");*/
                 // Get all children of the GameObject
@@ -124,23 +134,23 @@ public class MapIconManager : MonoBehaviour
             case 0: // All
                 ShowMapIcons(allMapIcons);
                 break;
-            case 1: // Unexplored
-                ShowMapIcons(unexploredMapIcons);
-                break;
-            case 2: // Nodes
+            case 1: // Nodes
                 ShowMapIcons(nodesMapIcons);
                 break;
-            case 3: // Images
+            case 2: // Images
                 ShowMapIcons(imagesMapIcons);
                 break;
-            case 4: // Text
+            case 3: // Text
                 ShowMapIcons(textMapIcons);
                 break;
-            case 5: // Video
+            case 4: // Video
                 ShowMapIcons(videoMapIcons);
                 break;
-            case 6: // Sound
+            case 5: // Sound
                 ShowMapIcons(soundMapIcons);
+                break;
+            case 6: // Unexplored
+                ShowMapIcons(unexploredMapIcons);
                 break;
             default:
                 break;
