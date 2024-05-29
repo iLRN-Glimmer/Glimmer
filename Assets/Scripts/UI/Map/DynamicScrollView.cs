@@ -34,10 +34,11 @@ public class DynamicScrollView : MonoBehaviour
 
         // List to store filtered objects
         List<GameObject> filteredObjects = new List<GameObject>();
-
+        Debug.Log(selectableObjects.GetLength(0));
         // Loop through each selectable object
         foreach (GameObject obj in selectableObjects)
         {
+            Debug.Log(obj);
             // Get the status of the collectible object
             int status = obj.GetComponent<Collectible>().GetStatus();
 

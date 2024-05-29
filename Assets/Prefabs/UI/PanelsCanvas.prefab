@@ -643,8 +643,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   panel: {fileID: 7987077582570030422}
-<<<<<<< HEAD
-=======
 --- !u!114 &426757015463872310
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -659,7 +657,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   cursorObject: {fileID: 5349367017147712524}
   maxDistance: 100
->>>>>>> 798c98f3cb74edb8d0d05db379c3640727fca5cd
 --- !u!1 &527910422053279028
 GameObject:
   m_ObjectHideFlags: 0

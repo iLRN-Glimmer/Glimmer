@@ -51725,7 +51725,7 @@ PrefabInstance:
     - target: {fileID: 4415820405337128638, guid: 15ac18aad61cb3147886441c2b09365e,
         type: 3}
       propertyPath: m_TagString
-      value: Selectable
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -59751,6 +59751,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: -49.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 7649599076849097754, guid: 4fa0bc49a958a1e4a90c4aa07f231bd8,
+        type: 3}
+      propertyPath: Status
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7649599076849097754, guid: 4fa0bc49a958a1e4a90c4aa07f231bd8,
         type: 3}
