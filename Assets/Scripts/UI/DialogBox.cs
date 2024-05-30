@@ -9,6 +9,8 @@ public class DialogBox : MonoBehaviour
     [SerializeField]
     private CanvasGroup background;
 
+    private AudioSource ClosePanel;
+
     private void OnEnable() {
 
         // set transparency of background to 0
@@ -20,6 +22,8 @@ public class DialogBox : MonoBehaviour
         box.localPosition = new Vector2(0, -Screen.height);
         box.LeanMoveLocalY(0, 0.5f).setEaseOutExpo().delay = 0.1f;
         // box.LeanMoveLocalY(0, 0.5f).setEase; // look at bouncing effect for setEase
+
+        ClosePanel = GameObject.Find("PanelsCanvas").GetComponent<AudioSource>();
     }
 
     public void CloseDialog() {
@@ -28,6 +32,7 @@ public class DialogBox : MonoBehaviour
         // background.LeanAlpha(0, 0.5);
         // move screen outside of view
         box.LeanMoveLocalY(-Screen.height, 0.5f).setEaseInExpo().setOnComplete(OnComplete);
+        ClosePanel.Play();
     }
 
     void OnComplete() {

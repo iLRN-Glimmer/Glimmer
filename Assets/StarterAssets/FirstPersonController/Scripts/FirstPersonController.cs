@@ -68,6 +68,8 @@ namespace StarterAssets
 		[SerializeField]
 		private Material defaultMaterial;
 
+		private AudioSource openPanel;
+
 		// cinemachine
 		private float _cinemachineTargetPitch;
 
@@ -137,6 +139,7 @@ namespace StarterAssets
 			canvas = GameObject.Find("PanelsCanvas");
 			reticle = GameObject.Find("ReticlePanel");
 			reticle.SetActive(false);
+			openPanel = GameObject.Find("OpenPanelsSound").GetComponent<AudioSource>();
 		}
 
 		private void Update()
@@ -197,6 +200,7 @@ namespace StarterAssets
 
 					freeze = true;
 					reticle.SetActive(false);
+					openPanel.Play();
 				}
 
 				
