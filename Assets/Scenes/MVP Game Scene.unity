@@ -10265,11 +10265,11 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 201205147636430036, guid: 377431898cf61584ea4ac3d57b487a0c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 321218069}
+      addedObject: {fileID: 321218068}
     - targetCorrespondingSourceObject: {fileID: 201205147636430036, guid: 377431898cf61584ea4ac3d57b487a0c,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 321218068}
+      addedObject: {fileID: 321218073}
   m_SourcePrefab: {fileID: 100100000, guid: 377431898cf61584ea4ac3d57b487a0c, type: 3}
 --- !u!4 &321218066 stripped
 Transform:
@@ -10379,7 +10379,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &321218069
+--- !u!114 &321218073
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -10388,33 +10388,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 321218067}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e7718f343c8ef14780cd8a9db749f14, type: 3}
+  m_Script: {fileID: 11500000, guid: f017a7e000fa57d4c8748fdc112c2c40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Title: Northern Heritage Network
-  Body: The Northern Heritage Network has curated immersive virtual museum exhibits
-    and tours showcasing the rich history, landscapes, and artifacts of the Northern
-    periphery and arctic regions of Europe. These web-based 2D and 3D experiences
-    highlight treasures from the Orkney North Isles, Downpatrick Head, and St. Kilda,
-    as well as offering virtual walks in Teampull na Trionaid and Barca Lang's.
+  Body: "Virtual St. Kilda is part of a larger site called the Northern Heritage
+    Network (https://northernheritage.org) with many virtual museum exhibits such
+    as Virtual Orkney North Isles, Seinn Spioradail, Skri\xF0uklaustur Monastery,
+    and Uist. The geographical focus of the Northern Heritage Network is: Finland,
+    Sweden, Norway, Denmark, Scotland, Island of Ireland, Faroe Islands, Iceland,
+    Greenland and the Baltic countries. The Northern Heritage Network has 104 virtual
+    tours, over 4666 digitized 3D objects, and 87 virtual reconstructions. "
   Status: 0
-  Custom: no
+  Custom: 
   Next: {fileID: 6132312195907708226, guid: a4c8a90e86e6f584f932685775c05cb3, type: 3}
-  Question: "St. Kilda\u2019s isolation led to developing its very own animal species,
-    such as the St. Kila Wren, St. Kilda field mouse, and the ancient ____ sheep
-    breed."
-  Answer: Soay
-  URL: https://northernheritage.org/
-  Tags:
-  - House 3
-  - House 6
-  Images:
-  - {fileID: 21300000, guid: b5d5bcf77acba2e40a2d7fc7ecd8ccb7, type: 3}
-  - {fileID: 21300000, guid: aa83fdef9121a9f43aa8f14fe08e2a65, type: 3}
-  - {fileID: 21300000, guid: 7009e420fb7f08e45868ca79a6e3d58e, type: 3}
-  Open: 2024-04-19
-  Author:
-  - University of St. Andrews
 --- !u!4 &322638898 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7441648869455655236, guid: 444c2557c4933a24f8f3b2837d95200f,
@@ -24469,7 +24456,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 4415820405337128638, guid: 15ac18aad61cb3147886441c2b09365e,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 1200111948}
+      addedObject: {fileID: 1200111952}
   m_SourcePrefab: {fileID: 100100000, guid: 15ac18aad61cb3147886441c2b09365e, type: 3}
 --- !u!1001 &847359995
 PrefabInstance:
@@ -34270,7 +34257,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1200111948
+--- !u!114 &1200111952
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -34279,29 +34266,26 @@ MonoBehaviour:
   m_GameObject: {fileID: 1200111941}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e7718f343c8ef14780cd8a9db749f14, type: 3}
+  m_Script: {fileID: 11500000, guid: f017a7e000fa57d4c8748fdc112c2c40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 'Wake: Tales from the Aqualab'
-  Body: 'Wake: Tales from the Aqualab is a 6th-9th grade science game that challenges
-    students with engaging, authentic missions in a variety of ocean-based ecosystems.'
+  Body: "Wake is funded by the NSF DRK-12 grant, \"Collaborative Research: Developing
+    an Online Game to Teach Middle School Students Science Research Practices in
+    the Life Sciences\" to David Gagnon (University of Wisconsin-Madison), Shari
+    Metcalf (Harvard Graduate School of Education), and Ryan Baker (University of
+    Pennsylvania), grant #'s: DRL-1907384, DRL-1907398, and DRL-1907437. In an interview,
+    Sarah Gagnon, creative director at Field Day Lab said, \u201CThis is an important
+    element to our design philosophy \u2014 to reach kids through their imagination.
+    The game includes experiments and all kinds of science, but it also includes
+    a compelling story and dream sequences. We wanted to create a game that explores
+    the wonderful and vast world of terrifying creatures in the deepest parts of
+    the ocean.\u201D In an interview, David Gagnon, director at Field Day Lab said,
+    \u201CIt\u2019s one of a few projects of this size ever attempted. The game has
+    over 50 challenges across a dozen ecosystems with hundreds of individual species.\u201D "
   Status: 0
-  Custom: no
-  Next: {fileID: 6320215028923037986, guid: 35e3a537d3a158247a5e72ce0b83c2d0, type: 3}
-  Question: 'The first kelp forest you visit is Site C: Forested Lagoon. What is
-    the name of the new kelp forest at Site A? '
-  Answer: Rodeo Cove
-  URL: https://fielddaylab.org/play/wake/ci/production/
-  Tags:
-  - House 5
-  Images:
-  - {fileID: 21300000, guid: 9fa69cb4bcfa7404aa2a6ca20bb9f00e, type: 3}
-  - {fileID: 21300000, guid: 5b2adb91a414cf74cbb6c32d6a102522, type: 3}
-  Open: 2024-04-19
-  Author:
-  - David Gagnon
-  - Shari Metcalf
-  - Ryan Baker
+  Custom: 
+  Next: {fileID: 7649599076849097754, guid: 4fa0bc49a958a1e4a90c4aa07f231bd8, type: 3}
 --- !u!1001 &1201723254
 PrefabInstance:
   m_ObjectHideFlags: 0
