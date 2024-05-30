@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 1524867906630607362}
   - component: {fileID: 3448998759440055815}
   - component: {fileID: 4684488538352112593}
-  - component: {fileID: 6320215028923037986}
+  - component: {fileID: 7345039431310259812}
   m_Layer: 0
-  m_Name: Wake Text 2
+  m_Name: AI Image 1
   m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107,7 +107,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6320215028923037986
+--- !u!114 &7345039431310259812
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,34 +116,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1407429534207163380}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f017a7e000fa57d4c8748fdc112c2c40, type: 3}
+  m_Script: {fileID: 11500000, guid: f0596e253f63d0045aef89d30d92f8c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: 'Wake: Tales from the Aqualab'
-  Body: "One real-world phenomena that inspired the design team was the idea of a
-    whale fall, when the carcass of a whale provides a sudden, concentrated food
-    source for deep sea scavengers and decomposers. We developed a game storyline
-    in which arctic scientists request that the player help them find a whale who
-    went missing during migration. The player needs to explore the arctic dive sites
-    to find evidence of where the whale went; what they find is a whale tracking
-    device and a whale fall. As the player gets closer to the exposed bones of the
-    whale, they are swept through to a different dive site, under an ice shelf, thanks
-    to a powerful ocean current. The moment was meant to simultaneously build suspense,
-    create a need for the ship engine upgrade, and expose students to the role of
-    currents in moving nutrients through the ocean. During multiple playthroughs
-    with students, cries of, \u201CWhat\u2019s happening?!\u201D or \u201COh no,
-    oh no, oh no!\u201D could be heard as the students experienced the impact of
-    the current on their sub. What begins as a simple task of finding the whale grows
-    into a line of inquiry. One player recounted how, \u201CThere was like multiple
-    jobs all surrounding one whale, so you got to get really into it. First the whale\u2019s
-    missing, then you find the whale. Then you see that the whale\u2019s dead, see
-    what\u2019s eating it, why type thing, then it all connects.\u201D While many
-    students often see science courses as a set of disconnected tasks and facts,
-    Wake! was able to engage them in a way that demonstrates that the work scientists
-    do all connects. "
+  Title: AI Imagery as Analysis
+  Body: 'During development, images, like the ones below, were generated and we have
+    a live video call or chat on Slack to discuss how these images represent or not
+    what the findings  are. This set of images were not used but inspire other ones:'
   Status: 0
   Custom: 
-  Next: {fileID: 7649599076849097754, guid: 4fa0bc49a958a1e4a90c4aa07f231bd8, type: 3}
+  Next: {fileID: 0}
+  Images:
+  - {fileID: 21300000, guid: 82686bd4fd2710e478f3b5125088d48e, type: 3}
+  - {fileID: 21300000, guid: d098800ce187c9a4b8c81dc1695de565, type: 3}
+  - {fileID: 21300000, guid: b1a84f974b64c524f8a997054a2a6b31, type: 3}
+  - {fileID: 21300000, guid: 878638408f3901747805f4c2dc8d5ee7, type: 3}
 --- !u!1 &7165364373610784779
 GameObject:
   m_ObjectHideFlags: 0
