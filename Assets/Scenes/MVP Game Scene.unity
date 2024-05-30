@@ -32097,24 +32097,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2f04b17976b54b74d981f094b3ff1c82, type: 3}
---- !u!114 &1135401634 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 7649599076849097754, guid: 4fa0bc49a958a1e4a90c4aa07f231bd8,
-    type: 3}
-  m_PrefabInstance: {fileID: 3107625417101649842}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e7718f343c8ef14780cd8a9db749f14, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!4 &1135401638 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 5026700991546404566, guid: 4fa0bc49a958a1e4a90c4aa07f231bd8,
-    type: 3}
-  m_PrefabInstance: {fileID: 3107625417101649842}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1137513681
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -38406,7 +38388,7 @@ MonoBehaviour:
   Body: This is Text
   Status: 0
   Custom: 
-  Next: {fileID: 1135401634}
+  Next: {fileID: 0}
 --- !u!65 &1341818887
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -52185,7 +52167,6 @@ Transform:
   m_Children:
   - {fileID: 1655603345}
   - {fileID: 1341818885}
-  - {fileID: 1135401638}
   - {fileID: 1925222840}
   - {fileID: 1694291781}
   - {fileID: 1195243020}
@@ -62699,98 +62680,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 118877055}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 50.011}
---- !u!1001 &3107625417101649842
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    serializedVersion: 3
-    m_TransformParent: {fileID: 1742194126}
-    m_Modifications:
-    - target: {fileID: 1387603370683075016, guid: 4fa0bc49a958a1e4a90c4aa07f231bd8,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 5b73f180d76738347aaab094d2cb0386,
-        type: 3}
-    - target: {fileID: 5026700991546404566, guid: 4fa0bc49a958a1e4a90c4aa07f231bd8,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -0.44
-      objectReference: {fileID: 0}
-    - target: {fileID: 5026700991546404566, guid: 4fa0bc49a958a1e4a90c4aa07f231bd8,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 3.73
-      objectReference: {fileID: 0}
-    - target: {fileID: 5026700991546404566, guid: 4fa0bc49a958a1e4a90c4aa07f231bd8,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0.68
-      objectReference: {fileID: 0}
-    - target: {fileID: 5026700991546404566, guid: 4fa0bc49a958a1e4a90c4aa07f231bd8,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.8872795
-      objectReference: {fileID: 0}
-    - target: {fileID: 5026700991546404566, guid: 4fa0bc49a958a1e4a90c4aa07f231bd8,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0.014843354
-      objectReference: {fileID: 0}
-    - target: {fileID: 5026700991546404566, guid: 4fa0bc49a958a1e4a90c4aa07f231bd8,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0.18538648
-      objectReference: {fileID: 0}
-    - target: {fileID: 5026700991546404566, guid: 4fa0bc49a958a1e4a90c4aa07f231bd8,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0.42207417
-      objectReference: {fileID: 0}
-    - target: {fileID: 5026700991546404566, guid: 4fa0bc49a958a1e4a90c4aa07f231bd8,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 7.478
-      objectReference: {fileID: 0}
-    - target: {fileID: 5026700991546404566, guid: 4fa0bc49a958a1e4a90c4aa07f231bd8,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 20.148
-      objectReference: {fileID: 0}
-    - target: {fileID: 5026700991546404566, guid: 4fa0bc49a958a1e4a90c4aa07f231bd8,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: -49.55
-      objectReference: {fileID: 0}
-    - target: {fileID: 7649599076849097754, guid: 4fa0bc49a958a1e4a90c4aa07f231bd8,
-        type: 3}
-      propertyPath: Images.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300000, guid: 9fa69cb4bcfa7404aa2a6ca20bb9f00e,
-        type: 3}
-    - target: {fileID: 7649599076849097754, guid: 4fa0bc49a958a1e4a90c4aa07f231bd8,
-        type: 3}
-      propertyPath: Images.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300000, guid: 5b2adb91a414cf74cbb6c32d6a102522,
-        type: 3}
-    - target: {fileID: 8868644900045526568, guid: 4fa0bc49a958a1e4a90c4aa07f231bd8,
-        type: 3}
-      propertyPath: m_Name
-      value: 'Wake: Tales from the Aqualab Node'
-      objectReference: {fileID: 0}
-    - target: {fileID: 8868644900045526568, guid: 4fa0bc49a958a1e4a90c4aa07f231bd8,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-    m_RemovedGameObjects:
-    - {fileID: 7907403858306908270, guid: 4fa0bc49a958a1e4a90c4aa07f231bd8, type: 3}
-    m_AddedGameObjects: []
-    m_AddedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4fa0bc49a958a1e4a90c4aa07f231bd8, type: 3}
 --- !u!1 &3414313557276632937
 GameObject:
   m_ObjectHideFlags: 0
