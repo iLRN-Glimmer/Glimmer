@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4684488538352112593}
   - component: {fileID: 6320215028923037986}
   m_Layer: 0
-  m_Name: Wake Text 1
+  m_Name: Wake Text 2
   m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -120,11 +120,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: 'Wake: Tales from the Aqualab'
-  Body: 'Wake is funded by the NSF DRK-12 grant, "Collaborative Research: Developing
-    an Online Game to Teach Middle School Students Science Research Practices in
-    the Life Sciences" to David Gagnon (University of Wisconsin-Madison), Shari Metcalf
-    (Harvard Graduate School of Education), and Ryan Baker (University of Pennsylvania),
-    grant #''s: DRL-1907384, DRL-1907398, and DRL-1907437.'
+  Body: "In an interview, Sarah Gagnon, creative director at Field Day Lab said,
+    \u201CThis is an important element to our design philosophy \u2014 to reach kids
+    through their imagination. The game includes experiments and all kinds of science,
+    but it also includes a compelling story and dream sequences. We wanted to create
+    a game that explores the wonderful and vast world of terrifying creatures in
+    the deepest parts of the ocean.\u201D"
   Status: 0
   Custom: 
   Next: {fileID: 0}
