@@ -122,7 +122,7 @@ MonoBehaviour:
   Title: 'Wake: Tales from the Aqualab'
   Body: 'Wake: Tales from the Aqualab is a 6th-9th grade science game that challenges
     students with engaging, authentic missions in a variety of ocean-based ecosystems.'
-  Status: 1
+  Status: 0
   Custom: no
   Next: {fileID: -3128525735491741142, guid: c615b9c3fd09b2e45b51cc1543608631, type: 3}
   Question: 'The first kelp forest you visit is Site C: Forested Lagoon. What is

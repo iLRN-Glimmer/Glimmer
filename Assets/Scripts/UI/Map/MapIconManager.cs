@@ -19,7 +19,7 @@ public class MapIconManager : MonoBehaviour
         dropdownMenu.onValueChanged.AddListener(DropdownValueChanged);
         
         // Populate the arrays
-        PopulateArrays();
+        //PopulateArrays();
     }
 
     private void OnEnable()
