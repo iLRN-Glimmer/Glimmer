@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4684488538352112593}
   - component: {fileID: 6320215028923037986}
   m_Layer: 0
-  m_Name: Wake Text 1
+  m_Name: Zero Test 3
   m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -119,15 +119,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f017a7e000fa57d4c8748fdc112c2c40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: 'Wake: Tales from the Aqualab'
-  Body: 'Wake is funded by the NSF DRK-12 grant, "Collaborative Research: Developing
-    an Online Game to Teach Middle School Students Science Research Practices in
-    the Life Sciences" to David Gagnon (University of Wisconsin-Madison), Shari Metcalf
-    (Harvard Graduate School of Education), and Ryan Baker (University of Pennsylvania),
-    grant #''s: DRL-1907384, DRL-1907398, and DRL-1907437.'
+  Title: Zero-Waste Lifestyle Training
+  Body: The Tangra team combines very strong technical knowledge with super creative
+    problem-solving and positive attitude with impact-driven mindset. The team has
+    70+ years of technology experience in enterprise software, leading teams, and
+    innovation.
   Status: 0
   Custom: 
-  Next: {fileID: 7649599076849097754, guid: 4fa0bc49a958a1e4a90c4aa07f231bd8, type: 3}
+  Next: {fileID: 0}
 --- !u!1 &7165364373610784779
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &713295001907007284
+--- !u!1 &6047827573503152034
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,56 +8,56 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 2884481562045347996}
-  - component: {fileID: 769705232531810202}
-  - component: {fileID: 2568951600117909422}
+  - component: {fileID: 6774753383936569282}
+  - component: {fileID: 6394940558073051876}
+  - component: {fileID: 4269437104439634680}
   m_Layer: 8
-  m_Name: MapIcon2
+  m_Name: MapIcon1
   m_TagString: MapIcon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &2884481562045347996
+--- !u!224 &6774753383936569282
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 713295001907007284}
-  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_GameObject: {fileID: 6047827573503152034}
+  m_LocalRotation: {x: 0.7071069, y: 0.000000014901159, z: 0.00000008568167, w: 0.70710677}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1559016333318630893}
+  m_Father: {fileID: 5196661242621757068}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 20}
   m_SizeDelta: {x: 2, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &769705232531810202
+--- !u!222 &6394940558073051876
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 713295001907007284}
+  m_GameObject: {fileID: 6047827573503152034}
   m_CullTransparentMesh: 1
---- !u!114 &2568951600117909422
+--- !u!114 &4269437104439634680
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 713295001907007284}
+  m_GameObject: {fileID: 6047827573503152034}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: fd84d3695f201dc4cb19e98004aea113, type: 2}
+  m_Material: {fileID: 2100000, guid: b9d2de2ca3008854d9b4d91a0108a385, type: 2}
   m_Color: {r: 0.12818809, g: 1, b: 0.0745098, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -65,7 +65,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 21300000, guid: 5b73f180d76738347aaab094d2cb0386, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -75,7 +75,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!1 &6043406564857844574
+--- !u!1 &7854481675794575653
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -83,49 +83,49 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1559016333318630893}
-  - component: {fileID: 8858990156674306047}
-  - component: {fileID: 5587613855618072363}
-  - component: {fileID: 1085000162892675343}
-  - component: {fileID: 6837541562253917186}
+  - component: {fileID: 5196661242621757068}
+  - component: {fileID: 1162258135694959973}
+  - component: {fileID: 7691805128921482558}
+  - component: {fileID: 2233851095755565556}
+  - component: {fileID: 8017121277551394032}
   m_Layer: 0
-  m_Name: Bill's Computer Workshop Node
+  m_Name: Bill Text 3
   m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &1559016333318630893
+--- !u!4 &5196661242621757068
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6043406564857844574}
+  m_GameObject: {fileID: 7854481675794575653}
   serializedVersion: 2
   m_LocalRotation: {x: -0.014843354, y: 0.18538648, z: -0.42207417, w: 0.8872795}
-  m_LocalPosition: {x: -1.78, y: 5.48, z: 1.42}
+  m_LocalPosition: {x: -2.523, y: 4.31, z: 1.388}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 2884481562045347996}
+  - {fileID: 6774753383936569282}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 7.478, y: 20.148, z: -49.55}
---- !u!33 &8858990156674306047
+--- !u!33 &1162258135694959973
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6043406564857844574}
-  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &5587613855618072363
+  m_GameObject: {fileID: 7854481675794575653}
+  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &7691805128921482558
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6043406564857844574}
+  m_GameObject: {fileID: 7854481675794575653}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -161,13 +161,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &1085000162892675343
-SphereCollider:
+--- !u!65 &2233851095755565556
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6043406564857844574}
+  m_GameObject: {fileID: 7854481675794575653}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -180,38 +180,25 @@ SphereCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Radius: 0.5
+  m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6837541562253917186
+--- !u!114 &8017121277551394032
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6043406564857844574}
+  m_GameObject: {fileID: 7854481675794575653}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e7718f343c8ef14780cd8a9db749f14, type: 3}
+  m_Script: {fileID: 11500000, guid: f017a7e000fa57d4c8748fdc112c2c40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Title: Bill's Computer Workshop
-  Body: "\u200BThe Educational Virtual Environment Bill\u2019s Computer Workshop
-    focuses on the interaction and operating principle of parts of modern desktop
-    computers. Bill\u2019s Computer Workshop addresses the parts CPU, RAM, hard drive,
-    peripheral devices, and the mainboard. The learning objective is that the students
-    can name and organize the hardware components CPU, RAM, hard drive, input/output
-    control (mainboard), input units, and output units and are able to explain their
-    functions."
+  Body: This immersive approach can be combined with the other unplugged or virtual
+    approaches. Especially when introducing the components and their individual functions
+    with the immersive experience, teachers can add the unplugged classroom computer
+    activity to explain the interactions between the components.
   Status: 0
-  Custom: no
-  Next: {fileID: 8017121277551394032, guid: 58d5d0bffd96d394ba8959beeb6a1142, type: 3}
-  Question: What is the first component you need to fix?
-  Answer: CPU
-  URL: https://andydengel.itch.io/bills-computer-workshop-en
-  Tags:
-  - House 1
-  Images:
-  - {fileID: 21300000, guid: 6c5a3d42e00af9843b4744f6b3b564bf, type: 3}
-  Open: 2024-04-19
-  Author:
-  - Andy Dengel
+  Custom: 
+  Next: {fileID: 0}

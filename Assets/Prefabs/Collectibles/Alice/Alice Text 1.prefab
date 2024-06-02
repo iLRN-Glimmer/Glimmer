@@ -195,22 +195,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: Alice and TomKaT on the paths of OnLIFE Education
-  Body: "The students who worked on this project are primary school teachers and
+  Body: 'The students who worked on this project are primary school teachers and
     work with children and teenagers of different ages. In the academic activity,
     they are mobilized to reflect on how to teach and learn in a highly technological
     context. They explore the potential of digital technologies, artificial intelligence
     and immersive 3D environments for education, while problematizing, through the
     invention of problems, relevant issues of contemporary society present in their
-    cities and also in the schools where they work. The project team was inspired
-    by the actions carried out in the ConectaKaT International Network: \u201CMOVEOnCibricity\u201D
-    and \u201CTomKat in schools\u201D (https://conectakat.com/) Metaverso Spatial
-    was the environment that housed all the experiences acquired during the academic
-    activity \u201CTeaching and Learning in the Digital World\u201D. To build this
-    space, the team explored various digital technologies, such as Google Earth,
-    Discord, Story Jumper, artificial intelligence with ChatGPT and Bing Image Creator.
-    This variety of devices, technologies and digital platforms helped them to carry
-    out the challenges and fulfill the missions, according to the methodology proposed
-    in the academic activity. "
+    cities and also in the schools where they work. '
   Status: 0
   Custom: 
-  Next: {fileID: 7649599076849097754, guid: 4fa0bc49a958a1e4a90c4aa07f231bd8, type: 3}
+  Next: {fileID: 5421167991663603545, guid: cbe5a9deeb047984dab95955d6231d0c, type: 3}

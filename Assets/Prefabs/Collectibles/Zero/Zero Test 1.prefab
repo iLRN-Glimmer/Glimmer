@@ -122,16 +122,10 @@ MonoBehaviour:
   Title: Zero-Waste Lifestyle Training
   Body: "The vision of the Tangra Metaverse Platform team is \u201CTurning virtual
     learning and collaboration into immersive, engaging, and fun experiences. For
-    real!\u201D The Tangra Metverse Platform team deeply cares about: integrity &
-    respect, diversity & inclusion, continuous improvement & education, women in
-    technology. The diverse perspectives and background each of our team members
-    brings propels the flow of creative approaches and innovative solutions. The
-    Tangra team combines very strong technical knowledge with super creative problem-solving
-    and positive attitude with impact-driven mindset. The team has 70+ years of technology
-    experience in enterprise software, leading teams, and innovation. "
+    real!\u201D"
   Status: 0
   Custom: 
-  Next: {fileID: 7649599076849097754, guid: 4fa0bc49a958a1e4a90c4aa07f231bd8, type: 3}
+  Next: {fileID: 5421167991663603545, guid: 34173c6c69b0fb74986172fa748fef41, type: 3}
 --- !u!1 &7165364373610784779
 GameObject:
   m_ObjectHideFlags: 0
