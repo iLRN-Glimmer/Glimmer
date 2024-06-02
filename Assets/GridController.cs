@@ -11,6 +11,9 @@ public class GridController : MonoBehaviour
     public float fadeDist = 3.0f;
     public float transparency = 0.0f;
     public float scalingFactor = 2.5f;
+
+    public string Open;
+    
     void Start()
     {
         mat = GetComponent<Renderer>().material;
@@ -24,6 +27,12 @@ public class GridController : MonoBehaviour
         Color color = mat.GetColor("_Color");
         color.a = transparency;
         mat.SetColor("_Color", color);
+
+        System.DateTime dateTime = System.DateTime.Parse(Open);
+        if (System.DateTime.UtcNow > dateTime)
+        {
+            gameObject.SetActive(false);
+        }
     }
 
     public IEnumerator ShowBoundary()

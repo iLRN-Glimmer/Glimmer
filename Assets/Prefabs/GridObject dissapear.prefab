@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7384127287451286018}
   - component: {fileID: 5115229383510781722}
   m_Layer: 0
-  m_Name: GridObject
+  m_Name: GridObject dissapear
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -124,7 +124,7 @@ MonoBehaviour:
   fadeDist: 3
   transparency: 0
   scalingFactor: 2.5
-  Open: 2025-04-19
+  Open: 2024-04-19
 --- !u!1 &7429693357775255861
 GameObject:
   m_ObjectHideFlags: 0
