@@ -106,6 +106,7 @@ public class VideoPanel : MonoBehaviour
         if (!Next)
         {
             SetStatus();
+            PlayerPrefs.SetInt(VideoTitle.GetComponent<TextMeshProUGUI>().text + "Video", 1);
         }
     }
 

@@ -61145,7 +61145,7 @@ MonoBehaviour:
     went missing during migration. The player explores the arctic dive site and is
     surprised to discover the exposed bones of the whale being consumed by a variety
     of deep sea scavengers and decomposers.
-  Status: 1
+  Status: 0
   Custom: 
   Next: {fileID: 0}
   Images:

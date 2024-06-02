@@ -96,6 +96,7 @@ public class TextPanel : MonoBehaviour
         if (!Next)
         {
             SetStatus();
+            PlayerPrefs.SetInt(TextTitle.GetComponent<TextMeshProUGUI>().text + "Text1", 1);
         }
     }
 

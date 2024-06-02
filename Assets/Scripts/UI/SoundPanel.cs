@@ -102,6 +102,7 @@ public class SoundPanel : MonoBehaviour
         if (!Next)
         {
             SetStatus();
+            PlayerPrefs.SetInt(SoundTitle.GetComponent<TextMeshProUGUI>().text + "Sound", 1);
         }
 
         AudioSource speaker = Sound.transform.GetComponent<AudioSource>();

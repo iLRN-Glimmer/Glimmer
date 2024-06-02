@@ -23,8 +23,8 @@ public class DynamicScrollView : MonoBehaviour
         filterDropdown.onValueChanged.AddListener(FilterInventory);
 
         // Collect objects and populate the scroll view initially
-        CollectObjects();
-        PopulateScrollView(collected);
+        //CollectObjects();
+        //PopulateScrollView(collected);
     }
     
     private void OnEnable() {

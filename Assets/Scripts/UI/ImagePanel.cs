@@ -115,6 +115,7 @@ public class ImagePanel : MonoBehaviour
         UpdateButtonVisibility();
         if(!Next){
             SetStatus();
+            PlayerPrefs.SetInt(ImageTitle.GetComponent<TextMeshProUGUI>().text + "Picture", 1);
         }
         
         Debug.Log("set image");

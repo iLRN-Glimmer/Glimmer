@@ -167,6 +167,7 @@ public class NodePanel : MonoBehaviour
             return;
         }
         SetStatus();
+        PlayerPrefs.SetInt(NodeTitle.GetComponent<TextMeshProUGUI>().text + "Node", 1);
         var canvas = GameObject.Find("PanelsCanvas");
         Next.OpenWindow(canvas);
 

@@ -14,4 +14,8 @@ public class Text1 : Collectible
         temp.SetActive(true);
         temp.transform.Find("TextPanel").gameObject.GetComponent<TextPanel>().setText(Title, Body,Next,this);
     }
+
+    private void Start() {
+        Status = PlayerPrefs.GetInt(Title+"Text1");
+    }
 }
