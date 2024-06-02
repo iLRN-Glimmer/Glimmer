@@ -120,17 +120,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: AI Imagery as Analysis
-  Body: 'Genevieve Smith-Nunes, artist, producer, researcher and Associate lecturer
+  Body: Genevieve Smith-Nunes, artist, producer, researcher and Associate lecturer
     at the University of Roehampton. Her research is a transdisciplinary exploration
     into raising awareness of data ethics using biometrics, classical ballet, and
-    XR. She is an ex ballet dancer, loves sci-fi and kdrama. Alex the developer is
-    a creative technologist and freelancer based in Edinburgh, Scotland. They are
-    passionate about creative coding and knowledge sharing, dance, digital storytelling,
-    and immersive multisensory worlds. Some days, the drive to increase the creativity
-    in the world is what gets them out of bed, some days it''s coffee. '
+    XR. She is an ex ballet dancer, loves sci-fi and kdrama.
   Status: 0
   Custom: 
-  Next: {fileID: 7649599076849097754, guid: 4fa0bc49a958a1e4a90c4aa07f231bd8, type: 3}
+  Next: {fileID: 1570413761746013162, guid: 70fffe18fc7942e489dbc7a026b343bb, type: 3}
 --- !u!1 &7165364373610784779
 GameObject:
   m_ObjectHideFlags: 0
