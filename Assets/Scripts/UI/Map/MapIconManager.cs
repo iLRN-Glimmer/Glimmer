@@ -55,7 +55,7 @@ public class MapIconManager : MonoBehaviour
         foreach (GameObject obj in allObjects)
         {
             /* debugging: Debug.Log(scriptName + " outside"); */
-            //Debug.Log(obj.GetComponent<Collectible>().GetNext() + " " + scriptName);
+            //Debug.Log(obj + " " + scriptName);
             if (scriptName == "Node" && obj.GetComponent<Collectible>().GetNext())
             {
                 //Debug.Log(scriptName + " inside");

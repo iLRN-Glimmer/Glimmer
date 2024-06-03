@@ -9,7 +9,7 @@ using StarterAssets;
 public class ImagePanel : MonoBehaviour
 {
     private GameObject ImageTitle;
-    private GameObject ImageDescription;
+    private GameObject ImageDesc;
     private GameObject Picture;
     private GameObject Parent;
     private List<GameObject> children;
@@ -35,6 +35,7 @@ public class ImagePanel : MonoBehaviour
         children.Add(gameObject);
 
         ImageTitle = transform.Find("ImageTitle").gameObject;
+        ImageDesc = transform.Find("ImageDesc").gameObject;
         Picture = transform.Find("Image").gameObject;
         Parent = transform.parent.gameObject;
         index = 0;
@@ -109,7 +110,7 @@ public class ImagePanel : MonoBehaviour
             NextButton.SetActive(true);
         }
         ImageTitle.GetComponent<TextMeshProUGUI>().text = Title;
-        //ImageDescription.GetComponent<TextMeshProUGUI>().text = Body;
+        ImageDesc.GetComponent<TextMeshProUGUI>().text = Body;
         imageList = images;
         UpdateImage();
         UpdateButtonVisibility();
