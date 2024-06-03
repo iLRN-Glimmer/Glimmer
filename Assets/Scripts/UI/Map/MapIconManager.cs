@@ -19,7 +19,7 @@ public class MapIconManager : MonoBehaviour
         dropdownMenu.onValueChanged.AddListener(DropdownValueChanged);
         
         // Populate the arrays
-        //PopulateArrays();
+        PopulateArrays();
     }
 
     private void OnEnable()
@@ -55,11 +55,12 @@ public class MapIconManager : MonoBehaviour
         foreach (GameObject obj in allObjects)
         {
             /* debugging: Debug.Log(scriptName + " outside"); */
-            if (scriptName == "Node" && obj.GetComponent(scriptName) == null && obj.GetComponent<Collectible>().GetNext())
+            //Debug.Log(obj.GetComponent<Collectible>().GetNext() + " " + scriptName);
+            if (scriptName == "Node" && obj.GetComponent<Collectible>().GetNext())
             {
-                /* debugging: Debug.Log(scriptName + " inside");*/
+                //Debug.Log(scriptName + " inside");
                 // Get all children of the GameObject
-                foreach (Transform childTransform in obj.GetComponent<Collectible>().GetNext().transform)
+                foreach (Transform childTransform in obj.transform)
                 {
                     // each object only has one child - the map icon
                     mapIconChildren.Add(childTransform.gameObject);

@@ -32,4 +32,17 @@ public class Video : Collectible
         temp.SetActive(true);
         temp.transform.Find("VideoPanel").gameObject.GetComponent<VideoPanel>().setVideo(Title, Body, Next,Vid,this);
     }
+
+    private void Start()
+    {
+        if (!Next)
+        {
+            Status = PlayerPrefs.GetInt(Title + "Video");
+        }
+        else
+        {
+            Next.SetStatus(PlayerPrefs.GetInt(Next.GetTitle() + "Node"));
+        }
+
+    }
 }

@@ -16,6 +16,11 @@ public class Text1 : Collectible
     }
 
     private void Start() {
-        Status = PlayerPrefs.GetInt(Title+"Text1");
+        if(!Next){
+            Status = PlayerPrefs.GetInt(Title + "Text1");
+        }else{
+            Next.SetStatus(PlayerPrefs.GetInt(Next.GetTitle() + "Node"));
+        }
+        
     }
 }

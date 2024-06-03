@@ -26,4 +26,17 @@ public class Sound : Collectible
     {
         Audio = audio;
     }
+
+    private void Start()
+    {
+        if (!Next)
+        {
+            Status = PlayerPrefs.GetInt(Title + "Sound");
+        }
+        else
+        {
+            Next.SetStatus(PlayerPrefs.GetInt(Next.GetTitle() + "Node"));
+        }
+
+    }
 }
