@@ -61,6 +61,7 @@ sysinfo.txt
 *.aab
 *.unitypackage
 *.app
+*.br
 WebGL_Builds/
 
 # Crashlytics generated file
