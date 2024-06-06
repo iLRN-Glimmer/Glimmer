@@ -921,6 +921,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Northern Heritage Node
       objectReference: {fileID: 0}
+    - target: {fileID: 3257374286187205661, guid: 3d82ca417f5b1574fbb6a3d8a3f7b06a,
+        type: 3}
+      propertyPath: m_TagString
+      value: Selectable
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects:
@@ -8813,6 +8818,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AI Image
+      objectReference: {fileID: 0}
+    - target: {fileID: 4907749311662192056, guid: 7bfff1c2054240a4e9976ea0a006e732,
+        type: 3}
+      propertyPath: m_TagString
+      value: Selectable
       objectReference: {fileID: 0}
     - target: {fileID: 5715071585287319298, guid: 7bfff1c2054240a4e9976ea0a006e732,
         type: 3}
@@ -18693,6 +18703,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: AI Text
+      objectReference: {fileID: 0}
+    - target: {fileID: 9114735446417243205, guid: b925f8cf47be46f49ab2442519b1f547,
+        type: 3}
+      propertyPath: m_TagString
+      value: Selectable
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -50352,6 +50367,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: AI Node
       objectReference: {fileID: 0}
+    - target: {fileID: 7181654955629456900, guid: f2e7fcd19d6134841b001fda27ae9266,
+        type: 3}
+      propertyPath: m_TagString
+      value: Selectable
+      objectReference: {fileID: 0}
     - target: {fileID: 7557477287693120702, guid: f2e7fcd19d6134841b001fda27ae9266,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -67058,6 +67078,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Northern Heritage Text
+      objectReference: {fileID: 0}
+    - target: {fileID: 4874306498116882781, guid: a65ad7948238eea4abdda8d015cb13ac,
+        type: 3}
+      propertyPath: m_TagString
+      value: Selectable
       objectReference: {fileID: 0}
     - target: {fileID: 5255370103260892135, guid: a65ad7948238eea4abdda8d015cb13ac,
         type: 3}
