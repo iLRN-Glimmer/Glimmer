@@ -63,12 +63,8 @@ namespace StarterAssets
 		private Transform _selection;
 		[SerializeField]
 		private string selectableTag = "Selectable";
-		[SerializeField]
-		private Material highlightMaterial;
-		[SerializeField]
-		private Material defaultMaterial;
 
-		private AudioSource openPanel;
+        private AudioSource openPanel;
 
 		// cinemachine
 		private float _cinemachineTargetPitch;
@@ -83,9 +79,8 @@ namespace StarterAssets
 		private float _jumpTimeoutDelta;
 		private float _fallTimeoutDelta;
 
-	
 #if ENABLE_INPUT_SYSTEM
-		private PlayerInput _playerInput;
+        private PlayerInput _playerInput;
 #endif
 		private CharacterController _controller;
 		private StarterAssetsInputs _input;
@@ -118,20 +113,20 @@ namespace StarterAssets
 		{
 			_controller = GetComponent<CharacterController>();
 			_input = GetComponent<StarterAssetsInputs>();
-#if ENABLE_INPUT_SYSTEM
+			#if ENABLE_INPUT_SYSTEM
 			_playerInput = GetComponent<PlayerInput>();
-#else
+			#else
 			Debug.LogError( "Starter Assets package is missing dependencies. Please use Tools/Starter Assets/Reinstall Dependencies to fix it");
-#endif
+			#endif
 
 			// reset our timeouts on start
 			_jumpTimeoutDelta = JumpTimeout;
 			_fallTimeoutDelta = FallTimeout;
 
-#if !UNITY_EDITOR && UNITY_WEBGL
-        // disable WebGLInput.stickyCursorLock so if the browser unlocks the cursor (with the ESC key) the cursor will unlock in Unity
-        WebGLInput.stickyCursorLock = false;
-#endif
+			#if !UNITY_EDITOR && UNITY_WEBGL
+			// disable WebGLInput.stickyCursorLock so if the browser unlocks the cursor (with the ESC key) the cursor will unlock in Unity
+			WebGLInput.stickyCursorLock = false;
+			#endif
 			// CHANGED 
 			Cursor.lockState = CursorLockMode.None;
 			Cursor.visible = true;
@@ -140,6 +135,15 @@ namespace StarterAssets
 			reticle = GameObject.Find("ReticlePanel");
 			reticle.SetActive(false);
 			openPanel = GameObject.Find("OpenPanelsSound").GetComponent<AudioSource>();
+
+			// set all outlines to disabled and correct parameters
+			GameObject[] selectableObjects = GameObject.FindGameObjectsWithTag(selectableTag);
+			foreach (GameObject go in selectableObjects)
+			{
+				Outline outline = go.GetComponent<Outline>();
+				outline.enabled = false;
+				outline.OutlineMode = Outline.Mode.OutlineVisible;
+			}
 		}
 
 		private void Update()
@@ -158,15 +162,16 @@ namespace StarterAssets
 				GroundedCheck();
 				Move();
 
-				if (_selection != null)
-				{
-					var outline = _selection.GetComponent<Outline>();
-					outline.enabled = false;
-					_selection = null;
-				}
-				var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-				RaycastHit hit;
+				// remove the outline if we aren't looking at the object
+                if (_selection != null && _selection.CompareTag(selectableTag))
+                {
+                    var outline = _selection.GetComponent<Outline>();
+                    outline.enabled = false;
+                    _selection = null;
+                }
 
+                var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+				RaycastHit hit;
 
 				// Set the length of the ray (adjust as needed)
 				float rayLength = 10f;
@@ -178,21 +183,20 @@ namespace StarterAssets
 				{
 					// Debug.Log(hit.collider.gameObject.name);
 					var selection = hit.transform;
+
+					// draw outline around the object when we are looking at it
 					if (selection.CompareTag(selectableTag))
 					{
-						var outline = selection.GetComponent<Outline>();
+						Outline outline = selection.GetComponent<Outline>();
 						if (outline != null)
 						{
 							outline.enabled = true;
 						}
 						_selection = selection;
 					}
-
 				}
-
-
-
-				if (Input.GetMouseButtonDown(0) && _selection)
+                
+                if (Input.GetMouseButtonDown(0) && _selection)
 				{
 					_selection.gameObject.GetComponent<Collectible>().OpenWindow(canvas);
 					Cursor.lockState = CursorLockMode.None;
@@ -202,10 +206,7 @@ namespace StarterAssets
 					reticle.SetActive(false);
 					openPanel.Play();
 				}
-
-				
 			}
-			
 		}
 
 		private void LateUpdate()
@@ -213,7 +214,6 @@ namespace StarterAssets
 			if(!freeze){
 				CameraRotation();
 			}
-			
 		}
 
 		private void GroundedCheck()
