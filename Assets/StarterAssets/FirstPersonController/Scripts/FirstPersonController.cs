@@ -160,8 +160,8 @@ namespace StarterAssets
 
 				if (_selection != null)
 				{
-					var selectionRenderer = _selection.GetComponent<Renderer>();
-					selectionRenderer.material = defaultMaterial;
+					var outline = _selection.GetComponent<Outline>();
+					outline.enabled = false;
 					_selection = null;
 				}
 				var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
@@ -180,10 +180,10 @@ namespace StarterAssets
 					var selection = hit.transform;
 					if (selection.CompareTag(selectableTag))
 					{
-						var selectionRenderer = selection.GetComponent<Renderer>();
-						if (selectionRenderer != null)
+						var outline = selection.GetComponent<Outline>();
+						if (outline != null)
 						{
-							selectionRenderer.material = highlightMaterial;
+							outline.enabled = true;
 						}
 						_selection = selection;
 					}
