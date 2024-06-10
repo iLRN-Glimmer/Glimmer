@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f017a7e000fa57d4c8748fdc112c2c40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: 'Wake: Tales from the Aqualab'
+  Title: Epic Educational Game with Ecosystems
   Body: "In an interview, David Gagnon, director at Field Day Lab said, \u201CIt\u2019s
     one of a few projects of this size ever attempted. The game has over 50 challenges
     across a dozen ecosystems with hundreds of individual species.\u201D"

@@ -53,7 +53,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d67951259080f95469dafe87c9651f4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: 'Wake: Tales from the Aqualab'
+  Title: 'Wake: Aqualab Science Adventure Game'
   Body: 'Play as a young scientist faced with scientific challenges across multiple
     oceanic ecosystems. Made in partnership with Harvard, and the Penn Center for
     Learning Analytics. Wake: Tales from the Aqualab targets the NGSS science practices

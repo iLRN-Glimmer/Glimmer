@@ -52,6 +52,14 @@ public class GridController : MonoBehaviour
         }
     }
 
+    public IEnumerator HideBoundary()
+    {
+        Color color = mat.GetColor("_Color");
+        color.a = 0f;
+        mat.SetColor("_Color", color);
+        yield return null;
+    }
+
     // void Update()
     // {
     //     Collider playerCollider = player.GetComponent<Collider>();

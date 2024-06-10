@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f017a7e000fa57d4c8748fdc112c2c40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: AI Imagery as Analysis
+  Title: Ontological Kaleidoscope of Visual Data
   Body: The inspiration for the project was to be able to represent findings in a
     non-text format. We interpret the written text also based on our lived experience,
     the choice of words are important and convey meaning. The visual gives space

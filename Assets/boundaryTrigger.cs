@@ -15,5 +15,6 @@ public class boundaryTrigger : MonoBehaviour
     {
         Debug.Log("Exited Trigger");
         StopCoroutine(boundaryCoroutine);
+        StartCoroutine(objectToDissolve.GetComponent<GridController>().HideBoundary());
     }
 }

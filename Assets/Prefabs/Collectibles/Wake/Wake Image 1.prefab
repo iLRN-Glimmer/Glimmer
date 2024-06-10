@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0596e253f63d0045aef89d30d92f8c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: 'Wake: Tales from the Aqualab'
+  Title: Whale Fall Mystery Exploration Game
   Body: One real-world phenomena that inspired the design team was the idea of a
     whale fall, when the carcass of a whale provides a sudden, concentrated food
     source. Arctic scientists request that the player help them find a whale who

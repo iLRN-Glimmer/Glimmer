@@ -29,14 +29,15 @@ public class Sound : Collectible
 
     private void Start()
     {
-        if (!Next)
-        {
-            Status = PlayerPrefs.GetInt(Title + "Sound");
-        }
-        else
-        {
-            Next.SetStatus(PlayerPrefs.GetInt(Next.GetTitle() + "Node"));
-        }
+        Status = 0;
+        //if (!Next)
+        //{
+        //    Status = PlayerPrefs.GetInt(Title + "Sound");
+        //}
+        //else
+        //{
+        //    Next.SetStatus(PlayerPrefs.GetInt(Next.GetTitle() + "Node"));
+        //}
 
     }
 }
