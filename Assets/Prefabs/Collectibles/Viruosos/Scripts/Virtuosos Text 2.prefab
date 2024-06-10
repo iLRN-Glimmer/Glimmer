@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f017a7e000fa57d4c8748fdc112c2c40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: 'Virtuosos: Demo'
+  Title: 'Virtuosos: Advanced Rhythm Game Design'
   Body: 'Technical and Design Aspects: The game features meticulously crafted levels,
     character animations, and an intricate beatmap system using MIDI files for note
     spawning. It includes advanced audio management, input detection, and latency

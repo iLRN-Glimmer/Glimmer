@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1407429534207163380
+--- !u!1 &4807699083923020814
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,49 +8,49 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 6015002522018572178}
-  - component: {fileID: 1524867906630607362}
-  - component: {fileID: 3448998759440055815}
-  - component: {fileID: 4684488538352112593}
-  - component: {fileID: 7345039431310259812}
+  - component: {fileID: 1148061364936615814}
+  - component: {fileID: 890208949287245435}
+  - component: {fileID: 6695333597505871842}
+  - component: {fileID: 2725346323228981957}
+  - component: {fileID: 1570413761746013162}
   m_Layer: 0
-  m_Name: AI Image 1
+  m_Name: AI Imagery as Analysis Node
   m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &6015002522018572178
+--- !u!4 &1148061364936615814
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407429534207163380}
+  m_GameObject: {fileID: 4807699083923020814}
   serializedVersion: 2
   m_LocalRotation: {x: -0.014843354, y: 0.18538648, z: -0.42207417, w: 0.8872795}
-  m_LocalPosition: {x: -2.523, y: 4.31, z: 1.388}
+  m_LocalPosition: {x: -1.219, y: 4.752, z: 1.109}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 7445238214038780564}
+  - {fileID: 4869331104549735316}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 7.478, y: 20.148, z: -49.55}
---- !u!33 &1524867906630607362
+--- !u!33 &890208949287245435
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407429534207163380}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!23 &3448998759440055815
+  m_GameObject: {fileID: 4807699083923020814}
+  m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &6695333597505871842
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407429534207163380}
+  m_GameObject: {fileID: 4807699083923020814}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -86,13 +86,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!65 &4684488538352112593
-BoxCollider:
+--- !u!135 &2725346323228981957
+SphereCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407429534207163380}
+  m_GameObject: {fileID: 4807699083923020814}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -105,33 +105,48 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Radius: 0.5
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &7345039431310259812
+--- !u!114 &1570413761746013162
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1407429534207163380}
+  m_GameObject: {fileID: 4807699083923020814}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f0596e253f63d0045aef89d30d92f8c2, type: 3}
+  m_Script: {fileID: 11500000, guid: 5e7718f343c8ef14780cd8a9db749f14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: Images Inspiring Further Development
-  Body: 'During development, images, like the ones below, were generated and we have
-    a live video call or chat on Slack to discuss how these images represent or not
-    what the findings  are. This set of images were not used but inspire other ones:'
+  Title: AI Imagery as Analysis
+  Body: Explore AI at the intersection of visual arts and data analysis with a dozen
+    pieces of AI-generated artwork representing data visualizations that effectively
+    emphasize intricate patterns and correlations that might elude detection in conventional
+    data depictions and enabling educational researchers to communicate their findings
+    in innovative ways, diverging from traditional print-based dissemination, and
+    appealing to a broader audience.
   Status: 0
-  Custom: 
-  Next: {fileID: 0}
+  Custom: no
+  Next: {fileID: 6320215028923037986, guid: f874860058a75f14f856013527a82c62, type: 3}
+  Question: 'In thinking about the ethical implications of sharing personal biometric
+    information, one question to ask is: Are __________ something deeply personal?'
+  Answer: brainwaves
+  URL: https://www.spatial.io/s/AI-magery-as-analysis-63da7700ac31fab2ef98c693?share=6139665159883199232
+  Tags:
+  - House 3
+  - House 5
+  - House 9
   Images:
-  - {fileID: 21300000, guid: 82686bd4fd2710e478f3b5125088d48e, type: 3}
-  - {fileID: 21300000, guid: d098800ce187c9a4b8c81dc1695de565, type: 3}
-  - {fileID: 21300000, guid: b1a84f974b64c524f8a997054a2a6b31, type: 3}
-  - {fileID: 21300000, guid: 878638408f3901747805f4c2dc8d5ee7, type: 3}
---- !u!1 &7165364373610784779
+  - {fileID: 21300000, guid: fa2d9653373092244bb5a6c024d51825, type: 3}
+  - {fileID: 21300000, guid: f1c63c01279976a489be863f6f1863e3, type: 3}
+  - {fileID: 21300000, guid: a7eb5ae403f28e347834d704753bee14, type: 3}
+  Open: 2024-04-19
+  Author:
+  - Genevieve Smith-Nunes
+  - Alex
+  Head: {fileID: 6320215028923037986, guid: 83f968388d577c341a0282086ce4a95d, type: 3}
+--- !u!1 &4982520195169091851
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -139,56 +154,56 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 7445238214038780564}
-  - component: {fileID: 7459783427809430090}
-  - component: {fileID: 8262726419030108285}
+  - component: {fileID: 4869331104549735316}
+  - component: {fileID: 5946056719730490263}
+  - component: {fileID: 1774691574973136446}
   m_Layer: 8
-  m_Name: MapIcon1
+  m_Name: MapIcon2
   m_TagString: MapIcon
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &7445238214038780564
+--- !u!224 &4869331104549735316
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7165364373610784779}
-  m_LocalRotation: {x: 0.7071069, y: 0.000000014901159, z: 0.00000008568167, w: 0.70710677}
+  m_GameObject: {fileID: 4982520195169091851}
+  m_LocalRotation: {x: 0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 6015002522018572178}
+  m_Father: {fileID: 1148061364936615814}
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 20}
   m_SizeDelta: {x: 2, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!222 &7459783427809430090
+--- !u!222 &5946056719730490263
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7165364373610784779}
+  m_GameObject: {fileID: 4982520195169091851}
   m_CullTransparentMesh: 1
---- !u!114 &8262726419030108285
+--- !u!114 &1774691574973136446
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7165364373610784779}
+  m_GameObject: {fileID: 4982520195169091851}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Material: {fileID: 2100000, guid: b9d2de2ca3008854d9b4d91a0108a385, type: 2}
+  m_Material: {fileID: 2100000, guid: fd84d3695f201dc4cb19e98004aea113, type: 2}
   m_Color: {r: 0.12818809, g: 1, b: 0.0745098, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
@@ -196,7 +211,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 5b73f180d76738347aaab094d2cb0386, type: 3}
+  m_Sprite: {fileID: 0}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 1524867906630607362}
   - component: {fileID: 3448998759440055815}
   - component: {fileID: 4684488538352112593}
-  - component: {fileID: 6320215028923037986}
+  - component: {fileID: 7345039431310259812}
   m_Layer: 0
-  m_Name: AI Text 1
+  m_Name: AI Image 1
   m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -107,7 +107,7 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &6320215028923037986
+--- !u!114 &7345039431310259812
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -116,17 +116,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1407429534207163380}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f017a7e000fa57d4c8748fdc112c2c40, type: 3}
+  m_Script: {fileID: 11500000, guid: f0596e253f63d0045aef89d30d92f8c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: AI Imagery as Analysis
-  Body: Genevieve Smith-Nunes, artist, producer, researcher and Associate lecturer
-    at the University of Roehampton. Her research is a transdisciplinary exploration
-    into raising awareness of data ethics using biometrics, classical ballet, and
-    XR. She is an ex ballet dancer, loves sci-fi and kdrama.
+  Title: Inspirational Development Images Discussed
+  Body: 'During development, images, like the ones below, were generated and we have
+    a live video call or chat on Slack to discuss how these images represent or not
+    what the findings  are. This set of images were not used but inspire other ones:'
   Status: 0
   Custom: 
-  Next: {fileID: 1570413761746013162, guid: 70fffe18fc7942e489dbc7a026b343bb, type: 3}
+  Next: {fileID: 0}
+  Images:
+  - {fileID: 21300000, guid: 82686bd4fd2710e478f3b5125088d48e, type: 3}
+  - {fileID: 21300000, guid: d098800ce187c9a4b8c81dc1695de565, type: 3}
+  - {fileID: 21300000, guid: b1a84f974b64c524f8a997054a2a6b31, type: 3}
+  - {fileID: 21300000, guid: 878638408f3901747805f4c2dc8d5ee7, type: 3}
 --- !u!1 &7165364373610784779
 GameObject:
   m_ObjectHideFlags: 0

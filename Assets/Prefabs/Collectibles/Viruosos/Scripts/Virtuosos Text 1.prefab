@@ -44,7 +44,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f017a7e000fa57d4c8748fdc112c2c40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: 'Virtuosos: Demo'
+  Title: 'Virtuosos: Rhythm JRPG Adventure'
   Body: 'Game Overview: "Virtuosos" is a captivating rhythm JRPG that combines immersive
     musical performance gameplay with rich storytelling elements, drawing inspiration
     from games like Muse Dash and NieR: Automata and anime such as Made in Abyss

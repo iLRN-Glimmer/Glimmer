@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 2233851095755565556}
   - component: {fileID: 8017121277551394032}
   m_Layer: 0
-  m_Name: Alice Text 2
+  m_Name: Alice Text 4
   m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -194,10 +194,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f017a7e000fa57d4c8748fdc112c2c40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: Alice and TomKaT on the paths of OnLIFE Education
-  Body: "The project team was inspired by the actions carried out in the ConectaKaT
-    International Network: \u201CMOVEOnCibricity\u201D and \u201CTomKat in schools\u201D
-    (https://conectakat.com/) "
+  Title: 'Interventionist Pedagogy: Gamified Learning'
+  Body: "The team\u2019s methodological approach was influenced by the cartographic
+    research method, adopting an interventionist pedagogical approach. This approach
+    is linked to the creation of games, similar to the Hero\u2019s Journey, with
+    narratives, characters, challenges and missions, and is also aligned with the
+    methodology of gamified learning projects (in portuguese, projetos de aprendizagem
+    gamificados PAG). "
   Status: 0
   Custom: 
   Next: {fileID: 0}

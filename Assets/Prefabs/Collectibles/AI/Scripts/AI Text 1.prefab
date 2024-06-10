@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4684488538352112593}
   - component: {fileID: 6320215028923037986}
   m_Layer: 0
-  m_Name: Zero Test 1
+  m_Name: AI Text 1
   m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -119,13 +119,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f017a7e000fa57d4c8748fdc112c2c40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: Zero-Waste Lifestyle Training
-  Body: "The vision of the Tangra Metaverse Platform team is \u201CTurning virtual
-    learning and collaboration into immersive, engaging, and fun experiences. For
-    real!\u201D"
+  Title: Genevieve Smith-Nunes
+  Body: Genevieve Smith-Nunes, artist, producer, researcher and Associate lecturer
+    at the University of Roehampton. Her research is a transdisciplinary exploration
+    into raising awareness of data ethics using biometrics, classical ballet, and
+    XR. She is an ex ballet dancer, loves sci-fi and kdrama.
   Status: 0
   Custom: 
-  Next: {fileID: 5421167991663603545, guid: 34173c6c69b0fb74986172fa748fef41, type: 3}
+  Next: {fileID: 1570413761746013162, guid: 70fffe18fc7942e489dbc7a026b343bb, type: 3}
 --- !u!1 &7165364373610784779
 GameObject:
   m_ObjectHideFlags: 0

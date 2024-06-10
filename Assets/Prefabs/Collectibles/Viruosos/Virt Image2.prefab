@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1529297277881046691
+--- !u!1 &7420130308796436557
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,51 +8,50 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4676025675595084869}
-  - component: {fileID: 1596637949797179113}
-  - component: {fileID: 7833381964319380459}
-  - component: {fileID: 7558781669822730946}
-  - component: {fileID: 6923667618915111750}
-  - component: {fileID: 4672997951414013621}
-  - component: {fileID: -4532218637611291721}
+  - component: {fileID: 916447448595873128}
+  - component: {fileID: 9098545312472582396}
+  - component: {fileID: 6430536202086586664}
+  - component: {fileID: 2450515041986783334}
+  - component: {fileID: 3819434828538930284}
+  - component: {fileID: 2895476799193308469}
   m_Layer: 0
-  m_Name: Northern Heritage Node
+  m_Name: Virt Image2
   m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 16
   m_IsActive: 1
---- !u!4 &4676025675595084869
+--- !u!4 &916447448595873128
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529297277881046691}
+  m_GameObject: {fileID: 7420130308796436557}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.43311164, y: -0.8893536, z: 0.0074335206, w: 0.14631952}
-  m_LocalPosition: {x: -12.40959, y: -14.535503, z: 9.564175}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.0667691, y: -0.69468915, z: -0.068521224, w: 0.7129191}
+  m_LocalPosition: {x: 3.1912994, y: -0.8656001, z: -0.25310135}
+  m_LocalScale: {x: 1.6000001, y: 1.6, z: 1.6000001}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 23312626408361562}
+  - {fileID: 2943693754478925064}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &1596637949797179113
+  m_LocalEulerAnglesHint: {x: -10.976, y: -88.488, z: -0.288}
+--- !u!33 &9098545312472582396
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529297277881046691}
-  m_Mesh: {fileID: 5779493012461038546, guid: a42fdb67c082f514dba64131357ca66a, type: 3}
---- !u!23 &7833381964319380459
+  m_GameObject: {fileID: 7420130308796436557}
+  m_Mesh: {fileID: 4300000, guid: 1a1f9e492fa6f854b859aac3830906f0, type: 3}
+--- !u!23 &6430536202086586664
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529297277881046691}
+  m_GameObject: {fileID: 7420130308796436557}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -66,14 +65,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a7862d5615928c34e868320de65c2777, type: 2}
-  - {fileID: 2100000, guid: d07dc9a550022a74792d211f343e0b16, type: 2}
-  - {fileID: 2100000, guid: 4ea8e2de4ac6b564c98a36f67a2ad64f, type: 2}
-  - {fileID: 2100000, guid: 2a9bcab9060d28d468fc3c4d93775e7d, type: 2}
-  - {fileID: 2100000, guid: fb045539f4b18a242aca8e57e88c5cd7, type: 2}
-  - {fileID: 2100000, guid: 64a4684ba67ced04c811f6174e678a22, type: 2}
-  - {fileID: 2100000, guid: 3b20fc9e84b968641b7312bdcdd1ffd8, type: 2}
-  - {fileID: 2100000, guid: 48b31daa83ddb854fadd9402702394e4, type: 2}
+  - {fileID: 2100000, guid: 03ddc7e460b33402eb7640fab3881ac9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -85,7 +77,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -95,13 +87,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7558781669822730946
+--- !u!64 &2450515041986783334
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529297277881046691}
+  m_GameObject: {fileID: 7420130308796436557}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -116,14 +108,14 @@ MeshCollider:
   serializedVersion: 5
   m_Convex: 1
   m_CookingOptions: 30
-  m_Mesh: {fileID: 5779493012461038546, guid: a42fdb67c082f514dba64131357ca66a, type: 3}
---- !u!114 &6923667618915111750
+  m_Mesh: {fileID: 4300000, guid: 1a1f9e492fa6f854b859aac3830906f0, type: 3}
+--- !u!114 &3819434828538930284
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529297277881046691}
+  m_GameObject: {fileID: 7420130308796436557}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
@@ -135,164 +127,72 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!82 &4672997951414013621
-AudioSource:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529297277881046691}
-  m_Enabled: 1
-  serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: ab50864ae5c0fd14bab7f7c614f1255e, type: 3}
-  m_PlayOnAwake: 1
-  m_Volume: 0.5
-  m_Pitch: 1
-  Loop: 1
-  Mute: 0
-  Spatialize: 0
-  SpatializePostEffects: 0
-  Priority: 128
-  DopplerLevel: 1
-  MinDistance: 1
-  MaxDistance: 8.5
-  Pan2D: 0
-  rolloffMode: 1
-  BypassEffects: 0
-  BypassListenerEffects: 0
-  BypassReverbZones: 0
-  rolloffCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    - serializedVersion: 3
-      time: 1
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  panLevelCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  spreadCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 0
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
-  reverbZoneMixCustomCurve:
-    serializedVersion: 2
-    m_Curve:
-    - serializedVersion: 3
-      time: 0
-      value: 1
-      inSlope: 0
-      outSlope: 0
-      tangentMode: 0
-      weightedMode: 0
-      inWeight: 0.33333334
-      outWeight: 0.33333334
-    m_PreInfinity: 2
-    m_PostInfinity: 2
-    m_RotationOrder: 4
---- !u!114 &-4532218637611291721
+--- !u!114 &2895476799193308469
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529297277881046691}
+  m_GameObject: {fileID: 7420130308796436557}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f017a7e000fa57d4c8748fdc112c2c40, type: 3}
+  m_Script: {fileID: 11500000, guid: f0596e253f63d0045aef89d30d92f8c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: Explore Virtual Northern Heritage Network
-  Body: "Virtual St. Kilda is part of a larger site called the Northern Heritage
-    Network (https://northernheritage.org) with many virtual museum exhibits such
-    as Virtual Orkney North Isles, Seinn Spioradail, Skri\xF0uklaustur Monastery,
-    and Uist."
+  Title: Drummer Concept Art
+  Body: "The integration of characters was challenging and engaging, requiring collaboration
+    with various team members including concept artists, lead artists, and the writer.
+    Together, we embarked on an extensive creative process, aligning the character
+    design with the game\u2019s story, art style, and gameplay mechanics. This intricate
+    task demanded careful consideration of every detail, resulting in the development
+    of compelling and well-integrated characters. "
   Status: 0
   Custom: 
-  Next: {fileID: 6132312195907708226, guid: a4c8a90e86e6f584f932685775c05cb3, type: 3}
---- !u!1001 &9177923531785430536
+  Next: {fileID: 0}
+  Images:
+  - {fileID: 21300000, guid: 1b68ebbf8581f504b9f6c461f75ef4e1, type: 3}
+--- !u!1001 &6329320788488781146
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 4676025675595084869}
+    m_TransformParent: {fileID: 916447448595873128}
     m_Modifications:
     - target: {fileID: 1987466220906589181, guid: e991e5166f293084d8e25e903e82632d,
         type: 3}
       propertyPath: m_Name
-      value: Map Icon Sparkle
+      value: Map Icon Sparkle (4)
       objectReference: {fileID: 0}
     - target: {fileID: 9154791538820048978, guid: e991e5166f293084d8e25e903e82632d,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.2
+      value: 0.11612
       objectReference: {fileID: 0}
     - target: {fileID: 9154791538820048978, guid: e991e5166f293084d8e25e903e82632d,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.19999996
+      value: 0.11612
       objectReference: {fileID: 0}
     - target: {fileID: 9154791538820048978, guid: e991e5166f293084d8e25e903e82632d,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.2
+      value: 0.11612
       objectReference: {fileID: 0}
     - target: {fileID: 9154791538820048978, guid: e991e5166f293084d8e25e903e82632d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: -0.12
       objectReference: {fileID: 0}
     - target: {fileID: 9154791538820048978, guid: e991e5166f293084d8e25e903e82632d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 38.52
+      value: 24.47
       objectReference: {fileID: 0}
     - target: {fileID: 9154791538820048978, guid: e991e5166f293084d8e25e903e82632d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 4.75
       objectReference: {fileID: 0}
     - target: {fileID: 9154791538820048978, guid: e991e5166f293084d8e25e903e82632d,
         type: 3}
@@ -334,9 +234,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e991e5166f293084d8e25e903e82632d, type: 3}
---- !u!4 &23312626408361562 stripped
+--- !u!4 &2943693754478925064 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9154791538820048978, guid: e991e5166f293084d8e25e903e82632d,
     type: 3}
-  m_PrefabInstance: {fileID: 9177923531785430536}
+  m_PrefabInstance: {fileID: 6329320788488781146}
   m_PrefabAsset: {fileID: 0}

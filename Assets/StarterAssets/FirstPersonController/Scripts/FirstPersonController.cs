@@ -206,7 +206,19 @@ namespace StarterAssets
 					reticle.SetActive(false);
 					openPanel.Play();
 				}
-			}
+
+                if (Input.GetKeyDown(KeyCode.Backslash))
+                {
+                    // Find all objects with the tag "Wall"
+                    GameObject[] walls = GameObject.FindGameObjectsWithTag("Wall");
+
+                    // Loop through each wall object and disable it
+                    foreach (GameObject wall in walls)
+                    {
+                        wall.SetActive(false);
+                    }
+                }
+            }
 		}
 
 		private void LateUpdate()

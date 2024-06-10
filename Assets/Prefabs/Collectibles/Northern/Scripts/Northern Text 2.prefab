@@ -194,10 +194,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f017a7e000fa57d4c8748fdc112c2c40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: Northern Heritage Network Geographic Focus
+  Title: Geographic Focus
   Body: 'The geographical focus of the Northern Heritage Network is: Finland, Sweden,
     Norway, Denmark, Scotland, Island of Ireland, Faroe Islands, Iceland, Greenland
     and the Baltic countries.'
-  Status: 0
+  Status: 1
   Custom: 
   Next: {fileID: 0}

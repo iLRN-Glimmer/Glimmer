@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 2233851095755565556}
   - component: {fileID: 8017121277551394032}
   m_Layer: 0
-  m_Name: Alice Text 4
+  m_Name: Alice Text 5
   m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -194,13 +194,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f017a7e000fa57d4c8748fdc112c2c40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: Alice and TomKaT on the paths of OnLIFE Education
-  Body: "The team\u2019s methodological approach was influenced by the cartographic
-    research method, adopting an interventionist pedagogical approach. This approach
-    is linked to the creation of games, similar to the Hero\u2019s Journey, with
-    narratives, characters, challenges and missions, and is also aligned with the
-    methodology of gamified learning projects (in portuguese, projetos de aprendizagem
-    gamificados PAG). "
+  Title: 'OnLIFE Education: Cartographic Gamification'
+  Body: 'The objective is to explore cartographic practices in the context of OnLIFE
+    Education, using the metaphor of clues to trace and design routes and progress
+    in gamification. Tracking (exploring the terrain), tapping (starting the selection),
+    pausing (zooming) and attentive recognition (understanding the context of the
+    missions and their unfolding) are considered achievements, raising the level
+    of experience/knowledge. '
   Status: 0
   Custom: 
   Next: {fileID: 0}

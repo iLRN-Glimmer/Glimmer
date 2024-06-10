@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 4684488538352112593}
   - component: {fileID: 6320215028923037986}
   m_Layer: 0
-  m_Name: Zero Test 3
+  m_Name: AI Text 2
   m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -119,11 +119,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f017a7e000fa57d4c8748fdc112c2c40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: Zero-Waste Lifestyle Training
-  Body: The Tangra team combines very strong technical knowledge with super creative
-    problem-solving and positive attitude with impact-driven mindset. The team has
-    70+ years of technology experience in enterprise software, leading teams, and
-    innovation.
+  Title: 'Alex: Edinburgh Creative Technologist'
+  Body: Alex the developer is a creative technologist and freelancer based in Edinburgh,
+    Scotland. They are passionate about creative coding and knowledge sharing, dance,
+    digital storytelling, and immersive multisensory worlds. Some days, the drive
+    to increase the creativity in the world is what gets them out of bed, some days
+    it's coffee.
   Status: 0
   Custom: 
   Next: {fileID: 0}

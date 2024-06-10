@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &1529297277881046691
+--- !u!1 &5411833562998175320
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,51 +8,51 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4676025675595084869}
-  - component: {fileID: 1596637949797179113}
-  - component: {fileID: 7833381964319380459}
-  - component: {fileID: 7558781669822730946}
-  - component: {fileID: 6923667618915111750}
-  - component: {fileID: 4672997951414013621}
-  - component: {fileID: -4532218637611291721}
+  - component: {fileID: 7444486103034391616}
+  - component: {fileID: 1457426630967581989}
+  - component: {fileID: 8626472286523674636}
+  - component: {fileID: 3788595662011848044}
+  - component: {fileID: 5449415546922004825}
+  - component: {fileID: 7101362987147854209}
+  - component: {fileID: 13517154927210588}
   m_Layer: 0
-  m_Name: Northern Heritage Node
+  m_Name: Alice Node
   m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 16
   m_IsActive: 1
---- !u!4 &4676025675595084869
+--- !u!4 &7444486103034391616
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529297277881046691}
+  m_GameObject: {fileID: 5411833562998175320}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.43311164, y: -0.8893536, z: 0.0074335206, w: 0.14631952}
-  m_LocalPosition: {x: -12.40959, y: -14.535503, z: 9.564175}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0.31580248, y: -0.6647487, z: -0.32562438, w: 0.593588}
+  m_LocalPosition: {x: -70.78185, y: 65.44093, z: 44.577156}
+  m_LocalScale: {x: 2.2108998, y: 2.2109, z: 2.2108996}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 23312626408361562}
+  - {fileID: 5056654037410873575}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &1596637949797179113
+  m_LocalEulerAnglesHint: {x: -3.903, y: 70.867, z: -11.1}
+--- !u!33 &1457426630967581989
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529297277881046691}
-  m_Mesh: {fileID: 5779493012461038546, guid: a42fdb67c082f514dba64131357ca66a, type: 3}
---- !u!23 &7833381964319380459
+  m_GameObject: {fileID: 5411833562998175320}
+  m_Mesh: {fileID: 4300000, guid: 8ba121cc307784ad1a169af138386473, type: 3}
+--- !u!23 &8626472286523674636
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529297277881046691}
+  m_GameObject: {fileID: 5411833562998175320}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -66,14 +66,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a7862d5615928c34e868320de65c2777, type: 2}
-  - {fileID: 2100000, guid: d07dc9a550022a74792d211f343e0b16, type: 2}
-  - {fileID: 2100000, guid: 4ea8e2de4ac6b564c98a36f67a2ad64f, type: 2}
-  - {fileID: 2100000, guid: 2a9bcab9060d28d468fc3c4d93775e7d, type: 2}
-  - {fileID: 2100000, guid: fb045539f4b18a242aca8e57e88c5cd7, type: 2}
-  - {fileID: 2100000, guid: 64a4684ba67ced04c811f6174e678a22, type: 2}
-  - {fileID: 2100000, guid: 3b20fc9e84b968641b7312bdcdd1ffd8, type: 2}
-  - {fileID: 2100000, guid: 48b31daa83ddb854fadd9402702394e4, type: 2}
+  - {fileID: 2100000, guid: 03ddc7e460b33402eb7640fab3881ac9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -85,7 +78,7 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -95,13 +88,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &7558781669822730946
+--- !u!64 &3788595662011848044
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529297277881046691}
+  m_GameObject: {fileID: 5411833562998175320}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -114,16 +107,16 @@ MeshCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 5
-  m_Convex: 1
+  m_Convex: 0
   m_CookingOptions: 30
-  m_Mesh: {fileID: 5779493012461038546, guid: a42fdb67c082f514dba64131357ca66a, type: 3}
---- !u!114 &6923667618915111750
+  m_Mesh: {fileID: 4300000, guid: 8ba121cc307784ad1a169af138386473, type: 3}
+--- !u!114 &5449415546922004825
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529297277881046691}
+  m_GameObject: {fileID: 5411833562998175320}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
@@ -135,13 +128,36 @@ MonoBehaviour:
   precomputeOutline: 0
   bakeKeys: []
   bakeValues: []
---- !u!82 &4672997951414013621
+--- !u!114 &7101362987147854209
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5411833562998175320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f017a7e000fa57d4c8748fdc112c2c40, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title: Primary Teachers Innovating Education Tech
+  Body: 'The students who worked on this project are primary school teachers and
+    work with children and teenagers of different ages. In the academic activity,
+    they are mobilized to reflect on how to teach and learn in a highly technological
+    context. They explore the potential of digital technologies, artificial intelligence
+    and immersive 3D environments for education, while problematizing, through the
+    invention of problems, relevant issues of contemporary society present in their
+    cities and also in the schools where they work. '
+  Status: 0
+  Custom: 
+  Next: {fileID: 5421167991663603545, guid: cbe5a9deeb047984dab95955d6231d0c, type: 3}
+--- !u!82 &13517154927210588
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529297277881046691}
+  m_GameObject: {fileID: 5411833562998175320}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
@@ -231,68 +247,48 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &-4532218637611291721
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1529297277881046691}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f017a7e000fa57d4c8748fdc112c2c40, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Title: Explore Virtual Northern Heritage Network
-  Body: "Virtual St. Kilda is part of a larger site called the Northern Heritage
-    Network (https://northernheritage.org) with many virtual museum exhibits such
-    as Virtual Orkney North Isles, Seinn Spioradail, Skri\xF0uklaustur Monastery,
-    and Uist."
-  Status: 0
-  Custom: 
-  Next: {fileID: 6132312195907708226, guid: a4c8a90e86e6f584f932685775c05cb3, type: 3}
---- !u!1001 &9177923531785430536
+--- !u!1001 &4116433445892483253
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 4676025675595084869}
+    m_TransformParent: {fileID: 7444486103034391616}
     m_Modifications:
     - target: {fileID: 1987466220906589181, guid: e991e5166f293084d8e25e903e82632d,
         type: 3}
       propertyPath: m_Name
-      value: Map Icon Sparkle
+      value: Map Icon Sparkle (3)
       objectReference: {fileID: 0}
     - target: {fileID: 9154791538820048978, guid: e991e5166f293084d8e25e903e82632d,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.2
+      value: 0.089602
       objectReference: {fileID: 0}
     - target: {fileID: 9154791538820048978, guid: e991e5166f293084d8e25e903e82632d,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.19999996
+      value: 0.089602
       objectReference: {fileID: 0}
     - target: {fileID: 9154791538820048978, guid: e991e5166f293084d8e25e903e82632d,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.2
+      value: 0.089602
       objectReference: {fileID: 0}
     - target: {fileID: 9154791538820048978, guid: e991e5166f293084d8e25e903e82632d,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0
+      value: -4.33
       objectReference: {fileID: 0}
     - target: {fileID: 9154791538820048978, guid: e991e5166f293084d8e25e903e82632d,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 38.52
+      value: 22.06
       objectReference: {fileID: 0}
     - target: {fileID: 9154791538820048978, guid: e991e5166f293084d8e25e903e82632d,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 0
+      value: 1.53
       objectReference: {fileID: 0}
     - target: {fileID: 9154791538820048978, guid: e991e5166f293084d8e25e903e82632d,
         type: 3}
@@ -334,9 +330,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e991e5166f293084d8e25e903e82632d, type: 3}
---- !u!4 &23312626408361562 stripped
+--- !u!4 &5056654037410873575 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9154791538820048978, guid: e991e5166f293084d8e25e903e82632d,
     type: 3}
-  m_PrefabInstance: {fileID: 9177923531785430536}
+  m_PrefabInstance: {fileID: 4116433445892483253}
   m_PrefabAsset: {fileID: 0}
