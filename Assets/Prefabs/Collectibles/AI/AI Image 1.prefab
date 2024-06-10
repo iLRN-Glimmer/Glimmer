@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0596e253f63d0045aef89d30d92f8c2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: AI Imagery as Analysis
+  Title: Images Inspiring Further Development
   Body: 'During development, images, like the ones below, were generated and we have
     a live video call or chat on Slack to discuss how these images represent or not
     what the findings  are. This set of images were not used but inspire other ones:'

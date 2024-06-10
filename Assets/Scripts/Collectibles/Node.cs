@@ -29,6 +29,7 @@ public class Node : Collectible
         if(DateTime.UtcNow < dateTime){
             gameObject.SetActive(false);
         }
+        Status = 0;
     }
 
     public string GetQuestion()
