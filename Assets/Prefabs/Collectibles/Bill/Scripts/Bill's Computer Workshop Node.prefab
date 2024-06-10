@@ -199,7 +199,7 @@ MonoBehaviour:
     of modern desktop computers. It covers CPU, RAM, I/O, hard drive, peripheral
     devices, and the mainboard. The goal is for students to identify and categorize
     these hardware components and explain their functions.
-  Status: 1
+  Status: 0
   Custom: no
   Next: {fileID: 8017121277551394032, guid: 58d5d0bffd96d394ba8959beeb6a1142, type: 3}
   Question: What is the first component you need to fix?
