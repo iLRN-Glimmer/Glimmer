@@ -13,15 +13,17 @@ public class Node : Collectible
     [SerializeField] private List<Sprite> Images;
     [SerializeField] private string Open;
     [SerializeField] private List<string> Author;
+    [SerializeField] private Collectible Head;
     
 
-    public Node(string title, string body, int status, string question, string answer, string url, List<string> author, List<string> tags = null, List<Sprite> images = null, string custom = null) : base(title,body,status, custom){
+    public Node(string title, string body, int status, string question, string answer, string url, List<string> author,Collectible head, List<string> tags = null, List<Sprite> images = null, string custom = null) : base(title,body,status, custom){
         Question = question;
         Answer = answer;
         URL = url;
         Tags =tags;
         Images = images;
         Author = author;
+        Head = head;
     }
 
     private void Start() {
@@ -30,6 +32,10 @@ public class Node : Collectible
             gameObject.SetActive(false);
         }
         Status = 0;
+    }
+
+    public Collectible GetHead(){
+        return Head;
     }
 
     public string GetQuestion()
@@ -80,6 +86,10 @@ public class Node : Collectible
     public void SetImages(List<Sprite> l)
     {
         Images = l;
+    }
+
+    public void SetHead(Collectible c){
+        Head = c;
     }
 
 

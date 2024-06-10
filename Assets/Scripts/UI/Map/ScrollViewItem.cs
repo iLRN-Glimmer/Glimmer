@@ -41,7 +41,12 @@ public class ScrollViewItem : MonoBehaviour, IPointerClickHandler
 
         // BUG
         // GameObject.Find("Inventory").GetComponent<InventoryPanel>().setOpenedCollectible(true);
-        collectible.GetComponent<Collectible>().OpenWindow(canvas);
+        if(type == "Node"){
+            collectible.GetComponent<Node>().GetHead().OpenWindow(canvas);
+        }else{
+            collectible.GetComponent<Collectible>().OpenWindow(canvas);
+        }
+        
 
         // expand panel based on type - node, text1, picture, video, sound
         // if (type == "Node") {
