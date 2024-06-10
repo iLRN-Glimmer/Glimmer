@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using UnityEngine;
 
 public class GridController : MonoBehaviour
@@ -27,12 +28,34 @@ public class GridController : MonoBehaviour
         Color color = mat.GetColor("_Color");
         color.a = transparency;
         mat.SetColor("_Color", color);
-
-        System.DateTime dateTime = System.DateTime.Parse(Open);
-        if (System.DateTime.UtcNow > dateTime)
+        CultureInfo provider = CultureInfo.InvariantCulture;
+        try
         {
-            gameObject.SetActive(false);
+            string[] formats = { "yyyy-MM-dd HH:mm:ss", "yyyy-M-d H:m:s" };
+            System.DateTime dateTime;
+
+            if (System.DateTime.TryParseExact(Open, formats, null, System.Globalization.DateTimeStyles.None, out dateTime))
+            {
+                if (System.DateTime.UtcNow > dateTime)
+                {
+                    gameObject.SetActive(false);
+                }
+            }
+            else
+            {
+                Debug.LogError($"Failed to parse date: {Open}. The format should be either 'yyyy-MM-dd HH:mm:ss' or 'yyyy-M-d H:m:s'.");
+            }
         }
+        catch (System.FormatException e)
+        {
+            Debug.LogError($"Failed to parse date: {Open}. Error: {e.Message}");
+        }
+        //System.DateTime dateTime = System.DateTime.ParseExact(Open, "yyyy-MM-dd HH:mm:ss", null);
+        //Debug.Log(System.DateTime.UtcNow);
+        //if (System.DateTime.UtcNow > dateTime)
+        //{
+        //    gameObject.SetActive(false);
+        //}
     }
 
     public IEnumerator ShowBoundary()
