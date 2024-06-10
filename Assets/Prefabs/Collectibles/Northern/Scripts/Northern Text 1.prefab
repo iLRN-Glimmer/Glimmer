@@ -89,7 +89,7 @@ GameObject:
   - component: {fileID: 2233851095755565556}
   - component: {fileID: 8017121277551394032}
   m_Layer: 0
-  m_Name: Northern Text 3
+  m_Name: Northern Text 1
   m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -194,9 +194,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f017a7e000fa57d4c8748fdc112c2c40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: Northern Heritage Network
-  Body: The Northern Heritage Network has 104 virtual tours, over 4666 digitized
-    3D objects, and 87 virtual reconstructions.
+  Title: Explore Virtual Northern Heritage Network
+  Body: "Virtual St. Kilda is part of a larger site called the Northern Heritage
+    Network (https://northernheritage.org) with many virtual museum exhibits such
+    as Virtual Orkney North Isles, Seinn Spioradail, Skri\xF0uklaustur Monastery,
+    and Uist."
   Status: 0
   Custom: 
-  Next: {fileID: 0}
+  Next: {fileID: 6132312195907708226, guid: a4c8a90e86e6f584f932685775c05cb3, type: 3}
