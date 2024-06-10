@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &698578053771919805
+--- !u!1 &3198838252136616834
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,51 +8,51 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4235349433471558066}
-  - component: {fileID: 5407786761845941993}
-  - component: {fileID: 5484082300599957635}
-  - component: {fileID: 5758681371562692936}
-  - component: {fileID: -4062526756828040064}
-  - component: {fileID: 2121855457637398460}
-  - component: {fileID: 1461504885124745690}
+  - component: {fileID: 4279424191510181177}
+  - component: {fileID: 8264803553433920028}
+  - component: {fileID: 2565325241661059136}
+  - component: {fileID: 5982960882899363591}
+  - component: {fileID: 4566435193963201990}
+  - component: {fileID: 293932206811328594}
+  - component: {fileID: 2410626443400878311}
   m_Layer: 0
-  m_Name: Wake Text
+  m_Name: Wake Image
   m_TagString: Selectable
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 16
   m_IsActive: 1
---- !u!4 &4235349433471558066
+--- !u!4 &4279424191510181177
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 698578053771919805}
+  m_GameObject: {fileID: 3198838252136616834}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.4331116, y: -0.8893536, z: 0.0074335327, w: 0.14631951}
-  m_LocalPosition: {x: -12.795, y: -0.685, z: -62.228}
+  m_LocalRotation: {x: -0.32162747, y: -0.55015045, z: -0.29016668, w: 0.7139283}
+  m_LocalPosition: {x: -16.027, y: 8.184, z: -41.804}
   m_LocalScale: {x: 0.08132933, y: 0.08132934, z: 0.081329316}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1075320364255459175}
+  - {fileID: 4483877008113945832}
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!33 &5407786761845941993
+  m_LocalEulerAnglesHint: {x: -51.124, y: -72.591, z: -5.525}
+--- !u!33 &8264803553433920028
 MeshFilter:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 698578053771919805}
+  m_GameObject: {fileID: 3198838252136616834}
   m_Mesh: {fileID: -8656821521838982210, guid: be2a16107aa425743873dbb7d32d6e77, type: 3}
---- !u!23 &5484082300599957635
+--- !u!23 &2565325241661059136
 MeshRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 698578053771919805}
+  m_GameObject: {fileID: 3198838252136616834}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -89,13 +89,13 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!64 &5758681371562692936
+--- !u!64 &5982960882899363591
 MeshCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 698578053771919805}
+  m_GameObject: {fileID: 3198838252136616834}
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -111,13 +111,55 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: -8656821521838982210, guid: be2a16107aa425743873dbb7d32d6e77, type: 3}
---- !u!82 &-4062526756828040064
+--- !u!114 &4566435193963201990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3198838252136616834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f0596e253f63d0045aef89d30d92f8c2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title: Whale Fall Mystery Inspiration
+  Body: One real-world phenomena that inspired the design team was the idea of a
+    whale fall, when the carcass of a whale provides a sudden, concentrated food
+    source. Arctic scientists request that the player help them find a whale who
+    went missing during migration. The player explores the arctic dive site and is
+    surprised to discover the exposed bones of the whale being consumed by a variety
+    of deep sea scavengers and decomposers.
+  Status: 0
+  Custom: 
+  Next: {fileID: 0}
+  Images:
+  - {fileID: 21300000, guid: fbaab94de4d24c649810a076eb45d21d, type: 3}
+--- !u!114 &293932206811328594
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3198838252136616834}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  outlineMode: 1
+  outlineColor: {r: 0.7647059, g: 0, b: 0.16862746, a: 1}
+  outlineWidth: 8
+  precomputeOutline: 0
+  bakeKeys: []
+  bakeValues: []
+--- !u!82 &2410626443400878311
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 698578053771919805}
+  m_GameObject: {fileID: 3198838252136616834}
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
@@ -207,50 +249,13 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &2121855457637398460
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 698578053771919805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f017a7e000fa57d4c8748fdc112c2c40, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Title: Epic Educational Game with Ecosystems
-  Body: "In an interview, David Gagnon, director at Field Day Lab said, \u201CIt\u2019s
-    one of a few projects of this size ever attempted. The game has over 50 challenges
-    across a dozen ecosystems with hundreds of individual species.\u201D"
-  Status: 0
-  Custom: 
-  Next: {fileID: 0}
---- !u!114 &1461504885124745690
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 698578053771919805}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5fea29bb7c508c244a1f805a5fd3fc4d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  outlineMode: 1
-  outlineColor: {r: 0.7647059, g: 0, b: 0.16862746, a: 1}
-  outlineWidth: 8
-  precomputeOutline: 0
-  bakeKeys: []
-  bakeValues: []
---- !u!1001 &8205580829316767541
+--- !u!1001 &4698859729952351418
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 4235349433471558066}
+    m_TransformParent: {fileID: 4279424191510181177}
     m_Modifications:
     - target: {fileID: 1987466220906589181, guid: e991e5166f293084d8e25e903e82632d,
         type: 3}
@@ -327,9 +332,9 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e991e5166f293084d8e25e903e82632d, type: 3}
---- !u!4 &1075320364255459175 stripped
+--- !u!4 &4483877008113945832 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9154791538820048978, guid: e991e5166f293084d8e25e903e82632d,
     type: 3}
-  m_PrefabInstance: {fileID: 8205580829316767541}
+  m_PrefabInstance: {fileID: 4698859729952351418}
   m_PrefabAsset: {fileID: 0}

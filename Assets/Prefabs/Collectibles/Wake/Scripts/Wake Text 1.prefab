@@ -119,7 +119,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f017a7e000fa57d4c8748fdc112c2c40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: 'Wake: Tales from the Aqualab'
+  Title: NSF Grant for Wake Development
   Body: 'Wake is funded by the NSF DRK-12 grant, "Collaborative Research: Developing
     an Online Game to Teach Middle School Students Science Research Practices in
     the Life Sciences" to David Gagnon (University of Wisconsin-Madison), Shari Metcalf
