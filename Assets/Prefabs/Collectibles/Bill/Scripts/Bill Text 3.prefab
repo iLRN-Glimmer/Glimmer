@@ -194,7 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f017a7e000fa57d4c8748fdc112c2c40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: Bill's Computer Workshop
+  Title: Integrating Immersive & Unplugged Learning
   Body: This immersive approach can be combined with the other unplugged or virtual
     approaches. Especially when introducing the components and their individual functions
     with the immersive experience, teachers can add the unplugged classroom computer

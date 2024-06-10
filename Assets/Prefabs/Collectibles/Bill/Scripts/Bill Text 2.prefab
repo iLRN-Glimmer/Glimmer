@@ -194,10 +194,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f017a7e000fa57d4c8748fdc112c2c40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: Bill's Computer Workshop
+  Title: Hardware Terminology Immersive Primer
   Body: 'The immersive experience can be used as a  tool to establish important terms
     regarding the different hardware parts and their functions to repeat and deepen
     this knowledge later. '
   Status: 0
   Custom: 
-  Next: {fileID: 6837541562253917186, guid: 511ec0b00070f234685c483433d60434, type: 3}
+  Next: {fileID: 0}

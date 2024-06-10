@@ -195,14 +195,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Title: Bill's Computer Workshop
-  Body: "\u200BThe Educational Virtual Environment Bill\u2019s Computer Workshop
-    focuses on the interaction and operating principle of parts of modern desktop
-    computers. Bill\u2019s Computer Workshop addresses the parts CPU, RAM, hard drive,
-    peripheral devices, and the mainboard. The learning objective is that the students
-    can name and organize the hardware components CPU, RAM, hard drive, input/output
-    control (mainboard), input units, and output units and are able to explain their
-    functions."
-  Status: 0
+  Body: Bill's Computer Workshop teaches students about the components and operations
+    of modern desktop computers. It covers CPU, RAM, I/O, hard drive, peripheral
+    devices, and the mainboard. The goal is for students to identify and categorize
+    these hardware components and explain their functions.
+  Status: 1
   Custom: no
   Next: {fileID: 8017121277551394032, guid: 58d5d0bffd96d394ba8959beeb6a1142, type: 3}
   Question: What is the first component you need to fix?
@@ -215,3 +212,4 @@ MonoBehaviour:
   Open: 2024-04-19
   Author:
   - Andy Dengel
+  Head: {fileID: 8017121277551394032, guid: 969bdbbfb122af641ac296d0cdb058df, type: 3}

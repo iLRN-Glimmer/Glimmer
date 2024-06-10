@@ -194,7 +194,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f017a7e000fa57d4c8748fdc112c2c40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: Bill's Computer Workshop
+  Title: Engaging Immersive Tech Education Tool
   Body: 'The immersive experience can be introduced as a motivational game with the
     objective to engage the students with the topic. The immersive experience can
     be used as a  tool to establish important terms regarding the different hardware
